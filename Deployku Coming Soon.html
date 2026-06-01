@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Deployku — Returning soon</title>
+<meta name="description" content="Deployku — a Singapore venture studio. Site on its way." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --navy:#0E233E;--green:#2CFF71;--blue:#2574D6;--pink:#FF0072;--yellow:#FFDB03;
+  --ease:cubic-bezier(0.16,1,0.3,1);
+}
+*,*::before,*::after{box-sizing:border-box;}
+html,body{height:100%;}
+body{
+  margin:0;font-family:'DM Sans',system-ui,sans-serif;color:#fff;
+  background:radial-gradient(120% 100% at 50% 0%, #15315A 0%, #0E233E 55%, #0A1B30 100%);
+  -webkit-font-smoothing:antialiased;overflow:hidden;
+  display:flex;align-items:center;justify-content:center;text-align:center;
+}
+h1,p{margin:0;text-wrap:pretty;}
+a{color:inherit;}
+:focus-visible{outline:2.5px solid var(--green);outline-offset:4px;border-radius:8px;}
+
+.blob{position:fixed;border-radius:50%;filter:blur(80px);opacity:.4;z-index:0;pointer-events:none;animation:drift 13s ease-in-out infinite;}
+.blob.g{width:420px;height:420px;background:radial-gradient(circle,rgba(44,255,113,0.45),transparent 70%);top:-120px;left:8%;}
+.blob.b{width:480px;height:480px;background:radial-gradient(circle,rgba(37,116,214,0.5),transparent 70%);bottom:-180px;right:6%;animation-delay:-5s;}
+@keyframes drift{0%,100%{transform:translate(0,0) scale(1);}50%{transform:translate(-3%,4%) scale(1.08);}}
+
+.stage{position:relative;z-index:1;padding:32px 24px;max-width:600px;display:flex;flex-direction:column;align-items:center;}
+
+.signal{position:relative;display:flex;align-items:center;justify-content:center;width:clamp(180px,42vw,230px);height:clamp(180px,42vw,230px);margin-bottom:clamp(34px,6vw,52px);}
+.signal .mark{width:62%;height:auto;animation:float 6s ease-in-out infinite;position:relative;z-index:2;}
+.ring{position:absolute;border-radius:50%;border:2px solid rgba(37,116,214,0.3);width:140px;height:140px;animation:bc 4.5s ease-out infinite;}
+.ring.r2{animation-delay:-1.5s;border-color:rgba(44,255,113,0.32);}
+.ring.r3{animation-delay:-3s;border-color:rgba(255,0,114,0.22);}
+@keyframes float{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
+@keyframes bc{0%{transform:scale(.5);opacity:.7;}70%{opacity:0;}100%{transform:scale(2);opacity:0;}}
+
+.brand{font-family:'Sora',sans-serif;font-weight:800;font-size:clamp(26px,5vw,34px);letter-spacing:-0.02em;margin-bottom:clamp(28px,5vw,40px);}
+
+.eyebrow{font-family:'Sora',sans-serif;font-weight:700;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--green);margin-bottom:20px;}
+h1{font-family:'Sora',sans-serif;font-weight:800;font-size:clamp(28px,5.4vw,44px);letter-spacing:-0.03em;line-height:1.05;}
+.sub{margin-top:18px;font-size:clamp(15px,2.2vw,18px);color:rgba(255,255,255,0.66);max-width:38ch;}
+
+.cta{margin-top:clamp(34px,6vw,46px);display:inline-flex;align-items:center;gap:9px;
+  font-family:'Sora',sans-serif;font-weight:700;font-size:15px;text-decoration:none;
+  background:var(--green);color:var(--navy);padding:15px 26px;border-radius:14px;
+  box-shadow:0 14px 30px -12px rgba(44,255,113,0.6);
+  transition:transform .4s var(--ease),box-shadow .4s var(--ease);}
+.cta:hover{transform:translateY(-2px) scale(1.015);box-shadow:0 18px 36px -10px rgba(44,255,113,0.8);}
+.cta svg{width:16px;height:16px;}
+
+.foot{margin-top:clamp(40px,7vw,60px);font-size:13px;color:rgba(255,255,255,0.42);letter-spacing:0.02em;}
+
+@media (prefers-reduced-motion:reduce){*{animation:none !important;}}
+</style>
+</head>
+<body>
+<span class="blob g" aria-hidden="true"></span>
+<span class="blob b" aria-hidden="true"></span>
+
+<main class="stage">
+  <div class="signal" aria-hidden="true">
+    <span class="ring r1"></span><span class="ring r2"></span><span class="ring r3"></span>
+    <svg class="mark" viewBox="0 0 120 150">
+      <path d="M60 10 L77 41 Q60 35 43 41 Z" fill="#2CFF71" stroke="#2CFF71" stroke-width="2" stroke-linejoin="round"/>
+      <path d="M16 70 Q60 40 104 70" fill="none" stroke="#2CFF71" stroke-width="13" stroke-linecap="round"/>
+      <path d="M30 88 Q60 64 90 88" fill="none" stroke="#2574D6" stroke-width="13" stroke-linecap="round"/>
+      <path d="M44 104 Q60 86 76 104" fill="none" stroke="#FF0072" stroke-width="13" stroke-linecap="round"/>
+      <path d="M60 140 C53 126 50 122 50 116 a10 10 0 1 1 20 0 c0 6 -3 10 -10 24 Z" fill="#FFDB03"/>
+    </svg>
+  </div>
+
+  <div class="brand">Deployku</div>
+
+  <p class="eyebrow">Returning soon · Singapore</p>
+  <h1>We're building<br/>something good.</h1>
+  <p class="sub">A venture studio for Southeast Asia. The full story is on its way.</p>
+
+  <a class="cta" href="/cdn-cgi/l/email-protection#a8d2c9cbc0c9dad186dcc9d1c4c7dae8cccdd8c4c7d1c3dd86cbc7c5">Get in touch <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+
+  <p class="foot">© 2026 Deployku Pte Ltd</p>
+</main>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
+</html>
