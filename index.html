@@ -32,6 +32,11 @@
   --bg-soft-2:#EDF2F9;
   --line:#E4EAF3;
 
+  /* Readability wash over the fixed background photos (one-line tune knob).
+     Raise the alpha for more legible text / softer photos; lower it to let
+     the photography read stronger. */
+  --bg-wash:rgba(255,255,255,0.58);
+
   --radius-lg:24px;
   --radius:18px;
   --radius-sm:14px;
@@ -64,6 +69,28 @@ button{font-family:inherit;cursor:pointer;border:none;background:none;}
 h1,h2,h3,h4,p{margin:0;text-wrap:pretty;}
 ul{margin:0;padding:0;list-style:none;}
 :focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:6px;}
+
+/* ============================================================
+   FIXED BACKGROUND PHOTO STACK
+   One stack behind everything; one .bg-layer per photo-backed
+   section. Layers fade between each other as you scroll
+   (see the IntersectionObserver at the foot of the page).
+   ============================================================ */
+.bg-stack{position:fixed;inset:0;z-index:-1;pointer-events:none;background:var(--bg);}
+.bg-layer{position:absolute;inset:0;opacity:0;transition:opacity 1s var(--ease);}
+.bg-layer img{width:100%;height:100%;object-fit:cover;object-position:center;}
+.bg-layer.is-active{opacity:1;}
+/* Readability wash — sits over the photos, under the content. */
+.bg-stack::after{content:"";position:absolute;inset:0;
+  background:linear-gradient(180deg,var(--bg-wash),var(--bg-wash));}
+
+/* Per-image framing knob: landscape photos get centre-cropped on
+   portrait phones, so nudge object-position if a subject drifts off.
+   e.g.  .bg-layer[data-key="about"] img{object-position:50% 30%;} */
+
+@media (prefers-reduced-motion:reduce){
+  .bg-layer{transition:none;}
+}
 
 /* ---------- type ---------- */
 .display{font-family:'Sora',sans-serif;font-weight:800;letter-spacing:-0.03em;line-height:1.02;}
@@ -133,7 +160,7 @@ section{padding-block:clamp(80px,11vw,140px);}
    HERO
    ============================================================ */
 .hero{position:relative;overflow:hidden;padding-top:calc(var(--head-h) + clamp(44px,8vw,84px));padding-bottom:clamp(60px,9vw,110px);
-  background:radial-gradient(120% 90% at 80% -10%, #EAF1FB 0%, #F7FAFE 42%, #FFFFFF 78%);}
+  background:transparent;}
 .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.12fr 0.88fr;gap:clamp(32px,5vw,60px);align-items:center;}
 .hero h1{font-family:'Sora',sans-serif;font-weight:800;font-size:clamp(40px,6.4vw,72px);letter-spacing:-0.035em;line-height:1.0;}
 .hero h1 .pop{position:relative;white-space:nowrap;}
@@ -162,18 +189,20 @@ section{padding-block:clamp(80px,11vw,140px);}
 /* ============================================================
    MARQUEE / STAT STRIP
    ============================================================ */
-.strip{background:var(--navy);color:#fff;}
+.strip{background:transparent;color:var(--ink);}
 .strip-inner{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-block:clamp(40px,6vw,56px);}
-.stat{padding:4px 0;}
+.stat{padding:24px 24px 26px;background:rgba(255,255,255,0.72);border:1px solid var(--line);
+  border-radius:var(--radius);box-shadow:var(--shadow-sm);
+  backdrop-filter:saturate(160%) blur(10px);-webkit-backdrop-filter:saturate(160%) blur(10px);}
 .stat .n{font-family:'Sora',sans-serif;font-weight:800;font-size:clamp(28px,3.4vw,40px);letter-spacing:-0.02em;line-height:1;
-  background:linear-gradient(120deg,#2CFF71,#7FE0FF);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
-.stat .l{margin-top:10px;font-size:14px;color:rgba(255,255,255,0.66);}
+  background:linear-gradient(120deg,var(--green-ink),var(--blue));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;}
+.stat .l{margin-top:10px;font-size:14px;color:var(--muted);}
 @media (max-width:720px){.strip-inner{grid-template-columns:1fr 1fr;gap:28px 20px;}}
 
 /* ============================================================
    CAPABILITIES
    ============================================================ */
-.caps{background:var(--bg);}
+.caps{background:transparent;}
 .cap-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:54px;}
 .cap{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:30px 28px 32px;
   transition:transform .45s var(--ease),box-shadow .45s var(--ease),border-color .45s var(--ease);position:relative;overflow:hidden;}
@@ -191,7 +220,7 @@ section{padding-block:clamp(80px,11vw,140px);}
 /* ============================================================
    PRODUCTS / WORK
    ============================================================ */
-.work{background:var(--bg-soft);}
+.work{background:transparent;}
 .product{position:relative;overflow:hidden;border-radius:var(--radius-lg);background:var(--navy);color:#fff;
   display:grid;grid-template-columns:1.05fr 0.95fr;gap:clamp(28px,4vw,56px);align-items:center;
   padding:clamp(36px,5vw,64px);box-shadow:var(--shadow-navy);margin-top:52px;}
@@ -218,7 +247,7 @@ section{padding-block:clamp(80px,11vw,140px);}
 /* ============================================================
    APPROACH
    ============================================================ */
-.approach{background:var(--bg);}
+.approach{background:transparent;}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:54px;}
 .astep{padding:28px 4px 4px;border-top:3px solid var(--c);}
 .astep .k{font-family:'Sora',sans-serif;font-weight:800;font-size:15px;color:var(--c);letter-spacing:0.04em;}
@@ -230,7 +259,7 @@ section{padding-block:clamp(80px,11vw,140px);}
 /* ============================================================
    ABOUT
    ============================================================ */
-.about{background:var(--bg-soft);}
+.about{background:transparent;}
 .about-grid{display:grid;grid-template-columns:0.9fr 1.1fr;gap:clamp(36px,5vw,72px);align-items:center;}
 .about-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:clamp(30px,4vw,44px);box-shadow:var(--shadow-sm);}
 .about-card .mark{width:64px;height:80px;margin-bottom:26px;}
@@ -269,7 +298,7 @@ section{padding-block:clamp(80px,11vw,140px);}
 /* ============================================================
    CONTACT
    ============================================================ */
-.contact{background:var(--bg);}
+.contact{background:transparent;}
 .contact-card{position:relative;overflow:hidden;border-radius:var(--radius-lg);
   background:linear-gradient(135deg,#F7FAFE,#EAF1FB);border:1px solid var(--line);
   padding:clamp(40px,6vw,72px);text-align:center;}
@@ -302,6 +331,30 @@ section{padding-block:clamp(80px,11vw,140px);}
 </style>
 </head>
 <body>
+<!-- ============================================================
+     FIXED BACKGROUND PHOTO STACK (cross-fades on scroll)
+     ============================================================ -->
+<div class="bg-stack" aria-hidden="true">
+  <div class="bg-layer" data-key="hero">
+    <picture><source media="(max-width:640px)" srcset="bg-hero-m.webp"><img src="bg-hero.webp" alt=""></picture>
+  </div>
+  <div class="bg-layer" data-key="caps">
+    <picture><source media="(max-width:640px)" srcset="bg-caps-m.webp"><img src="bg-caps.webp" alt=""></picture>
+  </div>
+  <div class="bg-layer" data-key="work">
+    <picture><source media="(max-width:640px)" srcset="bg-work-m.webp"><img src="bg-work.webp" alt=""></picture>
+  </div>
+  <div class="bg-layer" data-key="approach">
+    <picture><source media="(max-width:640px)" srcset="bg-approach-m.webp"><img src="bg-approach.webp" alt=""></picture>
+  </div>
+  <div class="bg-layer" data-key="about">
+    <picture><source media="(max-width:640px)" srcset="bg-about-m.webp"><img src="bg-about.webp" alt=""></picture>
+  </div>
+  <div class="bg-layer" data-key="contact">
+    <picture><source media="(max-width:640px)" srcset="bg-contact-m.webp"><img src="bg-contact.webp" alt=""></picture>
+  </div>
+</div>
+
 <!-- ============================================================
      SHARED SVG SYMBOLS
      ============================================================ -->
@@ -370,7 +423,7 @@ section{padding-block:clamp(80px,11vw,140px);}
 <!-- ============================================================
      HERO
      ============================================================ -->
-<section class="hero" aria-labelledby="hero-h1">
+<section class="hero" data-bg-key="hero" aria-labelledby="hero-h1">
   <span class="hero-blob g" aria-hidden="true"></span>
   <span class="hero-blob b" aria-hidden="true"></span>
   <div class="wrap hero-grid">
@@ -410,7 +463,7 @@ section{padding-block:clamp(80px,11vw,140px);}
 <!-- ============================================================
      CAPABILITIES
      ============================================================ -->
-<section class="caps" id="caps" aria-labelledby="caps-h2">
+<section class="caps" id="caps" data-bg-key="caps" aria-labelledby="caps-h2">
   <div class="wrap">
     <div class="head-block reveal">
       <p class="eyebrow">What we do</p>
@@ -455,7 +508,7 @@ section{padding-block:clamp(80px,11vw,140px);}
 <!-- ============================================================
      PRODUCTS / WORK
      ============================================================ -->
-<section class="work" id="work" aria-labelledby="work-h2">
+<section class="work" id="work" data-bg-key="work" aria-labelledby="work-h2">
   <div class="wrap">
     <div class="head-block reveal">
       <p class="eyebrow">Products &amp; work</p>
@@ -495,7 +548,7 @@ section{padding-block:clamp(80px,11vw,140px);}
 <!-- ============================================================
      APPROACH
      ============================================================ -->
-<section class="approach" id="approach" aria-labelledby="appr-h2">
+<section class="approach" id="approach" data-bg-key="approach" aria-labelledby="appr-h2">
   <div class="wrap">
     <div class="head-block reveal">
       <p class="eyebrow">How we work</p>
@@ -512,7 +565,7 @@ section{padding-block:clamp(80px,11vw,140px);}
 <!-- ============================================================
      ABOUT
      ============================================================ -->
-<section class="about" id="about" aria-labelledby="about-h2">
+<section class="about" id="about" data-bg-key="about" aria-labelledby="about-h2">
   <div class="wrap about-grid">
     <div class="about-card reveal">
       <svg class="mark" viewBox="0 0 120 150" aria-hidden="true"><use href="#dk-mark"/></svg>
@@ -571,7 +624,7 @@ section{padding-block:clamp(80px,11vw,140px);}
 <!-- ============================================================
      CONTACT
      ============================================================ -->
-<section class="contact" id="contact" aria-labelledby="contact-h2">
+<section class="contact" id="contact" data-bg-key="contact" aria-labelledby="contact-h2">
   <div class="wrap">
     <div class="contact-card reveal">
       <p class="eyebrow" style="justify-content:center">Get in touch</p>
@@ -659,6 +712,27 @@ section{padding-block:clamp(80px,11vw,140px);}
       entries.forEach(function(e){ if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);} });
     },{threshold:0.12, rootMargin:'0px 0px -8% 0px'});
     reveals.forEach(function(el){io.observe(el);});
+  }
+
+  // Background photo cross-fade: activate the layer whose section is
+  // crossing the centre of the viewport.
+  var bgLayers={};
+  document.querySelectorAll('.bg-layer').forEach(function(l){ bgLayers[l.getAttribute('data-key')]=l; });
+  var bgSections=document.querySelectorAll('[data-bg-key]');
+  var activateBg=function(key){
+    for(var k in bgLayers){ bgLayers[k].classList.toggle('is-active', k===key); }
+  };
+  if(bgSections.length){
+    var firstKey=bgSections[0].getAttribute('data-bg-key');
+    if(!('IntersectionObserver' in window)){
+      activateBg(firstKey); // fallback: just show the hero photo
+    } else {
+      var bgIo=new IntersectionObserver(function(entries){
+        entries.forEach(function(e){ if(e.isIntersecting){ activateBg(e.target.getAttribute('data-bg-key')); } });
+      },{rootMargin:'-45% 0px -45% 0px'});
+      bgSections.forEach(function(s){ bgIo.observe(s); });
+      activateBg(firstKey); // active before the first scroll event fires
+    }
   }
 })();
 </script>
