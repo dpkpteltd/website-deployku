@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /old/
+
+Sitemap: https://deployku.com/sitemap.xml
