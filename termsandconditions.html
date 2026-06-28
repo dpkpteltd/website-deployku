@@ -105,6 +105,30 @@ ul,ol{margin:0;padding:0;}
 .nav-links a[aria-current="page"]{color:var(--navy);font-weight:600;}
 @media (max-width:880px){.nav-links{display:none;}}
 
+/* ---------- language pill ---------- */
+.lang{position:relative;flex:none;}
+.lang-btn{display:inline-flex;align-items:center;gap:8px;font-family:'Sora',sans-serif;font-weight:600;font-size:14px;color:var(--navy);
+  background:rgba(255,255,255,0.9);border:1px solid var(--line);padding:9px 13px;border-radius:var(--pill);box-shadow:var(--shadow-sm);
+  transition:transform .25s var(--ease),box-shadow .25s var(--ease),border-color .25s ease;}
+.lang-btn:hover{transform:translateY(-1px);border-color:#cdd8ea;box-shadow:var(--shadow);}
+.lang-globe{flex:none;color:var(--blue);}
+.lang-chev{flex:none;color:var(--faint);transition:transform .25s var(--ease);}
+.lang-btn[aria-expanded="true"] .lang-chev{transform:rotate(180deg);}
+.lang-menu{position:absolute;top:calc(100% + 10px);right:0;min-width:210px;background:#fff;border:1px solid var(--line);border-radius:16px;
+  box-shadow:var(--shadow);padding:7px;z-index:200;opacity:0;transform:translateY(-6px) scale(.98);pointer-events:none;
+  transition:opacity .2s ease,transform .2s var(--ease);}
+.lang-menu.open{opacity:1;transform:none;pointer-events:auto;}
+.lang-menu button{display:flex;align-items:center;gap:11px;width:100%;padding:10px 12px;border-radius:11px;font-family:'DM Sans',sans-serif;
+  font-size:14.5px;color:var(--ink);text-align:left;transition:background .18s ease,color .18s ease;}
+.lang-menu button:hover{background:var(--bg-soft);}
+.lang-menu .lang-short{flex:none;width:34px;font-family:'Sora',sans-serif;font-weight:700;font-size:11px;letter-spacing:0.04em;color:var(--faint);}
+.lang-menu .lang-name{flex:1;}
+.lang-menu .lang-check{flex:none;color:var(--blue);opacity:0;}
+.lang-menu button[aria-selected="true"]{color:var(--blue);font-weight:600;background:var(--bg-soft);}
+.lang-menu button[aria-selected="true"] .lang-short{color:var(--blue);}
+.lang-menu button[aria-selected="true"] .lang-check{opacity:1;}
+@media (max-width:880px){.lang-btn .lang-label{display:none;}.lang-btn{padding:9px 11px;}}
+
 /* ---------- legal doc layout ---------- */
 .doc-hero{position:relative;overflow:hidden;padding-top:calc(var(--head-h) + clamp(44px,7vw,72px));padding-bottom:clamp(36px,5vw,56px);
   background:radial-gradient(120% 90% at 80% -10%, #EAF1FB 0%, #F7FAFE 42%, #FFFFFF 78%);}
@@ -168,11 +192,12 @@ ul,ol{margin:0;padding:0;}
     </a>
     <nav class="nav" aria-label="Primary">
       <div class="nav-links">
-        <a href="index.html#work">Heqiyou</a>
-        <a href="privacy.html">Privacy</a>
-        <a href="termsandconditions.html" aria-current="page">Terms</a>
+        <a href="index.html#work" data-t="nav.product">Heqiyou</a>
+        <a href="privacy.html" data-t="nav.privacy">Privacy</a>
+        <a href="termsandconditions.html" aria-current="page" data-t="nav.terms">Terms</a>
       </div>
-      <a href="index.html#contact" class="btn btn-primary">Get in touch</a>
+      <a href="index.html#contact" class="btn btn-primary" data-t="nav.cta">Get in touch</a>
+      <div class="lang" id="lang-switcher"></div>
     </nav>
   </div>
 </header>
@@ -180,20 +205,20 @@ ul,ol{margin:0;padding:0;}
 <main>
 <section class="doc-hero">
   <div class="wrap">
-    <p class="eyebrow">Legal · Heqiyou</p>
-    <h1>Terms and Conditions</h1>
-    <div class="doc-meta">
+    <p class="eyebrow" data-t="eyebrow">Legal · Heqiyou</p>
+    <h1 data-t="h1">Terms and Conditions</h1>
+    <div class="doc-meta" data-t="meta">
       <span>Effective Date: 28 June 2026</span>
       <span>Version 1.3</span>
       <span>Deployku Pte Ltd · Singapore</span>
     </div>
-    <p class="doc-intro">These Terms and Conditions (the "<strong>Terms</strong>") are the agreement between you and <strong>Deployku Pte Ltd</strong>, a company registered in Singapore ("<strong>Deployku</strong>", "<strong>we</strong>", "<strong>us</strong>" or "<strong>our</strong>"). They cover your use of the Heqiyou app and everything in it — all features, content, and related websites and services (together, the "<strong>Service</strong>" or "<strong>App</strong>").</p>
+    <p class="doc-intro" data-t="intro">These Terms and Conditions (the "<strong>Terms</strong>") are the agreement between you and <strong>Deployku Pte Ltd</strong>, a company registered in Singapore ("<strong>Deployku</strong>", "<strong>we</strong>", "<strong>us</strong>" or "<strong>our</strong>"). They cover your use of the Heqiyou app and everything in it — all features, content, and related websites and services (together, the "<strong>Service</strong>" or "<strong>App</strong>").</p>
   </div>
 </section>
 
 <section class="doc">
   <div class="wrap">
-    <div class="doc-body">
+    <div class="doc-body" data-t="body">
 
       <p><strong>Please read these Terms. By creating an account or using the Service, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you don't agree, don't use the Service.</strong></p>
 
@@ -405,35 +430,35 @@ ul,ol{margin:0;padding:0;}
           <svg class="brand-mark" viewBox="0 0 120 150" aria-hidden="true"><use href="#dk-mark"/></svg>
           <span class="brand-name">Deployku</span>
         </a>
-        <p class="foot-tagline">A Singapore studio building the products that move Southeast Asia.</p>
+        <p class="foot-tagline" data-t="foot.tagline">A Singapore studio building the products that move Southeast Asia.</p>
       </div>
       <div class="foot-cols">
         <div class="foot-col">
-          <h4>Company</h4>
-          <a href="index.html#caps">What we do</a>
-          <a href="index.html#approach">Approach</a>
-          <a href="index.html#about">About</a>
-          <a href="index.html#careers">Careers</a>
+          <h4 data-t="foot.company">Company</h4>
+          <a href="index.html#caps" data-t="foot.whatwedo">What we do</a>
+          <a href="index.html#approach" data-t="foot.approach">Approach</a>
+          <a href="index.html#about" data-t="foot.about">About</a>
+          <a href="index.html#careers" data-t="foot.careers">Careers</a>
         </div>
         <div class="foot-col">
-          <h4>Products</h4>
-          <a href="index.html#work">Heqiyou</a>
+          <h4 data-t="foot.products">Products</h4>
+          <a href="index.html#work" data-t="foot.heqiyou">Heqiyou</a>
         </div>
         <div class="foot-col">
-          <h4>Legal</h4>
-          <a href="privacy.html">Privacy Policy</a>
-          <a href="termsandconditions.html">Terms &amp; Conditions</a>
+          <h4 data-t="foot.legal">Legal</h4>
+          <a href="privacy.html" data-t="foot.privacyLink">Privacy Policy</a>
+          <a href="termsandconditions.html" data-t="foot.termsLink">Terms &amp; Conditions</a>
         </div>
         <div class="foot-col">
-          <h4>Contact</h4>
-          <a href="mailto:admin@deployku.com">Email</a>
-          <a href="index.html#contact">Get in touch</a>
+          <h4 data-t="foot.contact">Contact</h4>
+          <a href="mailto:admin@deployku.com" data-t="foot.email">Email</a>
+          <a href="index.html#contact" data-t="foot.getintouch">Get in touch</a>
         </div>
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Deployku Pte Ltd. All rights reserved.</span>
-      <span>Built in Singapore · for Southeast Asia</span>
+      <span data-t="foot.copyright">© 2026 Deployku Pte Ltd. All rights reserved.</span>
+      <span data-t="foot.built">Built in Singapore · for Southeast Asia</span>
     </div>
   </div>
 </footer>
@@ -445,5 +470,11 @@ ul,ol{margin:0;padding:0;}
   onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
 })();
 </script>
+<script src="tr/terms.ms.js"></script>
+<script src="tr/terms.id.js"></script>
+<script src="tr/terms.vi.js"></script>
+<script src="tr/terms.th.js"></script>
+<script src="tr/terms.tl.js"></script>
+<script src="lang-switcher.js"></script>
 </body>
 </html>
