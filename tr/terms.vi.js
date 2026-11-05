@@ -72,7 +72,7 @@ window.DK_TRANSLATIONS.vi = {
 <p class="doc-note">Liên hệ: <a href="mailto:admin@deployku.com">admin@deployku.com</a></p>`,
   "meta": "<span>Ngày hiệu lực: 28 June 2026</span><span>Phiên bản 1.3</span><span>Deployku Pte Ltd · Singapore</span>",
   "intro": `Các Điều khoản và Điều kiện này (gọi là "<strong>Điều khoản</strong>") là thỏa thuận giữa bạn và <strong>Deployku Pte Ltd</strong>, một công ty được đăng ký tại Singapore ("<strong>Deployku</strong>", "<strong>chúng tôi</strong>" hoặc "<strong>của chúng tôi</strong>"). Các Điều khoản này điều chỉnh việc bạn sử dụng ứng dụng Heqiyou và mọi thứ trong đó — tất cả các tính năng, nội dung, cùng các trang web và dịch vụ liên quan (gọi chung là "<strong>Dịch vụ</strong>" (Service) hoặc "<strong>Ứng dụng</strong>" (App)).`,
-  "nav.product": "Heqiyou",
+  "nav.product": "Sản phẩm",
   "nav.privacy": "Quyền riêng tư",
   "nav.terms": "Điều khoản",
   "nav.cta": "Liên hệ",

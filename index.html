@@ -4,7 +4,7 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Deployku — We build the products that move Southeast Asia.</title>
-<meta name="description" content="Deployku is a Singapore studio that builds and backs a portfolio of products — payments-grade backends, real-time voice, and AI safety systems. Makers of Heqiyou." />
+<meta name="description" content="Deployku is a Singapore studio that builds and backs a portfolio of products — payments-grade backends, real-time voice, and AI safety systems. Makers of Heqiyou and Lekjek." />
 <link rel="canonical" href="https://deployku.com/" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="theme-color" content="#0E233E" />
@@ -15,7 +15,7 @@
 <meta property="og:site_name" content="Deployku" />
 <meta property="og:url" content="https://deployku.com/" />
 <meta property="og:title" content="Deployku — We build the products that move Southeast Asia." />
-<meta property="og:description" content="A Singapore studio building and backing a portfolio of consumer products — payments-grade backends, real-time voice, and AI safety. Makers of Heqiyou." />
+<meta property="og:description" content="A Singapore studio building and backing a portfolio of consumer products — payments-grade backends, real-time voice, and AI safety. Makers of Heqiyou and Lekjek." />
 <meta property="og:image" content="https://deployku.com/og-image.jpg" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
@@ -25,7 +25,7 @@
 <!-- Twitter -->
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Deployku — We build the products that move Southeast Asia." />
-<meta name="twitter:description" content="A Singapore studio building and backing a portfolio of consumer products — payments-grade backends, real-time voice, and AI safety. Makers of Heqiyou." />
+<meta name="twitter:description" content="A Singapore studio building and backing a portfolio of consumer products — payments-grade backends, real-time voice, and AI safety. Makers of Heqiyou and Lekjek." />
 <meta name="twitter:image" content="https://deployku.com/og-image.jpg" />
 
 <!-- Structured data -->
@@ -292,6 +292,24 @@ section{padding-block:clamp(80px,11vw,140px);}
 .product-visual .hq-glyph{width:min(280px,82%);animation:float-up 7s ease-in-out infinite;}
 @media (max-width:880px){.product{grid-template-columns:1fr;text-align:center;}.product .desc{margin-inline:auto;}.product .meta,.product .acts{justify-content:center;}.product-visual{order:-1;min-height:200px;}}
 
+/* ---- Lekjek product card ---- */
+.product.product-lk{grid-template-columns:0.95fr 1.05fr;margin-top:24px;}
+.product-lk .product-glow{background:radial-gradient(60% 80% at 12% 12%, rgba(123,97,255,0.42), transparent 60%);}
+.product-lk .product-badge .dot{background:var(--yellow);box-shadow:0 0 10px var(--yellow);}
+.product-lk .tagline{color:#CFC4FF;}
+.product-lk .product-visual{order:-1;}
+.btn-violet{background:#7B61FF;color:#fff;box-shadow:0 12px 26px -12px rgba(123,97,255,0.8);}
+.btn-violet:hover{transform:translateY(-2px) scale(1.015);background:#6A4FF5;}
+.lk-visual{display:flex;flex-direction:column;align-items:center;gap:22px;width:min(340px,100%);}
+.lk-tile{width:104px;height:104px;animation:float-up 7s ease-in-out infinite;filter:drop-shadow(0 18px 30px rgba(91,63,217,0.55));}
+.lk-steps{list-style:none;margin:0;padding:0;width:100%;display:flex;flex-direction:column;gap:10px;}
+.lk-steps li{display:flex;align-items:center;gap:14px;text-align:left;padding:13px 16px;border-radius:16px;
+  background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.13);backdrop-filter:blur(6px);}
+.lk-steps .n{flex:none;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-family:'Sora',sans-serif;font-weight:700;font-size:13px;color:#fff;background:#5B3FD9;}
+.lk-steps b{display:block;font-family:'Sora',sans-serif;font-weight:600;font-size:15px;color:#fff;line-height:1.2;}
+.lk-steps small{display:block;font-size:13px;color:rgba(255,255,255,0.68);margin-top:2px;line-height:1.35;}
+@media (max-width:880px){.product.product-lk{grid-template-columns:1fr;}}
+
 .more-products{margin-top:24px;display:flex;align-items:center;gap:16px;padding:24px 28px;border:1.5px dashed var(--line);border-radius:var(--radius);color:var(--muted);font-size:15.5px;}
 .more-products .pulse{width:11px;height:11px;border-radius:50%;background:var(--yellow);flex:none;box-shadow:0 0 0 0 rgba(255,219,3,.6);animation:broadcast 3s ease-out infinite;position:relative;}
 
@@ -440,6 +458,10 @@ section{padding-block:clamp(80px,11vw,140px);}
       <circle cx="100" cy="100" r="27" fill="url(#hqCore)"/>
       <circle cx="92" cy="92" r="7" fill="#fff" fill-opacity="0.4"/>
     </symbol>
+    <symbol id="lk-mark" viewBox="0 0 32 32">
+      <rect width="32" height="32" rx="8" fill="#5B3FD9"/>
+      <path fill="#FFFFFF" d="M11 6.5A1.5 1.5 0 0 1 12.5 5h2.5a1.5 1.5 0 0 1 1.5 1.5v13.6c0 1.6.8 2.4 2.3 2.4h.7a1.5 1.5 0 0 1 1.5 1.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-1.3C13.4 27 11 24.6 11 20.2z"/>
+    </symbol>
   </defs>
 </svg>
 <style>
@@ -564,7 +586,7 @@ section{padding-block:clamp(80px,11vw,140px);}
     <div class="head-block reveal">
       <p class="eyebrow">Products &amp; work</p>
       <h2 class="section-title" id="work-h2">What we've built.</h2>
-      <p class="lede">A studio is only as good as what it ships. Here's the product proving the model.</p>
+      <p class="lede">A studio is only as good as what it ships. Here's what we've shipped so far.</p>
     </div>
 
     <article class="product reveal" data-d="1">
@@ -589,7 +611,36 @@ section{padding-block:clamp(80px,11vw,140px);}
       </div>
     </article>
 
-    <div class="more-products reveal" data-d="2">
+    <article class="product product-lk reveal" data-d="2">
+      <div class="product-glow" aria-hidden="true"></div>
+      <div>
+        <span class="product-badge"><span class="dot"></span> New · In internal testing</span>
+        <h3>Lekjek</h3>
+        <p class="tagline">Less chasing. More business.</p>
+        <p class="desc">Invoice follow-up for small businesses. Upload an invoice, check what Lekjek read from it, and hand it over — Lekjek sends polite email and SMS reminders on your schedule and shows what each customer owes. Nothing goes out, and nothing is marked paid, until you say so.</p>
+        <div class="meta">
+          <span>Reads PDFs, photos &amp; spreadsheets</span>
+          <span>Email &amp; SMS reminders</span>
+          <span>A tone you choose</span>
+          <span>You approve every reply</span>
+        </div>
+        <div class="acts">
+          <a href="https://www.lekjek.com/" class="btn btn-violet">Visit Lekjek <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></a>
+        </div>
+      </div>
+      <div class="product-visual" aria-hidden="true">
+        <div class="lk-visual">
+          <svg class="lk-tile" viewBox="0 0 32 32"><use href="#lk-mark"/></svg>
+          <ol class="lk-steps">
+            <li><span class="n">1</span><span><b>Upload</b><small>A PDF or photo of the invoice you sent</small></span></li>
+            <li><span class="n">2</span><span><b>Check the details</b><small>Review what Lekjek read before anyone is contacted</small></span></li>
+            <li><span class="n">3</span><span><b>Hand it over</b><small>Reminders go out on the schedule you set</small></span></li>
+          </ol>
+        </div>
+      </div>
+    </article>
+
+    <div class="more-products reveal" data-d="3">
       <span class="pulse" aria-hidden="true"></span>
       <span>More products are in the works on the same backbone. We build deliberately — one proven loop at a time.</span>
     </div>
@@ -714,6 +765,7 @@ section{padding-block:clamp(80px,11vw,140px);}
         <div class="foot-col">
           <h4>Products</h4>
           <a href="https://heqiyou.com/index.html">Heqiyou</a>
+          <a href="https://www.lekjek.com/">Lekjek</a>
           <a href="#work">All work</a>
         </div>
         <div class="foot-col">

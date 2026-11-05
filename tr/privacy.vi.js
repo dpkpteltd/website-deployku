@@ -80,7 +80,7 @@ window.DK_TRANSLATIONS.vi = {
 <p>Bạn cũng có thể nêu mối quan ngại với Ủy ban Bảo vệ Dữ liệu Cá nhân Singapore tại <a href="https://www.pdpc.gov.sg" target="_blank" rel="noopener">https://www.pdpc.gov.sg</a>.</p>`,
   "meta": "<span>Ngày hiệu lực: 11 June 2026</span><span>Phiên bản 1.0</span><span>Deployku Pte Ltd · Singapore</span>",
   "intro": `Chính sách Bảo mật này giải thích cách <strong>Deployku Pte Ltd</strong>, một công ty trách nhiệm hữu hạn tư nhân được thành lập tại Singapore ("<strong>Deployku</strong>", "<strong>chúng tôi</strong>", "<strong>chúng tôi</strong>" hoặc "<strong>của chúng tôi</strong>"), thu thập, sử dụng, tiết lộ, chuyển giao, lưu giữ và bảo vệ dữ liệu cá nhân liên quan đến ứng dụng di động Heqiyou và các dịch vụ liên quan ("<strong>Dịch vụ</strong>" hoặc "<strong>Ứng dụng</strong>").`,
-  "nav.product": "Heqiyou",
+  "nav.product": "Sản phẩm",
   "nav.privacy": "Bảo mật",
   "nav.terms": "Điều khoản",
   "nav.cta": "Liên hệ với chúng tôi",

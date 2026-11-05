@@ -80,7 +80,7 @@ window.DK_TRANSLATIONS.tl = {
 <p>Puwede ka ring magpahayag ng concern sa Personal Data Protection Commission ng Singapore sa <a href="https://www.pdpc.gov.sg" target="_blank" rel="noopener">https://www.pdpc.gov.sg</a>.</p>`,
   "meta": "<span>Effective Date: 11 June 2026</span><span>Version 1.0</span><span>Deployku Pte Ltd · Singapore</span>",
   "intro": `Ipinapaliwanag ng Privacy Policy na ito kung paano kinokolekta, ginagamit, ini-disclose, nililipat, iniimbak at pinoprotektahan ng <strong>Deployku Pte Ltd</strong>, isang private limited company na incorporated sa Singapore ("<strong>Deployku</strong>", "<strong>kami</strong>", "<strong>amin</strong>" o "<strong>aming</strong>"), ang personal data kaugnay ng Heqiyou mobile application at mga kaugnay na serbisyo (ang "<strong>Service</strong>" o ang "<strong>App</strong>").`,
-  "nav.product": "Heqiyou",
+  "nav.product": "Mga Produkto",
   "nav.privacy": "Privacy",
   "nav.terms": "Terms",
   "nav.cta": "Mag-message ka",

@@ -80,7 +80,7 @@ window.DK_TRANSLATIONS.id = {
 <p>Anda juga dapat menyampaikan kekhawatiran kepada Komisi Perlindungan Data Pribadi Singapura di <a href="https://www.pdpc.gov.sg" target="_blank" rel="noopener">https://www.pdpc.gov.sg</a>.</p>`,
   "meta": "<span>Tanggal Berlaku: 11 June 2026</span><span>Versi 1.0</span><span>Deployku Pte Ltd · Singapura</span>",
   "intro": `Kebijakan Privasi ini menjelaskan bagaimana <strong>Deployku Pte Ltd</strong>, sebuah perseroan terbatas swasta yang didirikan di Singapura ("<strong>Deployku</strong>", "<strong>kami</strong>", "<strong>kita</strong>" atau "<strong>milik kami</strong>"), mengumpulkan, menggunakan, mengungkapkan, mentransfer, menyimpan, dan melindungi data pribadi sehubungan dengan aplikasi seluler Heqiyou dan layanan terkait ("<strong>Layanan</strong>" atau "<strong>Aplikasi</strong>").`,
-  "nav.product": "Heqiyou",
+  "nav.product": "Produk",
   "nav.privacy": "Privasi",
   "nav.terms": "Ketentuan",
   "nav.cta": "Hubungi kami",

@@ -72,7 +72,7 @@ window.DK_TRANSLATIONS.ms = {
 <p class="doc-note">Hubungi: <a href="mailto:admin@deployku.com">admin@deployku.com</a></p>`,
   "meta": "<span>Tarikh Berkuat Kuasa: 28 June 2026</span><span>Versi 1.3</span><span>Deployku Pte Ltd · Singapura</span>",
   "intro": `Terma dan Syarat ini ("<strong>Terma</strong>") merupakan perjanjian antara anda dengan <strong>Deployku Pte Ltd</strong>, sebuah syarikat yang didaftarkan di Singapura ("<strong>Deployku</strong>", "<strong>kami</strong>", "<strong>kita</strong>" atau "<strong>milik kami</strong>"). Terma ini merangkumi penggunaan anda terhadap aplikasi Heqiyou dan segala yang terkandung di dalamnya — semua ciri, kandungan, serta laman web dan perkhidmatan berkaitan (secara bersama, "<strong>Service</strong>" (Perkhidmatan) atau "<strong>App</strong>" (Aplikasi)).`,
-  "nav.product": "Heqiyou",
+  "nav.product": "Produk",
   "nav.privacy": "Privasi",
   "nav.terms": "Terma",
   "nav.cta": "Hubungi kami",

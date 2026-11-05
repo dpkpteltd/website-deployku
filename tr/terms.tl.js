@@ -72,7 +72,7 @@ window.DK_TRANSLATIONS.tl = {
 <p class="doc-note">Contact: <a href="mailto:admin@deployku.com">admin@deployku.com</a></p>`,
   "meta": "<span>Effective Date: 28 June 2026</span><span>Version 1.3</span><span>Deployku Pte Ltd · Singapore</span>",
   "intro": `Ang Terms and Conditions na ito (ang "<strong>Terms</strong>") ang kasunduan sa pagitan mo at ng <strong>Deployku Pte Ltd</strong>, isang kumpanyang naka-rehistro sa Singapore ("<strong>Deployku</strong>", "<strong>we</strong>", "<strong>us</strong>" o "<strong>our</strong>"). Sinasaklaw nito ang paggamit mo ng Heqiyou app at lahat ng nandito — lahat ng features, content, at mga kaugnay na website at services (sama-sama, ang "<strong>Service</strong>" o "<strong>App</strong>").`,
-  "nav.product": "Heqiyou",
+  "nav.product": "Mga Produkto",
   "nav.privacy": "Privacy",
   "nav.terms": "Terms",
   "nav.cta": "Makipag-ugnayan",

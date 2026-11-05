@@ -80,7 +80,7 @@ window.DK_TRANSLATIONS.ms = {
 <p>Anda juga boleh membangkitkan kebimbangan kepada Suruhanjaya Perlindungan Data Peribadi Singapura di <a href="https://www.pdpc.gov.sg" target="_blank" rel="noopener">https://www.pdpc.gov.sg</a>.</p>`,
   "meta": "<span>Tarikh Berkuat Kuasa: 11 June 2026</span><span>Versi 1.0</span><span>Deployku Pte Ltd · Singapura</span>",
   "intro": `Dasar Privasi ini menerangkan bagaimana <strong>Deployku Pte Ltd</strong>, sebuah syarikat sendirian berhad yang diperbadankan di Singapura ("<strong>Deployku</strong>", "<strong>kami</strong>", "<strong>kita</strong>" atau "<strong>milik kami</strong>"), mengumpul, menggunakan, mendedahkan, memindahkan, menyimpan dan melindungi data peribadi berkaitan dengan aplikasi mudah alih Heqiyou dan perkhidmatan berkaitan ("<strong>Perkhidmatan</strong>" atau "<strong>Aplikasi</strong>").`,
-  "nav.product": "Heqiyou",
+  "nav.product": "Produk",
   "nav.privacy": "Privasi",
   "nav.terms": "Terma",
   "nav.cta": "Hubungi kami",
