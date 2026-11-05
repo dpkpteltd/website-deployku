@@ -1,9 +1,83 @@
 window.DK_TRANSLATIONS = window.DK_TRANSLATIONS || {};
 window.DK_TRANSLATIONS.tl = {
   _lang: "tl",
-  _title: "Privacy Policy — Heqiyou · Deployku",
-  "eyebrow": "Legal · Heqiyou",
+  _title: "Privacy Policy — Heqiyou & Lekjek · Deployku",
+  "eyebrow": "Legal · Deployku",
   "h1": "Privacy Policy",
+  "pick.intro": "Ang Deployku Pte Ltd ay gumagawa ng higit sa isang app, at bawat isa ay may sariling privacy policy. Pumili ng app sa ibaba para mabasa kung paano nito hinahandle ang personal data.",
+  "pick.heqiyou": "Voice-first na dating app",
+  "pick.lekjek": "Customer records, invoices at payment reminders para sa mga negosyo",
+  "pick.back": "Pumili ng ibang app",
+  "hq.title": "Heqiyou — Privacy Policy",
+  "lk.langnote": "Ang translation na ito ay para sa convenience lang. Kung may hindi pagkakatugma, ang English version ang masusunod.",
+  "lk.title": `Lekjek — Privacy Policy`,
+  "lk.meta": `<span>Effective date: 5 November 2026</span>
+          <span>Deployku Pte. Ltd. · Singapore</span>`,
+  "lk.body": `<h2 id="lk-1">1. Sino ang saklaw ng policy na ito</h2>
+<p>Ang Lekjek ay pinapatakbo ng Deployku Pte. Ltd., Singapore. Ipinapaliwanag ng policy na ito kung paano namin kinokolekta, ginagamit, ishine-share at pinoprotektahan ang personal data. Ang personal data ay impormasyong nag-i-identify sa iyo, mag-isa man o kasama ng ibang impormasyong maa-access namin.</p>
+<p>Sinasaklaw nito ang aming website, platform at support, kabilang ang impormasyong hinahawakan ng isang negosyo sa pamamagitan ng Lekjek tungkol sa staff, customers o prospects nito.</p>
+
+<h2 id="lk-2">2. Ang aming papel at ang iyong negosyo</h2>
+<p>Kami ang nagpapasya kung paano ginagamit ang account, subscription, security at support information para patakbuhin ang Lekjek.</p>
+<p>Kapag ginagamit ng isang negosyo ang Lekjek para pamahalaan ang customer records, invoices o follow-up, karaniwan naming hinahawakan ang records na iyon ayon sa instructions nito. Responsable ang negosyong iyon sa mga dahilan nito sa paggamit ng impormasyon at sa pagbibigay ng anumang kinakailangang notices o pagkuha ng consent. Naaangkop pa rin ang sarili naming tungkulin na protektahan ang data.</p>
+<p>Para sa customer records na iyon, ipinapaliwanag din ng privacy notice ng negosyo kung paano ginagamit ang impormasyon mo.</p>
+
+<h2 id="lk-3">3. Impormasyong kinokolekta namin</h2>
+<p>Depende sa kung paano ginagamit ang Lekjek, maaari naming kolektahin ang:</p>
+<ul>
+  <li><strong>Account details</strong>, tulad ng pangalan mo, contact details, business name at workspace role.</li>
+  <li><strong>Business records</strong>, tulad ng customer details, invoices, balances, payment status, korespondensya at mga na-upload na dokumento.</li>
+  <li><strong>Billing records</strong>, tulad ng plan mo, billing contact, payment references at transaction status.</li>
+  <li><strong>Technical information</strong>, tulad ng IP addresses, browser o device details, login history, feature usage at error logs.</li>
+  <li><strong>Support messages, attachments</strong>, at impormasyong isinusumite sa AI tools o connected services.</li>
+</ul>
+<p>Natatanggap namin ang impormasyon mula sa iyo, sa negosyo mo, sa mga naka-enable na integration at, kung may kaugnayan, sa mga lawful public business source. Kasama lang ang calls, recordings o transcripts kung saan ginagamit ang mga ito ng isang naka-enable na feature, na may anumang kinakailangang notice at consent.</p>
+<p>Iwasang mag-upload ng identity documents, health information o buong payment card details maliban kung kailangan para sa isang authorised na feature.</p>
+
+<h2 id="lk-4">4. Paano namin ginagamit ang impormasyon</h2>
+<p>Ginagamit namin ang impormasyon para patakbuhin ang accounts at workspaces, isagawa ang hinihinging invoice at customer follow-up, pamahalaan ang subscriptions, sagutin ang support requests, pigilan ang maling paggamit, ayusin ang mga problema at tuparin ang mga legal na tungkulin. Ginagamit din namin ang account at usage information para maunawaan at mapabuti ang performance ng serbisyo.</p>
+<p>Kinokolekta, ginagamit at ishine-share namin ang personal data nang may consent o kung saan pinapayagan ng batas. Ipinapaliwanag namin ang mga bagong layunin at kumukuha kami ng consent kung saan kinakailangan bago gamitin ang impormasyon para sa mga ito.</p>
+
+<h2 id="lk-5">5. AI at connected services</h2>
+<p>Kung gagamit ka ng AI features, ang kaugnay na text o files ay maaaring ipadala sa isang AI provider para mag-extract ng details, magmungkahi ng messages o gumawa ng hinihinging outputs. Ang outputs ay maaaring may personal data at maaaring mali. I-check ang mga ito bago gamitin.</p>
+<p>Ang pag-connect ng ibang serbisyo ay nagpapahintulot sa amin na i-share ang impormasyong kailangan para sa feature na iyon ayon sa instructions mo. Maaari ring hawakan ng connected service ang impormasyon sa ilalim ng sarili nitong privacy policy. Mag-connect lang ng services at magsumite ng impormasyong authorised kang gamitin.</p>
+
+<h2 id="lk-6">6. Sino ang puwedeng makatanggap ng impormasyon</h2>
+<p>Ang authorised workspace owners, administrators at team members ay maaaring mag-access ng impormasyon ayon sa kanilang permissions.</p>
+<p>Gumagamit kami ng providers para sa mga function tulad ng hosting, messaging, payments, AI at support. Ang providers na humahawak ng data para sa amin ay kailangang sumunod sa napagkasunduang instructions at sa confidentiality at security requirements.</p>
+<p>Maaari naming i-share ang kinakailangang impormasyon sa advisers o authorities para tuparin ang mga legal na tungkulin, lutasin ang mga claim o protektahan ang lawful rights. Kung maibenta o ma-reorganise ang aming negosyo, ang kinakailangang impormasyon ay maaaring i-share sa ilalim ng confidentiality safeguards at patuloy na data protection obligations.</p>
+
+<h2 id="lk-7">7. Cookies at marketing</h2>
+<p>Gumagamit kami ng cookies at katulad na browser storage para sa mga function tulad ng pag-sign in sa iyo, pagprotekta ng sessions at pag-alala ng preferences. Ang pag-block ng essential storage ay maaaring makaapekto sa mga function na ito.</p>
+<p>Kung magpapadala kami ng marketing, puwede kang mag-opt out sa pamamagitan ng mensahe o sa pag-contact sa amin. Maaari pa rin kaming magpadala ng kinakailangang account, security at billing notices. Para sa mga mensaheng ipinadala ng isang negosyong gumagamit ng Lekjek, i-contact ang negosyong iyon para pamahalaan ang preferences mo. Matutulungan ka naming idirekta ang request mo.</p>
+
+<h2 id="lk-8">8. Proteksyon at overseas storage</h2>
+<p>Gumagamit kami ng makatuwirang safeguards at nililimitahan namin ang access sa mga tao at providers na nangangailangan ng impormasyon. Walang online system na makakagarantiya ng kumpletong security. Aabisuhan namin agad ang kaugnay na negosyo tungkol sa breach na nakakaapekto sa data na hinahawakan namin para dito, at aabisuhan namin ang mga indibidwal at regulators kung saan legal na kinakailangan.</p>
+<p>Ang aming providers ay maaaring mag-store o mag-proseso ng data sa labas ng Singapore. Gagamit kami ng contractual o iba pang safeguards na hinihingi ng batas para matiyak ang katumbas na proteksyon.</p>
+<p>Pangunahing processing locations: Singapore.</p>
+
+<h2 id="lk-9">9. Gaano katagal namin iniingatan ang impormasyon</h2>
+<p>Iniingatan lang namin ang personal data hangga't makatuwirang kailangan para sa serbisyo, kinakailangang business purposes o legal requirements. Pagkatapos ay dine-delete namin ito o inaalis ang identifying details.</p>
+<p>Bago isara ang isang workspace, responsable ang owner nito sa pag-export ng kanilang data sa ilalim ng aming <a href="termsandconditions.html#lekjek">Terms of Service</a>, napapailalim sa legal at security restrictions. Ang records na kailangan para sa disputes, billing o legal duties ay maaaring iingatan nang mas matagal. Ang backup copies ay mananatiling protektado hanggang sa naka-schedule na deletion ng mga ito.</p>
+<p>Deletion schedule: Puwede mo kaming hilingang i-delete ang records mo mula sa loob ng app, at ide-delete namin ang mga ito kapag hindi na namin kailangan para sa lawful purposes.</p>
+
+<h2 id="lk-10">10. Ang iyong mga pagpipilian at request</h2>
+<p>Napapailalim sa naaangkop na batas at sa mga exception nito, puwede kang humiling na ma-access ang personal data mo, malaman kung paano ito ginamit o ini-share sa nakaraang taon, o itama ang mga error. Puwede mong i-withdraw ang consent para sa mga paggamit na nakasalalay dito. Ipapaliwanag namin kung makakaapekto ito sa isang serbisyo; ang mga paggamit na pinapayagan o hinihingi ng batas ay maaaring magpatuloy.</p>
+<p>Puwede mo rin kaming hilingang i-delete ang impormasyon. Susuriin namin ang request, pero maaaring kailanganin naming iingatan ang ilang records para sa lawful purposes.</p>
+<p>I-contact ang aming Data Protection Officer sa ibaba. Maaaring kailanganin namin ng details para i-verify ang identity mo. Anumang lawful fee para sa isang access request ay ipapaliwanag nang maaga.</p>
+<p>Sasagot kami sa lalong madaling panahong makatuwirang posible. Kung hindi makumpleto ang isang access o correction request sa loob ng 30 araw, sasabihin namin sa iyo nang nakasulat sa loob ng panahong iyon kung kailan aasahan ang aming sagot.</p>
+<p>Para sa records na hinahawakan namin para sa isang negosyo, puwede mong i-contact ang negosyong iyon o kami. Tutulungan ka naming idirekta o i-coordinate ang request.</p>
+
+<h2 id="lk-11">11. Impormasyon tungkol sa mga bata</h2>
+<p>Ang Lekjek accounts ay para sa mga adults na 18 pataas. Ang isang negosyo ay dapat mag-upload lang ng impormasyon tungkol sa mga bata kung kinakailangan at legal, na may anumang kinakailangang consent ng magulang o guardian. I-contact kami kung naniniwala kang hindi tamang ginamit ang impormasyon ng isang bata.</p>
+
+<h2 id="lk-12">12. Updates at contact details</h2>
+<p>Ia-update namin ang effective date kapag nagbago ang policy na ito at magbibigay kami ng abiso tungkol sa mga significant na pagbabago sa pamamagitan ng email, sa aming website o sa Lekjek. Ang isang policy update ay hindi pumapalit sa consent kung saan kinakailangan ang consent para sa isang bagong paggamit.</p>
+<p>Para sa privacy questions, requests o complaints, i-contact ang:</p>
+<div class="summary-card">
+  <p><strong>Data Protection Officer</strong><br />Deployku Pte. Ltd.<br />Email: <a href="mailto:admin@deployku.com">admin@deployku.com</a></p>
+</div>
+<p>Puwede ka ring magpahayag ng concern sa Personal Data Protection Commission ng Singapore sa <a href="https://www.pdpc.gov.sg" target="_blank" rel="noopener">https://www.pdpc.gov.sg</a>.</p>`,
   "meta": "<span>Effective Date: 11 June 2026</span><span>Version 1.0</span><span>Deployku Pte Ltd · Singapore</span>",
   "intro": `Ipinapaliwanag ng Privacy Policy na ito kung paano kinokolekta, ginagamit, ini-disclose, nililipat, iniimbak at pinoprotektahan ng <strong>Deployku Pte Ltd</strong>, isang private limited company na incorporated sa Singapore ("<strong>Deployku</strong>", "<strong>kami</strong>", "<strong>amin</strong>" o "<strong>aming</strong>"), ang personal data kaugnay ng Heqiyou mobile application at mga kaugnay na serbisyo (ang "<strong>Service</strong>" o ang "<strong>App</strong>").`,
   "nav.product": "Heqiyou",

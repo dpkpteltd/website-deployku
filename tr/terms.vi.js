@@ -1,9 +1,75 @@
 window.DK_TRANSLATIONS = window.DK_TRANSLATIONS || {};
 window.DK_TRANSLATIONS.vi = {
   _lang: "vi",
-  _title: "Điều khoản và Điều kiện — Heqiyou · Deployku",
-  "eyebrow": "Pháp lý · Heqiyou",
+  _title: "Điều khoản và Điều kiện — Heqiyou & Lekjek · Deployku",
+  "eyebrow": "Pháp lý · Deployku",
   "h1": "Điều khoản và Điều kiện",
+  "pick.intro": "Deployku Pte Ltd phát triển nhiều ứng dụng và mỗi ứng dụng có điều khoản riêng. Chọn một ứng dụng bên dưới để đọc điều khoản áp dụng cho ứng dụng đó.",
+  "pick.heqiyou": "Ứng dụng hẹn hò ưu tiên giọng nói",
+  "pick.lekjek": "Hồ sơ khách hàng, hóa đơn và nhắc thanh toán cho doanh nghiệp",
+  "pick.back": "Chọn ứng dụng khác",
+  "hq.title": "Heqiyou — Điều khoản và Điều kiện",
+  "lk.langnote": "Đây là bản dịch chỉ nhằm mục đích tiện tham khảo; nếu có bất kỳ mâu thuẫn nào, bản tiếng Anh sẽ được áp dụng.",
+  "lk.title": `Lekjek — Điều khoản Dịch vụ`,
+  "lk.meta": `<span>Ngày hiệu lực: 5 tháng 11 năm 2026</span>
+          <span>Deployku Pte. Ltd. · Singapore</span>`,
+  "lk.body": `<h2 id="lk-1">1. Về các điều khoản này</h2>
+<p>Lekjek được vận hành bởi Deployku Pte. Ltd., Singapore. Các điều khoản này giải thích thỏa thuận giữa chúng tôi và cá nhân hoặc doanh nghiệp sử dụng Lekjek.</p>
+<p>Bằng việc chấp nhận các điều khoản này khi đăng ký, bạn đồng ý tuân theo chúng. Bạn phải từ 18 tuổi trở lên và có năng lực tham gia thỏa thuận này. Nếu bạn đăng ký cho một doanh nghiệp, bạn xác nhận rằng bạn có thẩm quyền chấp nhận thay mặt doanh nghiệp đó. Trong trường hợp đó, “bạn” có nghĩa là doanh nghiệp đó.</p>
+
+<h2 id="lk-2">2. Lekjek làm gì</h2>
+<p>Lekjek giúp doanh nghiệp quản lý hồ sơ khách hàng, hóa đơn, nhắc thanh toán và theo dõi bán hàng. Các tính năng và giới hạn dành cho bạn phụ thuộc vào gói dịch vụ của bạn.</p>
+<p>Các điều khoản này áp dụng cho việc truy cập phần mềm. Các điều khoản này không chỉ định chúng tôi thay bạn đàm phán dàn xếp, tiến hành hành động pháp lý hoặc giữ tiền của khách hàng. Mọi dịch vụ riêng biệt thuộc loại đó đều cần có thỏa thuận bằng văn bản riêng. Bạn vẫn chịu trách nhiệm về các mối quan hệ với khách hàng của mình và về các chỉ dẫn bạn đưa ra thông qua Lekjek.</p>
+<p>Chúng tôi không đảm bảo rằng khách hàng sẽ thanh toán, rằng một giao dịch bán hàng sẽ diễn ra hoặc rằng mọi tin nhắn đều sẽ được gửi đến nơi.</p>
+
+<h2 id="lk-3">3. Tài khoản và nhóm của bạn</h2>
+<p>Hãy cung cấp cho chúng tôi thông tin tài khoản và thông tin doanh nghiệp chính xác, giữ an toàn thông tin đăng nhập của bạn và thông báo kịp thời cho chúng tôi nếu bạn nghi ngờ có truy cập trái phép.</p>
+<p>Không gian làm việc của một doanh nghiệp do doanh nghiệp đó kiểm soát thông qua chủ sở hữu và các quản trị viên được ủy quyền. Họ quản lý lời mời, quyền truy cập và phân quyền. Doanh nghiệp của bạn chịu trách nhiệm đối với việc các thành viên trong nhóm sử dụng Lekjek theo ủy quyền và đối với việc thu hồi quyền truy cập khi không còn cần thiết.</p>
+
+<h2 id="lk-4">4. Sử dụng Lekjek một cách có trách nhiệm</h2>
+<p>Chỉ tải lên thông tin mà bạn có quyền sử dụng. Kiểm tra số tiền trên hóa đơn, thông tin khách hàng và trạng thái thanh toán trước khi gửi lời nhắc. Chỉ yêu cầu thanh toán khi bạn có cơ sở hợp pháp và thẩm quyền để làm vậy. Sửa lỗi kịp thời và tạm dừng các lời nhắc đang bị tranh chấp trong khi bạn xem xét vấn đề.</p>
+<p>Không sử dụng Lekjek để đe dọa hoặc quấy rối bất kỳ ai, đưa ra tuyên bố sai sự thật, tiết lộ khoản nợ cho những người không liên quan, gửi thư rác trái pháp luật, mạo danh người khác hoặc vi phạm pháp luật. Không can thiệp vào nền tảng, truy cập dữ liệu của người dùng khác hoặc vượt qua các biện pháp bảo mật hay giới hạn sử dụng.</p>
+<p>Bạn phải tuân thủ các quy định áp dụng cho tin nhắn, hoạt động tiếp thị và hoạt động thu nợ của mình, bao gồm mọi sự cho phép hoặc giấy phép bắt buộc. Hãy tôn trọng các hạn chế liên lạc và các yêu cầu từ chối nhận tiếp thị. Việc sử dụng Lekjek không đồng nghĩa với việc bạn được phép liên lạc với một người nào đó.</p>
+
+<h2 id="lk-5">5. AI và các dịch vụ được kết nối</h2>
+<p>Khi có tính năng AI, AI có thể mắc lỗi. Hãy kiểm tra thông tin hóa đơn được trích xuất, các tin nhắn được gợi ý và các kết quả khác trước khi dựa vào chúng. Kết quả do AI tạo ra không phải là tư vấn pháp lý, kế toán hoặc tài chính.</p>
+<p>Nếu bạn bật các tin nhắn hoặc hành động tự động, bạn ủy quyền cho Lekjek thực hiện chúng trong phạm vi các thiết lập và chỉ dẫn mà bạn chọn. Hãy xem lại các thiết lập đó và tạm dừng tự động hóa khi thông tin hoặc hoàn cảnh thay đổi.</p>
+<p>Các dịch vụ nhắn tin, thanh toán, bản đồ và các dịch vụ khác được kết nối có thể có điều khoản, phí và giới hạn riêng. Hãy đối chiếu trạng thái thanh toán với hồ sơ thanh toán đáng tin cậy. Chúng tôi không thể kiểm soát các nhà cung cấp bên ngoài, nhưng vẫn chịu trách nhiệm về các nghĩa vụ của chính mình theo các điều khoản này.</p>
+
+<h2 id="lk-6">6. Phí và hủy dịch vụ</h2>
+<p>Chúng tôi hiển thị giá, chu kỳ thanh toán, giới hạn sử dụng, thuế và mọi khoản phí bổ sung trước khi bạn mua. Bạn đồng ý thanh toán các khoản phí mà bạn chấp thuận.</p>
+<p>Nếu bạn chọn gói định kỳ, gói sẽ được gia hạn vào cuối mỗi kỳ thanh toán trừ khi bạn hủy trước thời điểm gia hạn. Hãy hủy trong phần cài đặt thanh toán hoặc liên hệ với chúng tôi theo thông tin bên dưới. Việc hủy có hiệu lực vào cuối kỳ đã thanh toán. Các khoản phí đã phát sinh vẫn phải được thanh toán.</p>
+<p>Thời gian hoặc credit chưa sử dụng không được hoàn lại, trừ khi pháp luật yêu cầu, gói của bạn quy định khác hoặc các điều khoản này có quy định hoàn tiền. Nếu chúng tôi không cung cấp dịch vụ đã thỏa thuận ở mức nghiêm trọng và không khắc phục trong thời gian hợp lý sau khi bạn thông báo cho chúng tôi, bạn có thể chấm dứt dịch vụ bị ảnh hưởng và được hoàn tiền cho phần thời gian trả trước chưa sử dụng của dịch vụ đó.</p>
+<p>Chúng tôi sẽ thông báo trước về việc tăng giá. Mức giá mới sẽ áp dụng từ lần gia hạn tiếp theo của bạn sau thông báo đó, để bạn có thể hủy trước.</p>
+
+<h2 id="lk-7">7. Dữ liệu và quyền riêng tư của bạn</h2>
+<p>Bạn giữ các quyền của mình đối với hồ sơ và nội dung bạn tải lên. Bạn cho phép chúng tôi và các nhà cung cấp dịch vụ của chúng tôi xử lý chúng khi cần thiết để cung cấp và bảo vệ Lekjek, làm theo chỉ dẫn của bạn và đáp ứng các nghĩa vụ pháp lý.</p>
+<p>Bạn chịu trách nhiệm thu thập và sử dụng thông tin khách hàng một cách hợp pháp, bao gồm việc đưa ra mọi thông báo bắt buộc và có được mọi sự đồng ý bắt buộc.</p>
+<p>Chúng tôi sẽ áp dụng các biện pháp bảo vệ hợp lý để bảo vệ dữ liệu cá nhân và tuân thủ luật bảo vệ dữ liệu hiện hành. Chúng tôi sẽ thông báo cho bạn sớm nhất có thể trong phạm vi hợp lý nếu phát hiện một vi phạm dữ liệu ảnh hưởng đến dữ liệu cá nhân mà chúng tôi xử lý cho doanh nghiệp của bạn. Việc chuyển dữ liệu ra nước ngoài sẽ có các biện pháp bảo vệ theo yêu cầu của pháp luật.</p>
+<p><a href="privacy.html#lekjek">Chính sách Bảo mật</a> của chúng tôi giải thích cách chúng tôi xử lý dữ liệu cá nhân, bao gồm các nhà cung cấp dịch vụ của chúng tôi và mọi việc sử dụng AI.</p>
+
+<h2 id="lk-8">8. Quyền sở hữu Lekjek</h2>
+<p>Chúng tôi và các nhà cung cấp của chúng tôi sở hữu phần mềm, thương hiệu và tài liệu của nền tảng. Gói của bạn cho phép bạn sử dụng Lekjek cho doanh nghiệp của mình trong thời gian tài khoản của bạn còn hoạt động và bạn tuân thủ các điều khoản này. Gói này không cho phép bạn sao chép hoặc bán lại nền tảng khi chưa được chúng tôi cho phép. Điều này không giới hạn các quyền mà pháp luật trao cho bạn.</p>
+
+<h2 id="lk-9">9. Tính khả dụng và thay đổi dịch vụ</h2>
+<p>Chúng tôi sẽ cẩn trọng ở mức hợp lý khi vận hành Lekjek, nhưng không thể cam kết dịch vụ không bị gián đoạn hoặc không có lỗi. Việc bảo trì, sự cố internet và các nhà cung cấp bên ngoài có thể gây chậm trễ. Hãy lưu giữ bản sao các hồ sơ quan trọng đối với doanh nghiệp của bạn.</p>
+<p>Chúng tôi có thể cập nhật các tính năng. Nếu chúng tôi ngừng một tính năng trả phí cốt lõi hoặc ngừng dịch vụ, chúng tôi sẽ thông báo trước trong thời gian hợp lý và cho phép bạn hủy dịch vụ bị ảnh hưởng kèm hoàn tiền cho phần thời gian trả trước chưa sử dụng của dịch vụ đó.</p>
+
+<h2 id="lk-10">10. Tạm ngừng hoặc đóng tài khoản</h2>
+<p>Chúng tôi có thể hạn chế hoặc đóng một tài khoản vì phí chưa thanh toán, vi phạm nghiêm trọng các điều khoản này, hoặc vì nhu cầu pháp lý hay bảo mật. Khi khả thi, chúng tôi sẽ giải thích vấn đề và cho bạn cơ hội hợp lý để khắc phục. Các rủi ro khẩn cấp có thể đòi hỏi hành động ngay lập tức.</p>
+<p>Bạn có thể đóng tài khoản của mình bằng cách thực hiện thao tác này ngay trong ứng dụng. Các quy định về hủy dịch vụ nêu trên được áp dụng. Mọi hồ sơ được lưu giữ hoặc bản sao lưu sẽ tiếp tục được bảo vệ và sẽ bị xóa khi không còn cần thiết cho các mục đích hợp pháp.</p>
+
+<h2 id="lk-11">11. Giới hạn trách nhiệm của chúng tôi</h2>
+<p>Trong phạm vi pháp luật cho phép, chúng tôi không chịu trách nhiệm về lợi nhuận bị mất, cơ hội kinh doanh bị mất hoặc các tổn thất gián tiếp phát sinh từ việc sử dụng Lekjek.</p>
+<p>Nếu chúng tôi phải chịu trách nhiệm pháp lý đối với các khiếu nại phát sinh từ Lekjek hoặc từ các điều khoản này, tổng số tiền chúng tôi phải trả được giới hạn ở mức S$100.</p>
+<p>Các giới hạn này chỉ áp dụng trong phạm vi pháp luật cho phép. Chúng không áp dụng đối với hành vi gian lận hoặc hành vi sai trái cố ý của chúng tôi, tử vong hoặc thương tích cá nhân do sự cẩu thả của chúng tôi gây ra, hoặc bất kỳ trách nhiệm nào mà pháp luật không cho phép chúng tôi giới hạn.</p>
+
+<h2 id="lk-12">12. Thay đổi và giải quyết vấn đề</h2>
+<p>Chúng tôi sẽ thông báo cho bạn về những thay đổi quan trọng đối với các điều khoản này qua email hoặc trên nền tảng ngay khi các thay đổi đó có hiệu lực. Bằng việc tiếp tục sử dụng dịch vụ, bạn đồng ý với các điều khoản đã được cập nhật.</p>
+<p>Hãy liên hệ với chúng tôi trước để chúng tôi có thể cố gắng giải quyết mọi vấn đề. Pháp luật Singapore được áp dụng, và các tranh chấp sẽ do tòa án Singapore giải quyết, tùy thuộc vào mọi quyền hoặc thủ tục mà pháp luật yêu cầu.</p>
+<p>Một thỏa thuận riêng do cả hai bên ký kết sẽ được ưu tiên áp dụng khi thỏa thuận đó thay đổi rõ ràng các điều khoản này. Nếu một phần không thể thực thi, các phần còn lại vẫn được áp dụng.</p>
+
+<p class="doc-note">Liên hệ: <a href="mailto:admin@deployku.com">admin@deployku.com</a></p>`,
   "meta": "<span>Ngày hiệu lực: 28 June 2026</span><span>Phiên bản 1.3</span><span>Deployku Pte Ltd · Singapore</span>",
   "intro": `Các Điều khoản và Điều kiện này (gọi là "<strong>Điều khoản</strong>") là thỏa thuận giữa bạn và <strong>Deployku Pte Ltd</strong>, một công ty được đăng ký tại Singapore ("<strong>Deployku</strong>", "<strong>chúng tôi</strong>" hoặc "<strong>của chúng tôi</strong>"). Các Điều khoản này điều chỉnh việc bạn sử dụng ứng dụng Heqiyou và mọi thứ trong đó — tất cả các tính năng, nội dung, cùng các trang web và dịch vụ liên quan (gọi chung là "<strong>Dịch vụ</strong>" (Service) hoặc "<strong>Ứng dụng</strong>" (App)).`,
   "nav.product": "Heqiyou",

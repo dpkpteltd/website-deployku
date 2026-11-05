@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Privacy Policy — Heqiyou · Deployku</title>
+<title>Privacy Policy — Heqiyou &amp; Lekjek · Deployku</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-<meta name="description" content="Privacy Policy for the Heqiyou voice-first dating app by Deployku Pte Ltd — how we collect, use, disclose, retain and protect personal data under the Singapore PDPA." />
+<meta name="description" content="Privacy policies for the apps made by Deployku Pte Ltd — Heqiyou and Lekjek — and how each collects, uses, retains and protects personal data under the Singapore PDPA." />
 <link rel="canonical" href="https://deployku.com/privacy.html" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="theme-color" content="#0E233E" />
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Deployku" />
 <meta property="og:url" content="https://deployku.com/privacy.html" />
-<meta property="og:title" content="Privacy Policy — Heqiyou · Deployku" />
-<meta property="og:description" content="How Heqiyou (by Deployku Pte Ltd) collects, uses, retains and protects personal data under the Singapore PDPA." />
+<meta property="og:title" content="Privacy Policy — Heqiyou &amp; Lekjek · Deployku" />
+<meta property="og:description" content="How Heqiyou and Lekjek (by Deployku Pte Ltd) collect, use, retain and protect personal data under the Singapore PDPA." />
 <meta property="og:image" content="https://deployku.com/og-image.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://deployku.com/og-image.jpg" />
@@ -160,6 +160,49 @@ ul,ol{margin:0;padding:0;}
 .summary-card ul{margin-bottom:0;}
 .doc-note{font-size:14.5px;color:var(--muted);font-style:italic;margin-top:40px;padding-top:22px;border-top:1px solid var(--line);}
 
+/* ---------- product picker + expandable panels ---------- */
+.tc-doc{padding-top:4px;}
+.tc-picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:860px;}
+.tc-card{display:flex;align-items:center;gap:16px;width:100%;text-align:left;padding:18px 20px;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);color:var(--ink);
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .25s ease,background .25s ease;}
+.tc-card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:#cdd8ea;}
+.tc-icon{flex:none;width:56px;height:56px;border-radius:16px;display:grid;place-items:center;overflow:hidden;}
+.tc-icon svg{width:100%;height:100%;}
+.tc-icon.hq{background:linear-gradient(135deg,#FFF5EC,#FFE3DA);}
+.tc-icon.hq svg{width:46px;height:46px;}
+.tc-text{flex:1;min-width:0;}
+.tc-name{display:block;font-family:'Sora',sans-serif;font-weight:700;font-size:18px;letter-spacing:-0.01em;line-height:1.2;}
+.tc-desc{display:block;font-size:14px;color:var(--muted);line-height:1.4;margin-top:4px;}
+.tc-chev{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--bg-soft);color:var(--navy);
+  transition:transform .35s var(--ease),background .25s ease,color .25s ease;}
+.tc-card[aria-expanded="true"]{border-color:var(--navy);box-shadow:0 0 0 1px var(--navy),var(--shadow);}
+.tc-card[aria-expanded="true"] .tc-chev{transform:rotate(180deg);background:var(--navy);color:#fff;}
+.tc-card[data-product="lekjek"][aria-expanded="true"]{border-color:#5B3FD9;box-shadow:0 0 0 1px #5B3FD9,var(--shadow);}
+.tc-card[data-product="lekjek"][aria-expanded="true"] .tc-chev{background:#5B3FD9;}
+.tc-card[data-product="heqiyou"][aria-expanded="true"]{border-color:#E0877B;box-shadow:0 0 0 1px #E0877B,var(--shadow);}
+.tc-card[data-product="heqiyou"][aria-expanded="true"] .tc-chev{background:#C67B7B;}
+.tc-hint{margin-top:14px;font-size:14px;color:var(--faint);}
+.tc-panel{margin-top:40px;scroll-margin-top:calc(var(--head-h) + 16px);}
+.tc-panel:not([hidden]){animation:tc-in .45s var(--ease);}
+@keyframes tc-in{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+.tc-panel-head{max-width:860px;padding-bottom:28px;margin-bottom:34px;border-bottom:1px solid var(--line);}
+.tc-panel-head h2{font-family:'Sora',sans-serif;font-weight:800;font-size:clamp(26px,3.4vw,36px);letter-spacing:-0.02em;line-height:1.1;}
+.tc-panel-head .doc-meta{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px;}
+.tc-panel-head .doc-meta span{font-size:13px;font-weight:600;font-family:'Sora',sans-serif;color:var(--muted);
+  background:var(--bg-soft);border:1px solid var(--line);padding:7px 14px;border-radius:var(--pill);}
+.tc-panel-head .doc-intro{margin-top:18px;font-size:16.5px;color:var(--muted);max-width:76ch;}
+.tc-langnote{margin-top:16px;font-size:14px;color:var(--muted);background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px 16px;}
+.tc-langnote:empty{display:none;}
+.tc-back{margin-top:40px;display:inline-flex;align-items:center;gap:8px;font-family:'Sora',sans-serif;font-weight:600;font-size:14.5px;color:var(--blue);}
+.tc-back:hover{color:var(--navy);}
+.doc-body mark.ph{background:#FFF4C2;color:var(--ink);border-radius:4px;padding:0 4px;}
+@media (max-width:640px){
+  .tc-picker{grid-template-columns:1fr;}
+  .tc-card{padding:16px;}
+  .tc-icon{width:50px;height:50px;}
+}
+
 /* ---------- footer (shared) ---------- */
 .foot{background:var(--navy);color:#fff;padding-block:54px 40px;margin-top:40px;}
 .foot-top{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start;}
@@ -186,6 +229,30 @@ ul,ol{margin:0;padding:0;}
       <path d="M44 104 Q60 86 76 104" fill="none" stroke="#FF0072" stroke-width="13" stroke-linecap="round"/>
       <path d="M60 140 C53 126 50 122 50 116 a10 10 0 1 1 20 0 c0 6 -3 10 -10 24 Z" fill="#FFDB03"/>
     </symbol>
+    <radialGradient id="hqCore" cx="50%" cy="40%" r="62%">
+      <stop offset="0%" stop-color="#FFEAC4"/><stop offset="42%" stop-color="#FFB347"/><stop offset="100%" stop-color="#FF9A8B"/>
+    </radialGradient>
+    <linearGradient id="hqPetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF9A8B"/><stop offset="100%" stop-color="#C67B7B"/>
+    </linearGradient>
+    <symbol id="hq-glyph" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="76" fill="none" stroke="url(#hqPetal)" stroke-width="3" stroke-dasharray="3 10" stroke-linecap="round" opacity="0.7"/>
+      <g fill="url(#hqPetal)" opacity="0.92">
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(0 100 100)"/>
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(51.4 100 100)"/>
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(102.8 100 100)"/>
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(154.3 100 100)"/>
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(205.7 100 100)"/>
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(257.1 100 100)"/>
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(308.6 100 100)"/>
+      </g>
+      <circle cx="100" cy="100" r="29" fill="url(#hqCore)"/>
+      <circle cx="92" cy="92" r="7" fill="#fff" fill-opacity="0.4"/>
+    </symbol>
+    <symbol id="lk-mark" viewBox="0 0 32 32">
+      <rect width="32" height="32" rx="8" fill="#5B3FD9"/>
+      <path fill="#FFFFFF" d="M11 6.5A1.5 1.5 0 0 1 12.5 5h2.5a1.5 1.5 0 0 1 1.5 1.5v13.6c0 1.6.8 2.4 2.3 2.4h.7a1.5 1.5 0 0 1 1.5 1.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-1.3C13.4 27 11 24.6 11 20.2z"/>
+    </symbol>
   </defs>
 </svg>
 
@@ -210,250 +277,349 @@ ul,ol{margin:0;padding:0;}
 <main>
 <section class="doc-hero">
   <div class="wrap">
-    <p class="eyebrow" data-t="eyebrow">Legal · Heqiyou</p>
+    <p class="eyebrow" data-t="eyebrow">Legal · Deployku</p>
     <h1 data-t="h1">Privacy Policy</h1>
-    <div class="doc-meta" data-t="meta">
-      <span>Effective Date: 11 June 2026</span>
-      <span>Version 1.0</span>
-      <span>Deployku Pte Ltd · Singapore</span>
-    </div>
-    <p class="doc-intro" data-t="intro">This Privacy Policy explains how <strong>Deployku Pte Ltd</strong>, a private limited company incorporated in Singapore ("<strong>Deployku</strong>", "<strong>we</strong>", "<strong>us</strong>" or "<strong>our</strong>"), collects, uses, discloses, transfers, retains and protects personal data in connection with the Heqiyou mobile application and related services (the "<strong>Service</strong>" or the "<strong>App</strong>").</p>
+    <p class="doc-intro" data-t="pick.intro">Deployku Pte Ltd makes more than one app, and each has its own privacy policy. Choose an app below to read how it handles personal data.</p>
   </div>
 </section>
 
-<section class="doc">
+<section class="doc tc-doc">
   <div class="wrap">
-    <div class="doc-body" data-t="body">
+    <div class="tc-picker" id="apps">
+      <button type="button" class="tc-card" id="tab-heqiyou" data-product="heqiyou" aria-expanded="false" aria-controls="heqiyou">
+        <span class="tc-icon hq" aria-hidden="true"><svg viewBox="0 0 200 200"><use href="#hq-glyph"/></svg></span>
+        <span class="tc-text"><span class="tc-name">Heqiyou</span><span class="tc-desc" data-t="pick.heqiyou">Voice-first dating app</span></span>
+        <span class="tc-chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </button>
+      <button type="button" class="tc-card" id="tab-lekjek" data-product="lekjek" aria-expanded="false" aria-controls="lekjek">
+        <span class="tc-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="#lk-mark"/></svg></span>
+        <span class="tc-text"><span class="tc-name">Lekjek</span><span class="tc-desc" data-t="pick.lekjek">Customer records, invoices and payment reminders for businesses</span></span>
+        <span class="tc-chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </button>
+    </div>
 
-      <p>We are the organisation responsible for personal data processed through the Service for the purposes of the Singapore Personal Data Protection Act 2012 ("<strong>PDPA</strong>"), and we honour applicable data-protection laws in the other jurisdictions where the App is made available.</p>
-      <p>This Policy forms part of, and uses defined terms from, our <a href="termsandconditions.html">Terms and Conditions</a>. By creating an account or using the Service, you acknowledge this Policy and, where consent is the applicable basis, consent to the collection, use and disclosure of your personal data as described here.</p>
-      <p><strong>Data Protection Officer / privacy contact: <a href="mailto:admin@deployku.com">admin@deployku.com</a></strong></p>
-
-      <h2 id="summary">1. Summary (Read This First)</h2>
-      <div class="summary-card">
-        <ul>
-          <li>Heqiyou is a voice-first dating service: you talk first, anonymously, and reveal profiles only by mutual choice. The design intentionally minimises what other users can see about you before you choose to be revealed.</li>
-          <li><strong>Calls made through the Service are recorded and transcribed for safety.</strong> Raw audio is deleted promptly after transcription; the text transcript is retained and is visible only to the call's participants and authorised personnel.</li>
-          <li><strong>Your conversations (call recordings, transcripts and chat messages) may be used for the safety of users — for example to investigate reports, detect abuse and enforce our rules — and to enhance your own experience of the Service.</strong></li>
-          <li><strong>Anonymized and aggregated data — data that can no longer reasonably identify you — may be used to improve and enhance the platform experience</strong>, including matching quality, safety systems and product features.</li>
-          <li>We do not sell your personal data.</li>
-          <li>The Service is for adults aged 18 and over only.</li>
-          <li>You can request access, correction or deletion of your personal data, and withdraw consent, by contacting <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong> or using in-app controls.</li>
-        </ul>
+    <div class="tc-panel" id="heqiyou" role="region" aria-labelledby="tab-heqiyou" hidden>
+      <div class="tc-panel-head">
+        <h2 data-t="hq.title">Heqiyou — Privacy Policy</h2>
+        <div class="doc-meta" data-t="meta">
+          <span>Effective Date: 11 June 2026</span>
+          <span>Version 1.0</span>
+          <span>Deployku Pte Ltd · Singapore</span>
+        </div>
+        <p class="doc-intro" data-t="intro">This Privacy Policy explains how <strong>Deployku Pte Ltd</strong>, a private limited company incorporated in Singapore ("<strong>Deployku</strong>", "<strong>we</strong>", "<strong>us</strong>" or "<strong>our</strong>"), collects, uses, discloses, transfers, retains and protects personal data in connection with the Heqiyou mobile application and related services (the "<strong>Service</strong>" or the "<strong>App</strong>").</p>
       </div>
+      <div class="doc-body" data-t="body">
 
-      <h2 id="data-we-collect">2. Personal Data We Collect</h2>
+        <p>We are the organisation responsible for personal data processed through the Service for the purposes of the Singapore Personal Data Protection Act 2012 ("<strong>PDPA</strong>"), and we honour applicable data-protection laws in the other jurisdictions where the App is made available.</p>
+        <p>This Policy forms part of, and uses defined terms from, our <a href="termsandconditions.html">Terms and Conditions</a>. By creating an account or using the Service, you acknowledge this Policy and, where consent is the applicable basis, consent to the collection, use and disclosure of your personal data as described here.</p>
+        <p><strong>Data Protection Officer / privacy contact: <a href="mailto:admin@deployku.com">admin@deployku.com</a></strong></p>
 
-      <h3>2.1 Data you provide to us</h3>
-      <table>
-        <thead><tr><th>Category</th><th>Examples</th></tr></thead>
-        <tbody>
-          <tr><td>Identity &amp; contact</td><td>Mobile phone number (your primary login credential, verified by one-time code); country/dialling code; optional email address</td></tr>
-          <tr><td>Profile</td><td>Display name; date of birth (used to verify you are 18+ and to show your age after reveal); gender; city (free-text — we do not collect precise GPS coordinates for your profile); short bio; optional profile photo</td></tr>
-          <tr><td>Preferences &amp; compatibility</td><td>Dating intent; who you are interested in; preferred age range; preferred distance; language preference; answers to the onboarding compatibility quiz</td></tr>
-          <tr><td>Communications content</td><td>Your voice during calls made through the Service; chat messages with matched users; inputs you provide to the AI date-planning feature (e.g., vibe, time, budget)</td></tr>
-          <tr><td>Safety submissions</td><td>Reports you file about other users (reason and details); blocks; post-call ratings and flags</td></tr>
-          <tr><td>Verification data</td><td>If and when identity/liveness verification is introduced, a selfie or short video and the verification result, processed by a specialist verification provider</td></tr>
-          <tr><td>Support communications</td><td>Correspondence when you contact us (e.g., by email)</td></tr>
-        </tbody>
-      </table>
+        <h2 id="summary">1. Summary (Read This First)</h2>
+        <div class="summary-card">
+          <ul>
+            <li>Heqiyou is a voice-first dating service: you talk first, anonymously, and reveal profiles only by mutual choice. The design intentionally minimises what other users can see about you before you choose to be revealed.</li>
+            <li><strong>Calls made through the Service are recorded and transcribed for safety.</strong> Raw audio is deleted promptly after transcription; the text transcript is retained and is visible only to the call's participants and authorised personnel.</li>
+            <li><strong>Your conversations (call recordings, transcripts and chat messages) may be used for the safety of users — for example to investigate reports, detect abuse and enforce our rules — and to enhance your own experience of the Service.</strong></li>
+            <li><strong>Anonymized and aggregated data — data that can no longer reasonably identify you — may be used to improve and enhance the platform experience</strong>, including matching quality, safety systems and product features.</li>
+            <li>We do not sell your personal data.</li>
+            <li>The Service is for adults aged 18 and over only.</li>
+            <li>You can request access, correction or deletion of your personal data, and withdraw consent, by contacting <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong> or using in-app controls.</li>
+          </ul>
+        </div>
 
-      <h3>2.2 Data collected automatically</h3>
-      <table>
-        <thead><tr><th>Category</th><th>Examples</th></tr></thead>
-        <tbody>
-          <tr><td>Call metadata</td><td>Call identifiers, participants, booked and actual duration, start/end times, end reason, whether each participant chose to continue after the call</td></tr>
-          <tr><td>Call recordings &amp; transcripts</td><td>Audio of calls (temporarily, for transcription), the resulting text transcript, automatically generated speaker labels and a short summary</td></tr>
-          <tr><td>Transaction data</td><td>Credit purchases, grants, reservations, spends, refunds and balance (kept in an append-only ledger); purchase identifiers from the relevant app marketplace or payment processor; rewarded-ad completion events</td></tr>
-          <tr><td>Device &amp; technical data</td><td>Device platform and model, app version, push-notification tokens, IP address, time-zone, language settings, crash and diagnostic logs</td></tr>
-          <tr><td>Usage data</td><td>Features used, screens viewed, queue and matching events, in-app events used for analytics and fraud prevention</td></tr>
-          <tr><td>Derived/inferred data</td><td>Internal compatibility indicators, matching-quality and standing/reputation scores derived from your activity, ratings and call outcomes (used for matching, fairness, rate-limiting and safety; not shown to other users)</td></tr>
-        </tbody>
-      </table>
+        <h2 id="data-we-collect">2. Personal Data We Collect</h2>
 
-      <h3>2.3 Data we receive from others</h3>
-      <ul>
-        <li><strong>App marketplaces and payment processors:</strong> confirmation of purchases, transaction identifiers and entitlement events (we do not receive or store your full payment card details).</li>
-        <li><strong>Communications providers:</strong> delivery status of one-time codes and notifications.</li>
-        <li><strong>Other users:</strong> reports, ratings and blocks that reference you.</li>
-        <li><strong>Verification providers (if/when introduced):</strong> verification outcomes and provider session identifiers.</li>
-      </ul>
+        <h3>2.1 Data you provide to us</h3>
+        <table>
+          <thead><tr><th>Category</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr><td>Identity &amp; contact</td><td>Mobile phone number (your primary login credential, verified by one-time code); country/dialling code; optional email address</td></tr>
+            <tr><td>Profile</td><td>Display name; date of birth (used to verify you are 18+ and to show your age after reveal); gender; city (free-text — we do not collect precise GPS coordinates for your profile); short bio; optional profile photo</td></tr>
+            <tr><td>Preferences &amp; compatibility</td><td>Dating intent; who you are interested in; preferred age range; preferred distance; language preference; answers to the onboarding compatibility quiz</td></tr>
+            <tr><td>Communications content</td><td>Your voice during calls made through the Service; chat messages with matched users; inputs you provide to the AI date-planning feature (e.g., vibe, time, budget)</td></tr>
+            <tr><td>Safety submissions</td><td>Reports you file about other users (reason and details); blocks; post-call ratings and flags</td></tr>
+            <tr><td>Verification data</td><td>If and when identity/liveness verification is introduced, a selfie or short video and the verification result, processed by a specialist verification provider</td></tr>
+            <tr><td>Support communications</td><td>Correspondence when you contact us (e.g., by email)</td></tr>
+          </tbody>
+        </table>
 
-      <h3>2.4 What we deliberately do not collect</h3>
-      <ul>
-        <li>We do not collect precise GPS location for matching; distance preferences operate on coarse, user-provided information.</li>
-        <li>We do not access your contact list or address book.</li>
-        <li>We do not collect government-issued identification at sign-up (specialist verification, if introduced, will be separately disclosed in-app).</li>
-        <li>We do not store full payment card numbers.</li>
-      </ul>
+        <h3>2.2 Data collected automatically</h3>
+        <table>
+          <thead><tr><th>Category</th><th>Examples</th></tr></thead>
+          <tbody>
+            <tr><td>Call metadata</td><td>Call identifiers, participants, booked and actual duration, start/end times, end reason, whether each participant chose to continue after the call</td></tr>
+            <tr><td>Call recordings &amp; transcripts</td><td>Audio of calls (temporarily, for transcription), the resulting text transcript, automatically generated speaker labels and a short summary</td></tr>
+            <tr><td>Transaction data</td><td>Credit purchases, grants, reservations, spends, refunds and balance (kept in an append-only ledger); purchase identifiers from the relevant app marketplace or payment processor; rewarded-ad completion events</td></tr>
+            <tr><td>Device &amp; technical data</td><td>Device platform and model, app version, push-notification tokens, IP address, time-zone, language settings, crash and diagnostic logs</td></tr>
+            <tr><td>Usage data</td><td>Features used, screens viewed, queue and matching events, in-app events used for analytics and fraud prevention</td></tr>
+            <tr><td>Derived/inferred data</td><td>Internal compatibility indicators, matching-quality and standing/reputation scores derived from your activity, ratings and call outcomes (used for matching, fairness, rate-limiting and safety; not shown to other users)</td></tr>
+          </tbody>
+        </table>
 
-      <h2 id="purposes">3. How We Use Personal Data (Purposes)</h2>
-      <p>We collect, use and disclose personal data for the following purposes:</p>
+        <h3>2.3 Data we receive from others</h3>
+        <ul>
+          <li><strong>App marketplaces and payment processors:</strong> confirmation of purchases, transaction identifiers and entitlement events (we do not receive or store your full payment card details).</li>
+          <li><strong>Communications providers:</strong> delivery status of one-time codes and notifications.</li>
+          <li><strong>Other users:</strong> reports, ratings and blocks that reference you.</li>
+          <li><strong>Verification providers (if/when introduced):</strong> verification outcomes and provider session identifiers.</li>
+        </ul>
 
-      <h3>3.1 Providing the Service</h3>
-      <ul>
-        <li>Creating and authenticating your account (phone-based one-time codes; optional email);</li>
-        <li>Operating matching, queues, calls, profile reveal, chat, the AI date planner, and other features;</li>
-        <li>Displaying your profile to a matched user after mutual reveal, as designed;</li>
-        <li>Processing Credit purchases, free grants, rewarded-ad credits, reservations, settlements and refunds, and maintaining accurate transaction records;</li>
-        <li>Sending service communications (one-time codes, call notifications, match and message alerts, transactional notices).</li>
-      </ul>
+        <h3>2.4 What we deliberately do not collect</h3>
+        <ul>
+          <li>We do not collect precise GPS location for matching; distance preferences operate on coarse, user-provided information.</li>
+          <li>We do not access your contact list or address book.</li>
+          <li>We do not collect government-issued identification at sign-up (specialist verification, if introduced, will be separately disclosed in-app).</li>
+          <li>We do not store full payment card numbers.</li>
+        </ul>
 
-      <h3>3.2 Safety of users — including use of conversation data</h3>
-      <p><strong>We may use your personal data — including conversation data such as call recordings, call transcripts and chat messages — for the safety of users.</strong> This includes:</p>
-      <ul>
-        <li>investigating reports filed by or about you, with human review;</li>
-        <li>detecting, preventing and acting on harassment, scams, fraud, solicitation, under-age use, impersonation and other violations of our Terms;</li>
-        <li>screening profile photos through automated moderation before display;</li>
-        <li>applying and reviewing enforcement actions (warnings, cooldowns, suspensions, bans, credit forfeiture) and handling appeals;</li>
-        <li>maintaining internal standing and integrity signals that protect the community;</li>
-        <li>protecting the rights, property and safety of users, the public and Deployku, and responding to emergencies involving risk of harm.</li>
-      </ul>
+        <h2 id="purposes">3. How We Use Personal Data (Purposes)</h2>
+        <p>We collect, use and disclose personal data for the following purposes:</p>
 
-      <h3>3.3 Enhancing your experience — including use of conversation data</h3>
-      <p><strong>We may use your personal data, including conversation data, to enhance your own experience of the Service</strong> — for example: improving the relevance of your matches; personalising features, prompts and suggestions for you (such as AI date plans built from inputs you and your match provide); surfacing your own call summaries and transcripts back to you; remembering your preferences; and tailoring in-app content to your usage.</p>
+        <h3>3.1 Providing the Service</h3>
+        <ul>
+          <li>Creating and authenticating your account (phone-based one-time codes; optional email);</li>
+          <li>Operating matching, queues, calls, profile reveal, chat, the AI date planner, and other features;</li>
+          <li>Displaying your profile to a matched user after mutual reveal, as designed;</li>
+          <li>Processing Credit purchases, free grants, rewarded-ad credits, reservations, settlements and refunds, and maintaining accurate transaction records;</li>
+          <li>Sending service communications (one-time codes, call notifications, match and message alerts, transactional notices).</li>
+        </ul>
 
-      <h3>3.4 Improving the platform — anonymized and aggregated data</h3>
-      <p><strong>We may anonymize, de-identify and/or aggregate personal data so that it can no longer reasonably be used to identify you, and use that data to enhance the platform experience for all users</strong> — for example: analysing usage trends; improving matching algorithms, queue fairness and safety systems; developing, testing and evaluating features; and producing statistics and business analytics. Anonymized data is no longer personal data and may be retained and used without restriction under this Policy.</p>
+        <h3>3.2 Safety of users — including use of conversation data</h3>
+        <p><strong>We may use your personal data — including conversation data such as call recordings, call transcripts and chat messages — for the safety of users.</strong> This includes:</p>
+        <ul>
+          <li>investigating reports filed by or about you, with human review;</li>
+          <li>detecting, preventing and acting on harassment, scams, fraud, solicitation, under-age use, impersonation and other violations of our Terms;</li>
+          <li>screening profile photos through automated moderation before display;</li>
+          <li>applying and reviewing enforcement actions (warnings, cooldowns, suspensions, bans, credit forfeiture) and handling appeals;</li>
+          <li>maintaining internal standing and integrity signals that protect the community;</li>
+          <li>protecting the rights, property and safety of users, the public and Deployku, and responding to emergencies involving risk of harm.</li>
+        </ul>
 
-      <h3>3.5 Other purposes</h3>
-      <ul>
-        <li><strong>Fraud and abuse prevention:</strong> verifying purchases, enforcing daily and monthly limits, detecting multi-account and ban evasion, preventing payment and promotional abuse;</li>
-        <li><strong>Analytics and diagnostics:</strong> measuring performance, diagnosing crashes and errors, and understanding feature usage (via third-party analytics and error-tracking providers acting on our behalf);</li>
-        <li><strong>Legal compliance:</strong> complying with applicable laws, regulations, codes of practice, court orders, and lawful requests by authorities; establishing, exercising or defending legal claims;</li>
-        <li><strong>Business operations:</strong> audits, record-keeping, corporate transactions (see Section 6.3), and enforcing our agreements;</li>
-        <li><strong>With your separate consent, where required:</strong> marketing communications and any new purpose not covered above. We will notify you and, where required by law, obtain consent before using personal data for materially new purposes.</li>
-      </ul>
-      <p>We do not use your personal data to train our own machine-learning models in a way that identifies you, and we do not permit our AI service providers to use your data to train their models except as needed to provide their service to us.</p>
+        <h3>3.3 Enhancing your experience — including use of conversation data</h3>
+        <p><strong>We may use your personal data, including conversation data, to enhance your own experience of the Service</strong> — for example: improving the relevance of your matches; personalising features, prompts and suggestions for you (such as AI date plans built from inputs you and your match provide); surfacing your own call summaries and transcripts back to you; remembering your preferences; and tailoring in-app content to your usage.</p>
 
-      <h2 id="recording">4. Call Recording and Transcription — How It Works</h2>
-      <p>Because voice is the core of the Service, we are specific about this:</p>
-      <ol>
-        <li><strong>Disclosure and consent.</strong> Before every call, the App reminds you that calls are recorded and that audio is transcribed for safety review. Joining the call constitutes consent.</li>
-        <li><strong>Recording.</strong> Call audio is captured by our recording infrastructure and stored temporarily in secure cloud storage.</li>
-        <li><strong>Transcription.</strong> The audio is transcribed by an automated speech-to-text service, then processed by a language-model service to label speakers and produce a short summary. These providers act on our behalf under contractual confidentiality and data-protection obligations.</li>
-        <li><strong>Deletion of audio.</strong> <strong>The raw audio recording is deleted promptly after transcription is complete.</strong> We do not maintain a long-term archive of call audio.</li>
-        <li><strong>Retention of transcripts.</strong> The text transcript, speaker labels and summary are retained and linked to the call.</li>
-        <li><strong>Access.</strong> Transcripts are accessible only to (a) the two participants of that call, and (b) a limited number of authorised personnel, strictly for the safety, moderation, fraud-prevention, legal-compliance and experience purposes described in Section 3. Transcripts are never shown to other users.</li>
-      </ol>
+        <h3>3.4 Improving the platform — anonymized and aggregated data</h3>
+        <p><strong>We may anonymize, de-identify and/or aggregate personal data so that it can no longer reasonably be used to identify you, and use that data to enhance the platform experience for all users</strong> — for example: analysing usage trends; improving matching algorithms, queue fairness and safety systems; developing, testing and evaluating features; and producing statistics and business analytics. Anonymized data is no longer personal data and may be retained and used without restriction under this Policy.</p>
 
-      <h2 id="legal-bases">5. Legal Bases and Consent (PDPA)</h2>
-      <p>We rely on the following bases under the PDPA and equivalent provisions of other applicable laws:</p>
-      <ul>
-        <li><strong>Consent</strong>, given when you create an account, accept in-app disclosures (such as the pre-call recording notice), upload content, or enable device permissions;</li>
-        <li><strong>Deemed consent</strong>, where you voluntarily provide personal data for an obvious purpose (e.g., providing your phone number to receive a login code) or where processing is reasonably necessary to perform our contract with you;</li>
-        <li><strong>Legitimate interests and other statutory exceptions</strong>, where permitted — for example for fraud detection and prevention, network and information security, and protecting the safety of individuals — where our interests are not overridden by adverse effects on you;</li>
-        <li><strong>Legal obligations</strong>, where processing is necessary to comply with applicable law.</li>
-      </ul>
-      <p><strong>Withdrawing consent.</strong> You may withdraw consent at any time by adjusting in-app/device settings (e.g., disabling notifications or photo access) or by contacting <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong>. We will explain the likely consequences: because core features depend on certain data (for example, calls cannot be offered without recording-and-transcription for safety, and accounts cannot exist without a verified phone number), withdrawing certain consents may require us to limit or terminate your use of the Service. Withdrawal does not affect processing already carried out, or processing permitted without consent under applicable law.</p>
+        <h3>3.5 Other purposes</h3>
+        <ul>
+          <li><strong>Fraud and abuse prevention:</strong> verifying purchases, enforcing daily and monthly limits, detecting multi-account and ban evasion, preventing payment and promotional abuse;</li>
+          <li><strong>Analytics and diagnostics:</strong> measuring performance, diagnosing crashes and errors, and understanding feature usage (via third-party analytics and error-tracking providers acting on our behalf);</li>
+          <li><strong>Legal compliance:</strong> complying with applicable laws, regulations, codes of practice, court orders, and lawful requests by authorities; establishing, exercising or defending legal claims;</li>
+          <li><strong>Business operations:</strong> audits, record-keeping, corporate transactions (see Section 6.3), and enforcing our agreements;</li>
+          <li><strong>With your separate consent, where required:</strong> marketing communications and any new purpose not covered above. We will notify you and, where required by law, obtain consent before using personal data for materially new purposes.</li>
+        </ul>
+        <p>We do not use your personal data to train our own machine-learning models in a way that identifies you, and we do not permit our AI service providers to use your data to train their models except as needed to provide their service to us.</p>
 
-      <h2 id="disclosure">6. Disclosure of Personal Data</h2>
-      <p>We do <strong>not</strong> sell personal data. We disclose personal data only as follows:</p>
+        <h2 id="recording">4. Call Recording and Transcription — How It Works</h2>
+        <p>Because voice is the core of the Service, we are specific about this:</p>
+        <ol>
+          <li><strong>Disclosure and consent.</strong> Before every call, the App reminds you that calls are recorded and that audio is transcribed for safety review. Joining the call constitutes consent.</li>
+          <li><strong>Recording.</strong> Call audio is captured by our recording infrastructure and stored temporarily in secure cloud storage.</li>
+          <li><strong>Transcription.</strong> The audio is transcribed by an automated speech-to-text service, then processed by a language-model service to label speakers and produce a short summary. These providers act on our behalf under contractual confidentiality and data-protection obligations.</li>
+          <li><strong>Deletion of audio.</strong> <strong>The raw audio recording is deleted promptly after transcription is complete.</strong> We do not maintain a long-term archive of call audio.</li>
+          <li><strong>Retention of transcripts.</strong> The text transcript, speaker labels and summary are retained and linked to the call.</li>
+          <li><strong>Access.</strong> Transcripts are accessible only to (a) the two participants of that call, and (b) a limited number of authorised personnel, strictly for the safety, moderation, fraud-prevention, legal-compliance and experience purposes described in Section 3. Transcripts are never shown to other users.</li>
+        </ol>
 
-      <h3>6.1 To other users — by design</h3>
-      <ul>
-        <li>Before mutual reveal: other users see only an abstract system-generated avatar and limited non-identifying signals (such as a compatibility indicator). Your name, photo, and identifying details are not shown.</li>
-        <li>After mutual reveal: your matched user can see your profile (display name, age derived from your date of birth, gender, city, bio, photo) and exchange messages with you.</li>
-        <li>Participants of a call can each access the transcript of that call.</li>
-      </ul>
+        <h2 id="legal-bases">5. Legal Bases and Consent (PDPA)</h2>
+        <p>We rely on the following bases under the PDPA and equivalent provisions of other applicable laws:</p>
+        <ul>
+          <li><strong>Consent</strong>, given when you create an account, accept in-app disclosures (such as the pre-call recording notice), upload content, or enable device permissions;</li>
+          <li><strong>Deemed consent</strong>, where you voluntarily provide personal data for an obvious purpose (e.g., providing your phone number to receive a login code) or where processing is reasonably necessary to perform our contract with you;</li>
+          <li><strong>Legitimate interests and other statutory exceptions</strong>, where permitted — for example for fraud detection and prevention, network and information security, and protecting the safety of individuals — where our interests are not overridden by adverse effects on you;</li>
+          <li><strong>Legal obligations</strong>, where processing is necessary to comply with applicable law.</li>
+        </ul>
+        <p><strong>Withdrawing consent.</strong> You may withdraw consent at any time by adjusting in-app/device settings (e.g., disabling notifications or photo access) or by contacting <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong>. We will explain the likely consequences: because core features depend on certain data (for example, calls cannot be offered without recording-and-transcription for safety, and accounts cannot exist without a verified phone number), withdrawing certain consents may require us to limit or terminate your use of the Service. Withdrawal does not affect processing already carried out, or processing permitted without consent under applicable law.</p>
 
-      <h3>6.2 To service providers (data intermediaries / processors)</h3>
-      <p>We use carefully selected third-party providers who process personal data only on our documented instructions and under contractual confidentiality, security and data-protection obligations. These providers fall into the following categories:</p>
-      <ul>
-        <li>cloud hosting, database and storage providers;</li>
-        <li>real-time voice-call infrastructure providers;</li>
-        <li>SMS and email delivery providers (for one-time codes and notices);</li>
-        <li>push-notification delivery providers;</li>
-        <li>in-app purchase platforms and payment processors;</li>
-        <li>advertising networks (for optional rewarded advertisements);</li>
-        <li>automated content-moderation providers (e.g., photo screening);</li>
-        <li>AI speech-to-text and language-model providers (for call transcription, labelling, summaries and date-plan generation);</li>
-        <li>analytics, crash-reporting and error-tracking providers;</li>
-        <li>identity/liveness verification providers (if and when such verification is introduced); and</li>
-        <li>alternative or local payment providers (if and when such payment options are introduced).</li>
-      </ul>
-      <p>A list of our current providers in each category is available on request to <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong>.</p>
+        <h2 id="disclosure">6. Disclosure of Personal Data</h2>
+        <p>We do <strong>not</strong> sell personal data. We disclose personal data only as follows:</p>
 
-      <h3>6.3 Other disclosures</h3>
-      <ul>
-        <li><strong>Legal and safety:</strong> to law-enforcement agencies, regulators, courts or other authorities where required or permitted by law; to investigate or prevent suspected fraud, threats to safety, or illegal activity; or to establish, exercise or defend legal claims;</li>
-        <li><strong>Corporate transactions:</strong> to an actual or prospective acquirer, successor or assignee in connection with a merger, acquisition, financing, reorganisation or sale of assets, subject to confidentiality obligations and to this Policy continuing to apply;</li>
-        <li><strong>With your consent or at your direction</strong>, in other cases.</li>
-      </ul>
+        <h3>6.1 To other users — by design</h3>
+        <ul>
+          <li>Before mutual reveal: other users see only an abstract system-generated avatar and limited non-identifying signals (such as a compatibility indicator). Your name, photo, and identifying details are not shown.</li>
+          <li>After mutual reveal: your matched user can see your profile (display name, age derived from your date of birth, gender, city, bio, photo) and exchange messages with you.</li>
+          <li>Participants of a call can each access the transcript of that call.</li>
+        </ul>
 
-      <h2 id="transfers">7. International Transfers</h2>
-      <p>Our service providers may store or process personal data on infrastructure located outside the jurisdiction in which you reside. Where personal data is transferred out of Singapore, we comply with the PDPA's transfer-limitation obligation by ensuring the recipient provides a standard of protection comparable to the PDPA — through contractual safeguards, the recipient's binding policies, or other legally recognised mechanisms. Where the laws of your jurisdiction impose additional transfer requirements, we honour them.</p>
+        <h3>6.2 To service providers (data intermediaries / processors)</h3>
+        <p>We use carefully selected third-party providers who process personal data only on our documented instructions and under contractual confidentiality, security and data-protection obligations. These providers fall into the following categories:</p>
+        <ul>
+          <li>cloud hosting, database and storage providers;</li>
+          <li>real-time voice-call infrastructure providers;</li>
+          <li>SMS and email delivery providers (for one-time codes and notices);</li>
+          <li>push-notification delivery providers;</li>
+          <li>in-app purchase platforms and payment processors;</li>
+          <li>advertising networks (for optional rewarded advertisements);</li>
+          <li>automated content-moderation providers (e.g., photo screening);</li>
+          <li>AI speech-to-text and language-model providers (for call transcription, labelling, summaries and date-plan generation);</li>
+          <li>analytics, crash-reporting and error-tracking providers;</li>
+          <li>identity/liveness verification providers (if and when such verification is introduced); and</li>
+          <li>alternative or local payment providers (if and when such payment options are introduced).</li>
+        </ul>
+        <p>A list of our current providers in each category is available on request to <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong>.</p>
 
-      <h2 id="retention">8. Data Retention</h2>
-      <p>We retain personal data only as long as necessary for the purposes described in this Policy, to comply with legal obligations, to resolve disputes, and to enforce agreements. Indicative retention practices:</p>
-      <table>
-        <thead><tr><th>Data</th><th>Retention</th></tr></thead>
-        <tbody>
-          <tr><td>Raw call audio</td><td><strong>Deleted promptly after transcription</strong> (typically immediately upon successful processing)</td></tr>
-          <tr><td>Call transcripts, labels, summaries</td><td>Retained while your account is active; deleted or anonymized within a reasonable period after account deletion, except where retention is required for safety investigations, disputes or legal obligations</td></tr>
-          <tr><td>Chat messages</td><td>Retained while your account is active; removed from the Service upon account deletion (the other participant's copy of a conversation may persist in de-identified form)</td></tr>
-          <tr><td>Profile data and photos</td><td>Retained while your account is active; deleted upon account deletion. Photos rejected by moderation are deleted</td></tr>
-          <tr><td>One-time login codes</td><td>Minutes (expire shortly after issuance)</td></tr>
-          <tr><td>Credit/transaction ledger</td><td>Retained for the life of the account and thereafter as required for accounting, tax, audit, fraud-prevention and legal purposes (the ledger is append-only by design)</td></tr>
-          <tr><td>Reports, blocks, ratings, enforcement records</td><td>Retained as long as necessary for safety and legal purposes, including after account deletion where needed to prevent banned users from returning or to address ongoing investigations</td></tr>
-          <tr><td>Device tokens and technical logs</td><td>Short, rolling retention periods appropriate to their diagnostic and security purpose</td></tr>
-          <tr><td>Anonymized/aggregated data</td><td>May be retained indefinitely (no longer personal data)</td></tr>
-        </tbody>
-      </table>
-      <p>When retention ends, we delete or irreversibly anonymize the data. Residual copies may persist for a limited time in encrypted backups before being overwritten in the ordinary course.</p>
+        <h3>6.3 Other disclosures</h3>
+        <ul>
+          <li><strong>Legal and safety:</strong> to law-enforcement agencies, regulators, courts or other authorities where required or permitted by law; to investigate or prevent suspected fraud, threats to safety, or illegal activity; or to establish, exercise or defend legal claims;</li>
+          <li><strong>Corporate transactions:</strong> to an actual or prospective acquirer, successor or assignee in connection with a merger, acquisition, financing, reorganisation or sale of assets, subject to confidentiality obligations and to this Policy continuing to apply;</li>
+          <li><strong>With your consent or at your direction</strong>, in other cases.</li>
+        </ul>
 
-      <h2 id="rights">9. Your Rights and Choices</h2>
-      <p>Subject to applicable law (including the PDPA and any additional rights granted by the data-protection laws of your jurisdiction), you have the right to:</p>
-      <ul>
-        <li><strong>Access</strong> — request a copy of, and information about the use and disclosure of, your personal data within the preceding year;</li>
-        <li><strong>Correction</strong> — request correction of inaccurate or incomplete personal data (you can edit most profile data directly in the App);</li>
-        <li><strong>Deletion</strong> — request deletion of your account and associated personal data, via the App's settings or by emailing <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong>, subject to the retention exceptions in Section 8;</li>
-        <li><strong>Withdraw consent</strong> — as described in Section 5;</li>
-        <li><strong>Portability</strong> — where applicable law provides a data-portability right, request transmission of applicable data in a commonly used machine-readable format;</li>
-        <li><strong>Complain</strong> — raise concerns with us first (we will respond promptly), and, if unresolved, lodge a complaint with the Personal Data Protection Commission of Singapore or the data-protection authority of your jurisdiction.</li>
-      </ul>
-      <p>To exercise any right, contact <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong> from your registered email, or include your registered phone number, so we can verify your identity before acting. We respond within the timelines required by applicable law and will inform you if a statutory exception applies (for example, where access would reveal personal data about another individual, such as the other side of a conversation, or would compromise an ongoing safety investigation). We will not discriminate against you for exercising your rights.</p>
-      <p><strong>Other choices:</strong></p>
-      <ul>
-        <li><strong>Push notifications</strong> — disable in device or in-app settings (you may miss call and match alerts);</li>
-        <li><strong>Microphone, photo and other permissions</strong> — manage in device settings (calls require microphone access);</li>
-        <li><strong>Advertising</strong> — rewarded ads are optional; you can also limit ad personalisation through your device's advertising settings;</li>
-        <li><strong>Blocking</strong> — block any user at any time to prevent further contact and matching.</li>
-      </ul>
+        <h2 id="transfers">7. International Transfers</h2>
+        <p>Our service providers may store or process personal data on infrastructure located outside the jurisdiction in which you reside. Where personal data is transferred out of Singapore, we comply with the PDPA's transfer-limitation obligation by ensuring the recipient provides a standard of protection comparable to the PDPA — through contractual safeguards, the recipient's binding policies, or other legally recognised mechanisms. Where the laws of your jurisdiction impose additional transfer requirements, we honour them.</p>
 
-      <h2 id="security">10. Security</h2>
-      <p>We implement administrative, technical and organisational measures appropriate to the sensitivity of the data we hold, including:</p>
-      <ul>
-        <li>encryption of data in transit;</li>
-        <li>database-level access rules that restrict each user's access to their own records (for example, transcripts readable only by call participants);</li>
-        <li>security credentials and call/session tokens issued only server-side, never embedded in the App;</li>
-        <li>an append-only financial ledger that cannot be retroactively edited;</li>
-        <li>least-privilege access controls, secrets management, and logging for our personnel and systems;</li>
-        <li>automated screening of uploaded photos before display;</li>
-        <li>vendor due-diligence and contractual data-protection obligations for all service providers.</li>
-      </ul>
-      <p>No method of transmission or storage is completely secure, and we cannot guarantee absolute security. If a data breach occurs that is notifiable under applicable law, we will notify the relevant authority and affected users as required.</p>
+        <h2 id="retention">8. Data Retention</h2>
+        <p>We retain personal data only as long as necessary for the purposes described in this Policy, to comply with legal obligations, to resolve disputes, and to enforce agreements. Indicative retention practices:</p>
+        <table>
+          <thead><tr><th>Data</th><th>Retention</th></tr></thead>
+          <tbody>
+            <tr><td>Raw call audio</td><td><strong>Deleted promptly after transcription</strong> (typically immediately upon successful processing)</td></tr>
+            <tr><td>Call transcripts, labels, summaries</td><td>Retained while your account is active; deleted or anonymized within a reasonable period after account deletion, except where retention is required for safety investigations, disputes or legal obligations</td></tr>
+            <tr><td>Chat messages</td><td>Retained while your account is active; removed from the Service upon account deletion (the other participant's copy of a conversation may persist in de-identified form)</td></tr>
+            <tr><td>Profile data and photos</td><td>Retained while your account is active; deleted upon account deletion. Photos rejected by moderation are deleted</td></tr>
+            <tr><td>One-time login codes</td><td>Minutes (expire shortly after issuance)</td></tr>
+            <tr><td>Credit/transaction ledger</td><td>Retained for the life of the account and thereafter as required for accounting, tax, audit, fraud-prevention and legal purposes (the ledger is append-only by design)</td></tr>
+            <tr><td>Reports, blocks, ratings, enforcement records</td><td>Retained as long as necessary for safety and legal purposes, including after account deletion where needed to prevent banned users from returning or to address ongoing investigations</td></tr>
+            <tr><td>Device tokens and technical logs</td><td>Short, rolling retention periods appropriate to their diagnostic and security purpose</td></tr>
+            <tr><td>Anonymized/aggregated data</td><td>May be retained indefinitely (no longer personal data)</td></tr>
+          </tbody>
+        </table>
+        <p>When retention ends, we delete or irreversibly anonymize the data. Residual copies may persist for a limited time in encrypted backups before being overwritten in the ordinary course.</p>
 
-      <h2 id="children">11. Children</h2>
-      <p>The Service is strictly for users aged <strong>18 and over</strong>. We do not knowingly collect personal data from anyone under 18. Date of birth is collected at onboarding to enforce this. If we learn that an account belongs to a person under 18, we will terminate the account and delete its personal data, subject only to retention needed for legal and safety purposes. If you believe a minor is using the Service, please report it in-app or to <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong>.</p>
+        <h2 id="rights">9. Your Rights and Choices</h2>
+        <p>Subject to applicable law (including the PDPA and any additional rights granted by the data-protection laws of your jurisdiction), you have the right to:</p>
+        <ul>
+          <li><strong>Access</strong> — request a copy of, and information about the use and disclosure of, your personal data within the preceding year;</li>
+          <li><strong>Correction</strong> — request correction of inaccurate or incomplete personal data (you can edit most profile data directly in the App);</li>
+          <li><strong>Deletion</strong> — request deletion of your account and associated personal data, via the App's settings or by emailing <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong>, subject to the retention exceptions in Section 8;</li>
+          <li><strong>Withdraw consent</strong> — as described in Section 5;</li>
+          <li><strong>Portability</strong> — where applicable law provides a data-portability right, request transmission of applicable data in a commonly used machine-readable format;</li>
+          <li><strong>Complain</strong> — raise concerns with us first (we will respond promptly), and, if unresolved, lodge a complaint with the Personal Data Protection Commission of Singapore or the data-protection authority of your jurisdiction.</li>
+        </ul>
+        <p>To exercise any right, contact <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong> from your registered email, or include your registered phone number, so we can verify your identity before acting. We respond within the timelines required by applicable law and will inform you if a statutory exception applies (for example, where access would reveal personal data about another individual, such as the other side of a conversation, or would compromise an ongoing safety investigation). We will not discriminate against you for exercising your rights.</p>
+        <p><strong>Other choices:</strong></p>
+        <ul>
+          <li><strong>Push notifications</strong> — disable in device or in-app settings (you may miss call and match alerts);</li>
+          <li><strong>Microphone, photo and other permissions</strong> — manage in device settings (calls require microphone access);</li>
+          <li><strong>Advertising</strong> — rewarded ads are optional; you can also limit ad personalisation through your device's advertising settings;</li>
+          <li><strong>Blocking</strong> — block any user at any time to prevent further contact and matching.</li>
+        </ul>
 
-      <h2 id="cookies">12. Cookies, Local Storage and Tracking</h2>
-      <p>The App is a mobile application and does not use browser cookies. It stores on your device: authentication tokens (to keep you signed in), and local preferences/settings. Third-party software components within the App (for example, analytics, advertising and purchase libraries) may generate device-level identifiers used for the purposes described in Sections 3 and 6.2. You can reset or limit advertising identifiers in your device settings. If we operate websites, any cookie practices will be disclosed on those sites.</p>
+        <h2 id="security">10. Security</h2>
+        <p>We implement administrative, technical and organisational measures appropriate to the sensitivity of the data we hold, including:</p>
+        <ul>
+          <li>encryption of data in transit;</li>
+          <li>database-level access rules that restrict each user's access to their own records (for example, transcripts readable only by call participants);</li>
+          <li>security credentials and call/session tokens issued only server-side, never embedded in the App;</li>
+          <li>an append-only financial ledger that cannot be retroactively edited;</li>
+          <li>least-privilege access controls, secrets management, and logging for our personnel and systems;</li>
+          <li>automated screening of uploaded photos before display;</li>
+          <li>vendor due-diligence and contractual data-protection obligations for all service providers.</li>
+        </ul>
+        <p>No method of transmission or storage is completely secure, and we cannot guarantee absolute security. If a data breach occurs that is notifiable under applicable law, we will notify the relevant authority and affected users as required.</p>
 
-      <h2 id="automated">13. Automated Processing</h2>
-      <p>The Service uses automated systems to: match users; compute internal compatibility, standing and matching-quality scores; enforce usage caps; screen photos; transcribe and summarise calls; and flag potential Terms violations for human review. Significant enforcement decisions (such as suspensions and bans arising from reports) incorporate human review. If you believe an automated decision affecting you is wrong, contact <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong> and we will review it.</p>
+        <h2 id="children">11. Children</h2>
+        <p>The Service is strictly for users aged <strong>18 and over</strong>. We do not knowingly collect personal data from anyone under 18. Date of birth is collected at onboarding to enforce this. If we learn that an account belongs to a person under 18, we will terminate the account and delete its personal data, subject only to retention needed for legal and safety purposes. If you believe a minor is using the Service, please report it in-app or to <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong>.</p>
 
-      <h2 id="changes">14. Changes to This Policy</h2>
-      <p>We may update this Policy from time to time. If we make material changes, we will notify you through the App or by other reasonable means before the changes take effect, and update the Effective Date above. Where a change involves a new purpose for which consent is required by law, we will seek that consent. Your continued use of the Service after the effective date constitutes acknowledgement of the updated Policy.</p>
+        <h2 id="cookies">12. Cookies, Local Storage and Tracking</h2>
+        <p>The App is a mobile application and does not use browser cookies. It stores on your device: authentication tokens (to keep you signed in), and local preferences/settings. Third-party software components within the App (for example, analytics, advertising and purchase libraries) may generate device-level identifiers used for the purposes described in Sections 3 and 6.2. You can reset or limit advertising identifiers in your device settings. If we operate websites, any cookie practices will be disclosed on those sites.</p>
 
-      <h2 id="contact">15. Contact Us</h2>
-      <p><strong>Deployku Pte Ltd</strong><br />
-      <strong>Data Protection Officer</strong><br />
-      Email: <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong></p>
-      <p>Please include your registered phone number or email so we can locate your account, and a description of your request. We aim to acknowledge privacy requests promptly and to resolve them within the timelines required by applicable law.</p>
+        <h2 id="automated">13. Automated Processing</h2>
+        <p>The Service uses automated systems to: match users; compute internal compatibility, standing and matching-quality scores; enforce usage caps; screen photos; transcribe and summarise calls; and flag potential Terms violations for human review. Significant enforcement decisions (such as suspensions and bans arising from reports) incorporate human review. If you believe an automated decision affecting you is wrong, contact <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong> and we will review it.</p>
 
-      <p class="doc-note">This Privacy Policy should be read together with the Heqiyou <a href="termsandconditions.html">Terms and Conditions</a>.</p>
+        <h2 id="changes">14. Changes to This Policy</h2>
+        <p>We may update this Policy from time to time. If we make material changes, we will notify you through the App or by other reasonable means before the changes take effect, and update the Effective Date above. Where a change involves a new purpose for which consent is required by law, we will seek that consent. Your continued use of the Service after the effective date constitutes acknowledgement of the updated Policy.</p>
 
+        <h2 id="contact">15. Contact Us</h2>
+        <p><strong>Deployku Pte Ltd</strong><br />
+        <strong>Data Protection Officer</strong><br />
+        Email: <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong></p>
+        <p>Please include your registered phone number or email so we can locate your account, and a description of your request. We aim to acknowledge privacy requests promptly and to resolve them within the timelines required by applicable law.</p>
+
+        <p class="doc-note">This Privacy Policy should be read together with the Heqiyou <a href="termsandconditions.html">Terms and Conditions</a>.</p>
+
+      </div>
+      <a href="#apps" class="tc-back" data-tc-back><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-t="pick.back">Choose another app</span></a>
+    </div>
+
+    <div class="tc-panel" id="lekjek" role="region" aria-labelledby="tab-lekjek" hidden>
+      <div class="tc-panel-head">
+        <h2 data-t="lk.title">Lekjek — Privacy Policy</h2>
+        <div class="doc-meta" data-t="lk.meta">
+          <span>Effective date: 5 November 2026</span>
+          <span>Deployku Pte. Ltd. · Singapore</span>
+        </div>
+        <p class="tc-langnote" data-t="lk.langnote"></p>
+      </div>
+      <div class="doc-body" data-t="lk.body">
+        <h2 id="lk-1">1. Who this policy covers</h2>
+        <p>Lekjek is operated by Deployku Pte. Ltd., Singapore. This policy explains how we collect, use, share and protect personal data. Personal data means information that identifies you, either on its own or together with other information we can access.</p>
+        <p>It covers our website, platform and support, including information a business handles through Lekjek about its staff, customers or prospects.</p>
+
+        <h2 id="lk-2">2. Our role and your business</h2>
+        <p>We decide how account, subscription, security and support information is used to run Lekjek.</p>
+        <p>When a business uses Lekjek to manage customer records, invoices or follow-up, we normally handle those records on its instructions. That business is responsible for its reasons for using the information and for giving any required notices or obtaining consent. Our own duties to protect the data still apply.</p>
+        <p>For those customer records, the business's privacy notice also explains how your information is used.</p>
+
+        <h2 id="lk-3">3. Information we collect</h2>
+        <p>Depending on how Lekjek is used, we may collect:</p>
+        <ul>
+          <li><strong>Account details</strong>, such as your name, contact details, business name and workspace role.</li>
+          <li><strong>Business records</strong>, such as customer details, invoices, balances, payment status, correspondence and uploaded documents.</li>
+          <li><strong>Billing records</strong>, such as your plan, billing contact, payment references and transaction status.</li>
+          <li><strong>Technical information</strong>, such as IP addresses, browser or device details, login history, feature usage and error logs.</li>
+          <li><strong>Support messages, attachments</strong>, and information submitted to AI tools or connected services.</li>
+        </ul>
+        <p>We receive information from you, your business, enabled integrations and, where relevant, lawful public business sources. Calls, recordings or transcripts are included only where an enabled feature uses them, with any required notice and consent.</p>
+        <p>Avoid uploading identity documents, health information or full payment card details unless needed for an authorised feature.</p>
+
+        <h2 id="lk-4">4. How we use information</h2>
+        <p>We use information to operate accounts and workspaces, carry out requested invoice and customer follow-up, manage subscriptions, answer support requests, prevent misuse, fix problems and meet legal duties. We also use account and usage information to understand and improve service performance.</p>
+        <p>We collect, use and share personal data with consent or where the law allows it. We explain new purposes and obtain consent where required before using information for them.</p>
+
+        <h2 id="lk-5">5. AI and connected services</h2>
+        <p>Where you use AI features, relevant text or files may be sent to an AI provider to extract details, suggest messages or produce requested outputs. Outputs may contain personal data and may be wrong. Check them before use.</p>
+        <p>Connecting another service allows us to share the information needed for that feature under your instructions. The connected service may also handle information under its own privacy policy. Only connect services and submit information you are authorised to use.</p>
+
+        <h2 id="lk-6">6. Who can receive information</h2>
+        <p>Authorised workspace owners, administrators and team members can access information according to their permissions.</p>
+        <p>We use providers for functions such as hosting, messaging, payments, AI and support. Providers handling data for us must follow agreed instructions and confidentiality and security requirements.</p>
+        <p>We may share necessary information with advisers or authorities to meet legal duties, resolve claims or protect lawful rights. If our business is sold or reorganised, necessary information may be shared under confidentiality safeguards and continued data protection obligations.</p>
+
+        <h2 id="lk-7">7. Cookies and marketing</h2>
+        <p>We use cookies and similar browser storage for functions such as signing you in, protecting sessions and remembering preferences. Blocking essential storage may affect these functions.</p>
+        <p>If we send marketing, you can opt out through the message or by contacting us. We may still send necessary account, security and billing notices. For messages sent by a business using Lekjek, contact that business to manage your preferences. We can help direct your request.</p>
+
+        <h2 id="lk-8">8. Protection and overseas storage</h2>
+        <p>We use reasonable safeguards and limit access to people and providers who need the information. No online system can guarantee complete security. We will notify the relevant business promptly of a breach affecting data we handle for it, and notify individuals and regulators where legally required.</p>
+        <p>Our providers may store or process data outside Singapore. We will use contractual or other legally required safeguards to ensure comparable protection.</p>
+        <p>Main processing locations: Singapore.</p>
+
+        <h2 id="lk-9">9. How long we keep information</h2>
+        <p>We keep personal data only as long as reasonably needed for the service, necessary business purposes or legal requirements. We then delete it or remove identifying details.</p>
+        <p>Before closing a workspace, its owner is responsible for exporting their data under our <a href="termsandconditions.html#lekjek">Terms of Service</a>, subject to legal and security restrictions. Records needed for disputes, billing or legal duties may be kept longer. Backup copies remain protected until their scheduled deletion.</p>
+        <p>Deletion schedule: You can ask us to delete your records from within the app, and we will delete them once we no longer need them for lawful purposes.</p>
+
+        <h2 id="lk-10">10. Your choices and requests</h2>
+        <p>Subject to applicable law and its exceptions, you can ask to access your personal data, find out how it was used or shared in the past year, or correct errors. You can withdraw consent for uses that rely on it. We will explain if this affects a service; uses allowed or required by law may continue.</p>
+        <p>You can also ask us to delete information. We will review the request, but may need to retain some records for lawful purposes.</p>
+        <p>Contact our Data Protection Officer below. We may need details to verify your identity. Any lawful fee for an access request will be explained in advance.</p>
+        <p>We will respond as soon as reasonably possible. If an access or correction request cannot be completed within 30 days, we will tell you in writing within that period when to expect our response.</p>
+        <p>For records we handle for a business, you can contact that business or us. We will help direct or coordinate the request.</p>
+
+        <h2 id="lk-11">11. Information about children</h2>
+        <p>Lekjek accounts are intended for adults aged 18 and over. A business should only upload information about children where necessary and lawful, with any required parent or guardian consent. Contact us if you believe a child's information has been used improperly.</p>
+
+        <h2 id="lk-12">12. Updates and contact details</h2>
+        <p>We will update the effective date when this policy changes and give notice of significant changes by email, on our website or in Lekjek. A policy update does not replace consent where consent is required for a new use.</p>
+        <p>For privacy questions, requests or complaints, contact:</p>
+        <div class="summary-card">
+          <p><strong>Data Protection Officer</strong><br />Deployku Pte. Ltd.<br />Email: <a href="mailto:admin@deployku.com">admin@deployku.com</a></p>
+        </div>
+        <p>You may also raise a concern with Singapore's Personal Data Protection Commission at <a href="https://www.pdpc.gov.sg" target="_blank" rel="noopener">https://www.pdpc.gov.sg</a>.</p>
+      </div>
+      <a href="#apps" class="tc-back" data-tc-back><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-t="pick.back">Choose another app</span></a>
     </div>
   </div>
 </section>
@@ -505,6 +671,48 @@ ul,ol{margin:0;padding:0;}
   var header=document.getElementById('header');
   var onScroll=function(){ header.classList.toggle('scrolled', window.scrollY>24); };
   onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+})();
+</script>
+<script>
+(function(){
+  var cards=document.querySelectorAll('.tc-card');
+  var ids=['heqiyou','lekjek'];
+  function panel(id){return document.getElementById(id);}
+  function setOpen(id,scroll){
+    ids.forEach(function(p){
+      var on=p===id;
+      panel(p).hidden=!on;
+      document.getElementById('tab-'+p).setAttribute('aria-expanded',on?'true':'false');
+    });
+    if(history.replaceState){history.replaceState(null,'',id?('#'+id):location.pathname+location.search);}
+    if(id&&scroll){panel(id).scrollIntoView({behavior:'smooth',block:'start'});}
+  }
+  cards.forEach(function(c){
+    c.addEventListener('click',function(){
+      var id=c.getAttribute('data-product');
+      setOpen(c.getAttribute('aria-expanded')==='true'?null:id,false);
+    });
+  });
+  document.querySelectorAll('[data-tc-back]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      document.getElementById('apps').scrollIntoView({behavior:'smooth',block:'center'});
+    });
+  });
+  // Deep links: #heqiyou, #lekjek, or any section id inside a panel (e.g. #s8, #lk-6).
+  function fromHash(){
+    var h=decodeURIComponent(location.hash.slice(1));
+    if(!h)return;
+    var el=document.getElementById(h);
+    if(!el)return;
+    var p=el.closest('.tc-panel');
+    if(!p)return;
+    setOpen(p.id,false);
+    history.replaceState&&history.replaceState(null,'','#'+h);
+    requestAnimationFrame(function(){el.scrollIntoView({block:'start'});});
+  }
+  fromHash();
+  window.addEventListener('hashchange',fromHash);
 })();
 </script>
 <script src="tr/privacy.ms.js"></script>

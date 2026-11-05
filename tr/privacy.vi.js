@@ -1,9 +1,83 @@
 window.DK_TRANSLATIONS = window.DK_TRANSLATIONS || {};
 window.DK_TRANSLATIONS.vi = {
   _lang: "vi",
-  _title: "Chính sách Bảo mật — Heqiyou · Deployku",
-  "eyebrow": "Pháp lý · Heqiyou",
+  _title: "Chính sách Bảo mật — Heqiyou & Lekjek · Deployku",
+  "eyebrow": "Pháp lý · Deployku",
   "h1": "Chính sách Bảo mật",
+  "pick.intro": "Deployku Pte Ltd phát triển nhiều ứng dụng và mỗi ứng dụng có chính sách bảo mật riêng. Chọn một ứng dụng bên dưới để đọc cách ứng dụng đó xử lý dữ liệu cá nhân.",
+  "pick.heqiyou": "Ứng dụng hẹn hò ưu tiên giọng nói",
+  "pick.lekjek": "Hồ sơ khách hàng, hóa đơn và nhắc thanh toán cho doanh nghiệp",
+  "pick.back": "Chọn ứng dụng khác",
+  "hq.title": "Heqiyou — Chính sách Bảo mật",
+  "lk.langnote": "Đây là bản dịch chỉ nhằm mục đích tiện tham khảo; nếu có bất kỳ mâu thuẫn nào, bản tiếng Anh sẽ được áp dụng.",
+  "lk.title": `Lekjek — Chính sách Bảo mật`,
+  "lk.meta": `<span>Ngày hiệu lực: 5 tháng 11 năm 2026</span>
+          <span>Deployku Pte. Ltd. · Singapore</span>`,
+  "lk.body": `<h2 id="lk-1">1. Phạm vi của chính sách này</h2>
+<p>Lekjek được vận hành bởi Deployku Pte. Ltd., Singapore. Chính sách này giải thích cách chúng tôi thu thập, sử dụng, chia sẻ và bảo vệ dữ liệu cá nhân. Dữ liệu cá nhân là thông tin nhận dạng được bạn, dù là riêng lẻ hay khi kết hợp với thông tin khác mà chúng tôi có thể truy cập.</p>
+<p>Chính sách này áp dụng cho trang web, nền tảng và dịch vụ hỗ trợ của chúng tôi, bao gồm cả thông tin mà một doanh nghiệp xử lý thông qua Lekjek về nhân viên, khách hàng hoặc khách hàng tiềm năng của mình.</p>
+
+<h2 id="lk-2">2. Vai trò của chúng tôi và doanh nghiệp của bạn</h2>
+<p>Chúng tôi quyết định cách sử dụng thông tin về tài khoản, gói đăng ký, bảo mật và hỗ trợ để vận hành Lekjek.</p>
+<p>Khi một doanh nghiệp sử dụng Lekjek để quản lý hồ sơ khách hàng, hóa đơn hoặc hoạt động theo dõi, thông thường chúng tôi xử lý các hồ sơ đó theo chỉ dẫn của doanh nghiệp. Doanh nghiệp đó chịu trách nhiệm về lý do sử dụng thông tin và về việc đưa ra mọi thông báo bắt buộc hoặc có được sự đồng ý. Các nghĩa vụ bảo vệ dữ liệu của chính chúng tôi vẫn được áp dụng.</p>
+<p>Đối với các hồ sơ khách hàng đó, thông báo về quyền riêng tư của doanh nghiệp cũng giải thích cách thông tin của bạn được sử dụng.</p>
+
+<h2 id="lk-3">3. Thông tin chúng tôi thu thập</h2>
+<p>Tùy thuộc vào cách Lekjek được sử dụng, chúng tôi có thể thu thập:</p>
+<ul>
+  <li><strong>Thông tin tài khoản</strong>, chẳng hạn như tên, thông tin liên hệ, tên doanh nghiệp và vai trò trong không gian làm việc của bạn.</li>
+  <li><strong>Hồ sơ kinh doanh</strong>, chẳng hạn như thông tin khách hàng, hóa đơn, số dư, trạng thái thanh toán, thư từ trao đổi và tài liệu được tải lên.</li>
+  <li><strong>Hồ sơ thanh toán</strong>, chẳng hạn như gói của bạn, người liên hệ về thanh toán, mã tham chiếu thanh toán và trạng thái giao dịch.</li>
+  <li><strong>Thông tin kỹ thuật</strong>, chẳng hạn như địa chỉ IP, thông tin trình duyệt hoặc thiết bị, lịch sử đăng nhập, mức độ sử dụng tính năng và nhật ký lỗi.</li>
+  <li><strong>Tin nhắn hỗ trợ, tệp đính kèm</strong>, và thông tin được gửi đến các công cụ AI hoặc dịch vụ được kết nối.</li>
+</ul>
+<p>Chúng tôi nhận thông tin từ bạn, doanh nghiệp của bạn, các tích hợp đã được bật và, khi có liên quan, các nguồn thông tin doanh nghiệp công khai hợp pháp. Cuộc gọi, bản ghi âm hoặc bản chép lời chỉ được bao gồm khi một tính năng đã được bật sử dụng chúng, kèm theo mọi thông báo và sự đồng ý bắt buộc.</p>
+<p>Tránh tải lên giấy tờ tùy thân, thông tin sức khỏe hoặc đầy đủ thông tin thẻ thanh toán, trừ khi cần thiết cho một tính năng được ủy quyền.</p>
+
+<h2 id="lk-4">4. Cách chúng tôi sử dụng thông tin</h2>
+<p>Chúng tôi sử dụng thông tin để vận hành tài khoản và không gian làm việc, thực hiện các hoạt động theo dõi hóa đơn và khách hàng theo yêu cầu, quản lý gói đăng ký, trả lời yêu cầu hỗ trợ, ngăn chặn hành vi lạm dụng, khắc phục sự cố và đáp ứng các nghĩa vụ pháp lý. Chúng tôi cũng sử dụng thông tin tài khoản và thông tin sử dụng để hiểu và cải thiện hiệu suất dịch vụ.</p>
+<p>Chúng tôi thu thập, sử dụng và chia sẻ dữ liệu cá nhân khi có sự đồng ý hoặc khi pháp luật cho phép. Chúng tôi giải thích các mục đích mới và xin sự đồng ý khi được yêu cầu trước khi sử dụng thông tin cho các mục đích đó.</p>
+
+<h2 id="lk-5">5. AI và các dịch vụ được kết nối</h2>
+<p>Khi bạn sử dụng các tính năng AI, văn bản hoặc tệp có liên quan có thể được gửi đến một nhà cung cấp AI để trích xuất thông tin, gợi ý tin nhắn hoặc tạo ra các kết quả được yêu cầu. Kết quả có thể chứa dữ liệu cá nhân và có thể không chính xác. Hãy kiểm tra chúng trước khi sử dụng.</p>
+<p>Việc kết nối một dịch vụ khác cho phép chúng tôi chia sẻ thông tin cần thiết cho tính năng đó theo chỉ dẫn của bạn. Dịch vụ được kết nối cũng có thể xử lý thông tin theo chính sách bảo mật riêng của dịch vụ đó. Chỉ kết nối các dịch vụ và gửi thông tin mà bạn được phép sử dụng.</p>
+
+<h2 id="lk-6">6. Ai có thể nhận thông tin</h2>
+<p>Chủ sở hữu, quản trị viên và thành viên nhóm được ủy quyền của không gian làm việc có thể truy cập thông tin theo quyền hạn của họ.</p>
+<p>Chúng tôi sử dụng các nhà cung cấp cho những chức năng như lưu trữ máy chủ, nhắn tin, thanh toán, AI và hỗ trợ. Các nhà cung cấp xử lý dữ liệu thay cho chúng tôi phải tuân theo các chỉ dẫn đã thỏa thuận cũng như các yêu cầu về bảo mật thông tin và an ninh.</p>
+<p>Chúng tôi có thể chia sẻ thông tin cần thiết với các cố vấn hoặc cơ quan có thẩm quyền để đáp ứng nghĩa vụ pháp lý, giải quyết khiếu nại hoặc bảo vệ các quyền hợp pháp. Nếu doanh nghiệp của chúng tôi được bán hoặc tái cấu trúc, thông tin cần thiết có thể được chia sẻ kèm theo các biện pháp bảo vệ tính bảo mật và việc tiếp tục duy trì các nghĩa vụ bảo vệ dữ liệu.</p>
+
+<h2 id="lk-7">7. Cookie và tiếp thị</h2>
+<p>Chúng tôi sử dụng cookie và các hình thức lưu trữ tương tự trên trình duyệt cho những chức năng như đăng nhập, bảo vệ phiên làm việc và ghi nhớ tùy chọn. Việc chặn các hình thức lưu trữ thiết yếu có thể ảnh hưởng đến các chức năng này.</p>
+<p>Nếu chúng tôi gửi nội dung tiếp thị, bạn có thể từ chối nhận thông qua chính tin nhắn đó hoặc bằng cách liên hệ với chúng tôi. Chúng tôi vẫn có thể gửi các thông báo cần thiết về tài khoản, bảo mật và thanh toán. Đối với tin nhắn do một doanh nghiệp sử dụng Lekjek gửi, hãy liên hệ với doanh nghiệp đó để quản lý tùy chọn của bạn. Chúng tôi có thể giúp chuyển yêu cầu của bạn đến đúng nơi.</p>
+
+<h2 id="lk-8">8. Bảo vệ và lưu trữ ở nước ngoài</h2>
+<p>Chúng tôi áp dụng các biện pháp bảo vệ hợp lý và giới hạn quyền truy cập cho những người và nhà cung cấp cần đến thông tin đó. Không hệ thống trực tuyến nào có thể đảm bảo an toàn tuyệt đối. Chúng tôi sẽ thông báo kịp thời cho doanh nghiệp liên quan về vi phạm ảnh hưởng đến dữ liệu mà chúng tôi xử lý cho doanh nghiệp đó, và thông báo cho các cá nhân và cơ quan quản lý khi pháp luật yêu cầu.</p>
+<p>Các nhà cung cấp của chúng tôi có thể lưu trữ hoặc xử lý dữ liệu bên ngoài Singapore. Chúng tôi sẽ áp dụng các biện pháp bảo vệ theo hợp đồng hoặc các biện pháp khác theo yêu cầu của pháp luật để đảm bảo mức độ bảo vệ tương đương.</p>
+<p>Địa điểm xử lý chính: Singapore.</p>
+
+<h2 id="lk-9">9. Thời gian chúng tôi lưu giữ thông tin</h2>
+<p>Chúng tôi chỉ lưu giữ dữ liệu cá nhân trong thời gian cần thiết một cách hợp lý cho dịch vụ, cho các mục đích kinh doanh cần thiết hoặc cho các yêu cầu pháp lý. Sau đó, chúng tôi sẽ xóa dữ liệu hoặc loại bỏ các thông tin nhận dạng.</p>
+<p>Trước khi đóng một không gian làm việc, chủ sở hữu của không gian làm việc đó có trách nhiệm xuất dữ liệu của mình theo <a href="termsandconditions.html#lekjek">Điều khoản Dịch vụ</a> của chúng tôi, tùy thuộc vào các hạn chế về pháp lý và bảo mật. Các hồ sơ cần thiết cho tranh chấp, thanh toán hoặc nghĩa vụ pháp lý có thể được lưu giữ lâu hơn. Các bản sao lưu vẫn được bảo vệ cho đến khi bị xóa theo lịch.</p>
+<p>Lịch xóa dữ liệu: Bạn có thể yêu cầu chúng tôi xóa hồ sơ của mình ngay trong ứng dụng, và chúng tôi sẽ xóa chúng khi không còn cần đến chúng cho các mục đích hợp pháp.</p>
+
+<h2 id="lk-10">10. Lựa chọn và yêu cầu của bạn</h2>
+<p>Tùy thuộc vào pháp luật hiện hành và các ngoại lệ của pháp luật đó, bạn có thể yêu cầu truy cập dữ liệu cá nhân của mình, tìm hiểu cách dữ liệu đó đã được sử dụng hoặc chia sẻ trong năm qua, hoặc sửa lỗi. Bạn có thể rút lại sự đồng ý đối với các hoạt động sử dụng dựa trên sự đồng ý đó. Chúng tôi sẽ giải thích nếu điều này ảnh hưởng đến một dịch vụ; các hoạt động sử dụng được pháp luật cho phép hoặc yêu cầu có thể vẫn tiếp tục.</p>
+<p>Bạn cũng có thể yêu cầu chúng tôi xóa thông tin. Chúng tôi sẽ xem xét yêu cầu, nhưng có thể cần lưu giữ một số hồ sơ cho các mục đích hợp pháp.</p>
+<p>Hãy liên hệ với Cán bộ Bảo vệ Dữ liệu của chúng tôi theo thông tin bên dưới. Chúng tôi có thể cần một số thông tin để xác minh danh tính của bạn. Mọi khoản phí hợp pháp cho yêu cầu truy cập sẽ được giải thích trước.</p>
+<p>Chúng tôi sẽ phản hồi sớm nhất có thể trong phạm vi hợp lý. Nếu không thể hoàn tất yêu cầu truy cập hoặc chỉnh sửa trong vòng 30 ngày, chúng tôi sẽ thông báo bằng văn bản cho bạn trong thời hạn đó về thời điểm bạn có thể nhận được phản hồi của chúng tôi.</p>
+<p>Đối với các hồ sơ mà chúng tôi xử lý cho một doanh nghiệp, bạn có thể liên hệ với doanh nghiệp đó hoặc với chúng tôi. Chúng tôi sẽ giúp chuyển tiếp hoặc phối hợp xử lý yêu cầu.</p>
+
+<h2 id="lk-11">11. Thông tin về trẻ em</h2>
+<p>Tài khoản Lekjek dành cho người trưởng thành từ 18 tuổi trở lên. Doanh nghiệp chỉ nên tải lên thông tin về trẻ em khi cần thiết và hợp pháp, kèm theo mọi sự đồng ý bắt buộc của cha mẹ hoặc người giám hộ. Hãy liên hệ với chúng tôi nếu bạn cho rằng thông tin của một trẻ em đã bị sử dụng không đúng cách.</p>
+
+<h2 id="lk-12">12. Cập nhật và thông tin liên hệ</h2>
+<p>Chúng tôi sẽ cập nhật ngày hiệu lực khi chính sách này thay đổi và thông báo về những thay đổi quan trọng qua email, trên trang web của chúng tôi hoặc trong Lekjek. Việc cập nhật chính sách không thay thế cho sự đồng ý trong trường hợp cần có sự đồng ý cho một mục đích sử dụng mới.</p>
+<p>Đối với các câu hỏi, yêu cầu hoặc khiếu nại về quyền riêng tư, hãy liên hệ:</p>
+<div class="summary-card">
+  <p><strong>Cán bộ Bảo vệ Dữ liệu</strong><br />Deployku Pte. Ltd.<br />Email: <a href="mailto:admin@deployku.com">admin@deployku.com</a></p>
+</div>
+<p>Bạn cũng có thể nêu mối quan ngại với Ủy ban Bảo vệ Dữ liệu Cá nhân Singapore tại <a href="https://www.pdpc.gov.sg" target="_blank" rel="noopener">https://www.pdpc.gov.sg</a>.</p>`,
   "meta": "<span>Ngày hiệu lực: 11 June 2026</span><span>Phiên bản 1.0</span><span>Deployku Pte Ltd · Singapore</span>",
   "intro": `Chính sách Bảo mật này giải thích cách <strong>Deployku Pte Ltd</strong>, một công ty trách nhiệm hữu hạn tư nhân được thành lập tại Singapore ("<strong>Deployku</strong>", "<strong>chúng tôi</strong>", "<strong>chúng tôi</strong>" hoặc "<strong>của chúng tôi</strong>"), thu thập, sử dụng, tiết lộ, chuyển giao, lưu giữ và bảo vệ dữ liệu cá nhân liên quan đến ứng dụng di động Heqiyou và các dịch vụ liên quan ("<strong>Dịch vụ</strong>" hoặc "<strong>Ứng dụng</strong>").`,
   "nav.product": "Heqiyou",

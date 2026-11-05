@@ -1,9 +1,75 @@
 window.DK_TRANSLATIONS = window.DK_TRANSLATIONS || {};
 window.DK_TRANSLATIONS.ms = {
   _lang: "ms",
-  _title: "Terma dan Syarat — Heqiyou · Deployku",
-  "eyebrow": "Undang-undang · Heqiyou",
+  _title: "Terma dan Syarat — Heqiyou & Lekjek · Deployku",
+  "eyebrow": "Undang-undang · Deployku",
   "h1": "Terma dan Syarat",
+  "pick.intro": "Deployku Pte Ltd membina lebih daripada satu aplikasi, dan setiap satu mempunyai termanya sendiri. Pilih aplikasi di bawah untuk membaca terma yang berkaitan dengannya.",
+  "pick.heqiyou": "Aplikasi temu janji yang mengutamakan suara",
+  "pick.lekjek": "Rekod pelanggan, invois dan peringatan pembayaran untuk perniagaan",
+  "pick.back": "Pilih aplikasi lain",
+  "hq.title": "Heqiyou — Terma dan Syarat",
+  "lk.langnote": "Ini ialah terjemahan untuk kemudahan sahaja. Sekiranya terdapat sebarang percanggahan, versi bahasa Inggeris akan terpakai.",
+  "lk.title": `Lekjek — Terma Perkhidmatan`,
+  "lk.meta": `<span>Tarikh berkuat kuasa: 5 November 2026</span>
+          <span>Deployku Pte. Ltd. · Singapura</span>`,
+  "lk.body": `<h2 id="lk-1">1. Tentang terma ini</h2>
+<p>Lekjek dikendalikan oleh Deployku Pte. Ltd., Singapura. Terma ini menerangkan perjanjian antara kami dengan individu atau perniagaan yang menggunakan Lekjek.</p>
+<p>Dengan menerima terma ini semasa anda mendaftar, anda bersetuju untuk mematuhinya. Anda mestilah berumur sekurang-kurangnya 18 tahun dan berupaya untuk memasuki perjanjian ini. Jika anda mendaftar bagi pihak sesebuah perniagaan, anda mengesahkan bahawa anda mempunyai kuasa untuk menerima terma ini bagi pihaknya. Dalam keadaan tersebut, 'anda' bermaksud perniagaan itu.</p>
+
+<h2 id="lk-2">2. Apa yang dilakukan oleh Lekjek</h2>
+<p>Lekjek membantu perniagaan mengurus rekod pelanggan, invois, peringatan pembayaran dan susulan jualan. Ciri dan had yang tersedia kepada anda bergantung pada pelan anda.</p>
+<p>Terma ini meliputi akses kepada perisian. Terma ini tidak melantik kami untuk merundingkan penyelesaian, mengambil tindakan undang-undang atau memegang dana pelanggan bagi pihak anda. Sebarang perkhidmatan berasingan seperti itu memerlukan perjanjian bertulisnya sendiri. Anda kekal bertanggungjawab atas hubungan anda dengan pelanggan dan arahan yang anda berikan melalui Lekjek.</p>
+<p>Kami tidak menjamin bahawa pelanggan akan membuat bayaran, bahawa jualan akan berlaku atau bahawa setiap mesej akan sampai.</p>
+
+<h2 id="lk-3">3. Akaun dan pasukan anda</h2>
+<p>Berikan butiran akaun dan perniagaan yang tepat kepada kami, pastikan log masuk anda selamat, dan maklumkan kepada kami dengan segera jika anda mengesyaki akses tanpa kebenaran.</p>
+<p>Ruang kerja perniagaan dikawal oleh perniagaan tersebut melalui pemilik dan pentadbirnya yang diberi kuasa. Mereka mengurus jemputan, akses dan kebenaran. Perniagaan anda bertanggungjawab atas penggunaan Lekjek oleh ahli pasukannya dengan kebenaran dan atas penarikan balik akses apabila akses itu tidak lagi diperlukan.</p>
+
+<h2 id="lk-4">4. Gunakan Lekjek secara bertanggungjawab</h2>
+<p>Muat naik hanya maklumat yang anda berhak gunakan. Semak jumlah invois, butiran pelanggan dan status pembayaran sebelum menghantar peringatan. Minta bayaran hanya apabila anda mempunyai asas yang sah di sisi undang-undang dan kuasa untuk berbuat demikian. Betulkan kesilapan dengan segera dan hentikan sementara peringatan yang dipertikaikan semasa anda menyemak isu tersebut.</p>
+<p>Jangan gunakan Lekjek untuk mengugut atau mengganggu sesiapa, membuat dakwaan palsu, mendedahkan hutang kepada orang yang tidak berkaitan, menghantar spam yang menyalahi undang-undang, menyamar sebagai orang lain atau melanggar undang-undang. Jangan mengganggu platform, mengakses data pengguna lain atau memintas had keselamatan atau had penggunaan.</p>
+<p>Anda mesti mematuhi peraturan yang terpakai pada mesej, pemasaran dan aktiviti kutipan anda, termasuk sebarang kebenaran atau lesen yang diperlukan. Hormati sekatan untuk menghubungi dan pilihan menarik diri daripada pemasaran. Penggunaan Lekjek tidak memberi anda kebenaran untuk menghubungi seseorang.</p>
+
+<h2 id="lk-5">5. AI dan perkhidmatan bersambung</h2>
+<p>Jika AI tersedia, ia mungkin melakukan kesilapan. Semak butiran invois yang diekstrak, mesej yang dicadangkan dan output lain sebelum bergantung padanya. Output AI bukan nasihat undang-undang, perakaunan atau kewangan.</p>
+<p>Jika anda mendayakan mesej atau tindakan automatik, anda memberi kuasa kepada Lekjek untuk melaksanakannya dalam lingkungan tetapan dan arahan yang anda pilih. Semak tetapan tersebut dan hentikan sementara automasi apabila maklumat atau keadaan berubah.</p>
+<p>Perkhidmatan pemesejan, pembayaran, pemetaan dan perkhidmatan lain yang disambungkan mungkin mempunyai terma, fi dan had mereka sendiri. Semak status pembayaran berbanding rekod pembayaran yang boleh dipercayai. Kami tidak dapat mengawal penyedia luar, tetapi kami kekal bertanggungjawab atas kewajipan kami sendiri di bawah terma ini.</p>
+
+<h2 id="lk-6">6. Fi dan pembatalan</h2>
+<p>Kami memaparkan harga, kitaran pengebilan, had penggunaan, cukai dan sebarang caj tambahan sebelum anda membeli. Anda bersetuju untuk membayar caj yang anda luluskan.</p>
+<p>Jika anda memilih pelan berulang, pelan itu diperbaharui pada akhir setiap tempoh pengebilan melainkan anda membatalkannya sebelum pembaharuan. Batalkan melalui tetapan pengebilan atau hubungi kami menggunakan butiran di bawah. Pembatalan berkuat kuasa pada akhir tempoh yang telah dibayar. Fi yang telah ditanggung kekal perlu dibayar.</p>
+<p>Masa atau kredit yang tidak digunakan tidak boleh dibayar balik melainkan undang-undang menghendakinya, pelan anda menyatakan sebaliknya, atau terma ini memperuntukkan bayaran balik. Jika kami gagal dengan serius untuk menyediakan perkhidmatan yang dipersetujui dan tidak membetulkannya dalam tempoh yang munasabah selepas anda memaklumkan kami, anda boleh menamatkan perkhidmatan yang terjejas dan menerima bayaran balik bagi tempoh prabayarnya yang belum digunakan.</p>
+<p>Kami akan memberikan notis tentang kenaikan harga. Kenaikan itu akan terpakai mulai pembaharuan anda yang seterusnya selepas notis tersebut, supaya anda boleh membatalkan terlebih dahulu.</p>
+
+<h2 id="lk-7">7. Data dan privasi anda</h2>
+<p>Anda mengekalkan hak anda ke atas rekod dan kandungan yang anda muat naik. Anda membenarkan kami dan penyedia perkhidmatan kami memprosesnya sebagaimana yang diperlukan untuk menyediakan dan melindungi Lekjek, mematuhi arahan anda dan memenuhi kewajipan undang-undang.</p>
+<p>Anda bertanggungjawab untuk mengumpul dan menggunakan maklumat pelanggan secara sah di sisi undang-undang, termasuk memberikan sebarang notis yang diperlukan dan mendapatkan sebarang persetujuan yang diperlukan.</p>
+<p>Kami akan menggunakan langkah perlindungan yang munasabah untuk melindungi data peribadi dan mematuhi undang-undang perlindungan data yang terpakai. Kami akan memaklumkan anda secepat yang munasabah jika kami mendapati pelanggaran data yang menjejaskan data peribadi yang kami proses untuk perniagaan anda. Pemindahan ke luar negara akan mempunyai langkah perlindungan yang dikehendaki oleh undang-undang.</p>
+<p><a href="privacy.html#lekjek">Dasar Privasi</a> kami menerangkan cara kami mengendalikan data peribadi, termasuk penyedia perkhidmatan kami dan sebarang penggunaan AI.</p>
+
+<h2 id="lk-8">8. Pemilikan Lekjek</h2>
+<p>Kami dan pembekal kami memiliki perisian, penjenamaan dan bahan platform. Pelan anda memberi anda kebenaran untuk menggunakan Lekjek bagi perniagaan anda selagi akaun anda aktif dan anda mematuhi terma ini. Kebenaran itu tidak membolehkan anda menyalin atau menjual semula platform tanpa kebenaran kami. Ini tidak mengehadkan hak yang diberikan oleh undang-undang kepada anda.</p>
+
+<h2 id="lk-9">9. Ketersediaan dan perubahan perkhidmatan</h2>
+<p>Kami akan menggunakan penjagaan yang munasabah untuk mengendalikan Lekjek, tetapi tidak dapat menjanjikan perkhidmatan yang tidak terganggu atau bebas ralat. Penyelenggaraan, masalah internet dan penyedia luar boleh menyebabkan kelewatan. Simpan salinan rekod yang penting bagi perniagaan anda.</p>
+<p>Kami boleh mengemas kini ciri. Jika kami menghentikan ciri berbayar teras atau perkhidmatan ini, kami akan memberikan notis yang munasabah dan membenarkan anda membatalkan perkhidmatan yang terjejas dengan bayaran balik bagi tempoh prabayarnya yang belum digunakan.</p>
+
+<h2 id="lk-10">10. Menggantung atau menutup akaun</h2>
+<p>Kami boleh menyekat atau menutup akaun kerana fi yang tidak dibayar, pelanggaran serius terhadap terma ini, atau keperluan undang-undang atau keselamatan. Jika praktikal, kami akan menerangkan isu tersebut dan memberi anda peluang yang munasabah untuk membetulkannya. Risiko yang mendesak mungkin memerlukan tindakan segera.</p>
+<p>Anda boleh menutup akaun anda dengan melakukannya dalam aplikasi. Peraturan pembatalan di atas terpakai. Sebarang rekod yang disimpan atau salinan sandaran akan kekal dilindungi dan dipadamkan apabila tidak lagi diperlukan untuk tujuan yang sah di sisi undang-undang.</p>
+
+<h2 id="lk-11">11. Had tanggungjawab kami</h2>
+<p>Setakat yang dibenarkan oleh undang-undang, kami tidak bertanggungjawab atas kehilangan keuntungan, kehilangan peluang perniagaan atau kerugian tidak langsung yang timbul daripada penggunaan Lekjek.</p>
+<p>Jika kami bertanggungjawab di sisi undang-undang atas tuntutan yang timbul daripada Lekjek atau terma ini, jumlah keseluruhan yang perlu kami bayar adalah terhad kepada S$100.</p>
+<p>Had ini hanya terpakai setakat yang dibenarkan oleh undang-undang. Had ini tidak meliputi penipuan kami, salah laku yang disengajakan, kematian atau kecederaan diri yang disebabkan oleh kecuaian kami, atau sebarang tanggungjawab yang tidak dibenarkan oleh undang-undang untuk kami hadkan.</p>
+
+<h2 id="lk-12">12. Perubahan dan penyelesaian masalah</h2>
+<p>Kami akan memaklumkan anda tentang perubahan penting pada terma ini melalui e-mel atau dalam platform sebaik sahaja perubahan itu berkuat kuasa. Dengan terus menggunakan perkhidmatan, anda bersetuju dengan terma yang dikemas kini.</p>
+<p>Hubungi kami terlebih dahulu supaya kami boleh cuba menyelesaikan sebarang masalah. Undang-undang Singapura terpakai, dan pertikaian akan dikendalikan oleh mahkamah Singapura, tertakluk kepada sebarang hak atau prosedur yang dikehendaki oleh undang-undang.</p>
+<p>Perjanjian berasingan yang ditandatangani oleh kedua-dua pihak diberi keutamaan jika perjanjian itu secara nyata mengubah terma ini. Jika satu bahagian tidak boleh dikuatkuasakan, bahagian selebihnya masih terpakai.</p>
+
+<p class="doc-note">Hubungi: <a href="mailto:admin@deployku.com">admin@deployku.com</a></p>`,
   "meta": "<span>Tarikh Berkuat Kuasa: 28 June 2026</span><span>Versi 1.3</span><span>Deployku Pte Ltd · Singapura</span>",
   "intro": `Terma dan Syarat ini ("<strong>Terma</strong>") merupakan perjanjian antara anda dengan <strong>Deployku Pte Ltd</strong>, sebuah syarikat yang didaftarkan di Singapura ("<strong>Deployku</strong>", "<strong>kami</strong>", "<strong>kita</strong>" atau "<strong>milik kami</strong>"). Terma ini merangkumi penggunaan anda terhadap aplikasi Heqiyou dan segala yang terkandung di dalamnya — semua ciri, kandungan, serta laman web dan perkhidmatan berkaitan (secara bersama, "<strong>Service</strong>" (Perkhidmatan) atau "<strong>App</strong>" (Aplikasi)).`,
   "nav.product": "Heqiyou",

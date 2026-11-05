@@ -1,9 +1,75 @@
 window.DK_TRANSLATIONS = window.DK_TRANSLATIONS || {};
 window.DK_TRANSLATIONS.tl = {
   _lang: "tl",
-  _title: "Terms and Conditions — Heqiyou · Deployku",
-  "eyebrow": "Legal · Heqiyou",
+  _title: "Terms and Conditions — Heqiyou & Lekjek · Deployku",
+  "eyebrow": "Legal · Deployku",
   "h1": "Terms and Conditions",
+  "pick.intro": "Ang Deployku Pte Ltd ay gumagawa ng higit sa isang app, at bawat isa ay may sariling terms. Pumili ng app sa ibaba para basahin ang terms na para dito.",
+  "pick.heqiyou": "Voice-first na dating app",
+  "pick.lekjek": "Customer records, invoices at payment reminders para sa mga negosyo",
+  "pick.back": "Pumili ng ibang app",
+  "hq.title": "Heqiyou — Terms and Conditions",
+  "lk.langnote": "Ang translation na ito ay para sa convenience lang. Kung may hindi pagkakatugma, ang English version ang masusunod.",
+  "lk.title": `Lekjek — Terms of Service`,
+  "lk.meta": `<span>Effective date: 5 November 2026</span>
+          <span>Deployku Pte. Ltd. · Singapore</span>`,
+  "lk.body": `<h2 id="lk-1">1. Tungkol sa terms na ito</h2>
+<p>Ang Lekjek ay pinapatakbo ng Deployku Pte. Ltd., Singapore. Ipinapaliwanag ng terms na ito ang kasunduan sa pagitan namin at ng tao o negosyong gumagamit ng Lekjek.</p>
+<p>Sa pagtanggap mo sa terms na ito kapag nag-sign up ka, sumasang-ayon kang sundin ito. Kailangan mong 18 pataas at may kakayahang pumasok sa kasunduang ito. Kung mag-sign up ka para sa isang negosyo, kinukumpirma mong may awtoridad kang tumanggap para dito. Sa ganoong kaso, ang 'ikaw' ay tumutukoy sa negosyong iyon.</p>
+
+<h2 id="lk-2">2. Ano ang ginagawa ng Lekjek</h2>
+<p>Tinutulungan ng Lekjek ang mga negosyo na pamahalaan ang customer records, invoices, payment reminders at sales follow-up. Ang mga feature at limitasyong available sa iyo ay nakadepende sa plan mo.</p>
+<p>Ang terms na ito ay sumasaklaw sa access sa software. Hindi kami nito itinatalaga para makipag-negotiate ng settlements, magsampa ng legal action o mag-hold ng customer funds para sa iyo. Anumang hiwalay na serbisyo ng ganoong uri ay nangangailangan ng sarili nitong nakasulat na kasunduan. Nananatili kang responsable sa mga relasyon mo sa customers at sa mga instruction na ibinibigay mo sa pamamagitan ng Lekjek.</p>
+<p>Hindi namin ginagarantiya na magbabayad ang isang customer, na may mangyayaring sale, o na made-deliver ang bawat mensahe.</p>
+
+<h2 id="lk-3">3. Ang iyong account at team</h2>
+<p>Bigyan mo kami ng tamang account at business details, panatilihing secure ang login mo, at sabihin agad sa amin kung pinaghihinalaan mong may unauthorised access.</p>
+<p>Ang isang business workspace ay kontrolado ng negosyong iyon sa pamamagitan ng authorised owner at administrators nito. Sila ang namamahala sa invitations, access at permissions. Responsable ang negosyo mo sa authorised na paggamit ng Lekjek ng team members nito at sa pag-alis ng access kapag hindi na ito kailangan.</p>
+
+<h2 id="lk-4">4. Gamitin nang responsable ang Lekjek</h2>
+<p>Mag-upload lang ng impormasyong may karapatan kang gamitin. I-check ang invoice amounts, customer details at payment status bago magpadala ng reminders. Humingi lang ng bayad kung saan may lawful basis at awtoridad kang gawin ito. Itama agad ang mga error at i-pause ang mga disputed reminder habang sinusuri mo ang isyu.</p>
+<p>Huwag gamitin ang Lekjek para magbanta o mang-harass ng kahit sino, gumawa ng maling claims, ibunyag ang mga utang sa mga taong walang kinalaman, magpadala ng unlawful spam, magpanggap bilang ibang tao, o lumabag sa batas. Huwag pakialaman ang platform, i-access ang data ng ibang users, o i-bypass ang security o usage limits.</p>
+<p>Kailangan mong sundin ang mga patakarang naaangkop sa iyong messages, marketing at collection activity, kabilang ang anumang kinakailangang permissions o licences. Igalang ang contact restrictions at marketing opt-outs. Ang paggamit ng Lekjek ay hindi nagbibigay sa iyo ng pahintulot na i-contact ang isang tao.</p>
+
+<h2 id="lk-5">5. AI at connected services</h2>
+<p>Kung saan available ang AI, maaari itong magkamali. I-check ang extracted invoice details, suggested messages at iba pang outputs bago umasa sa mga ito. Ang AI output ay hindi legal, accounting o financial advice.</p>
+<p>Kung ie-enable mo ang automated messages o actions, pinapahintulutan mo ang Lekjek na isagawa ang mga ito sa loob ng settings at instructions na pipiliin mo. Suriin ang settings na iyon at i-pause ang automation kapag nagbago ang impormasyon o sitwasyon.</p>
+<p>Ang connected messaging, payment, mapping at iba pang services ay maaaring may sariling terms, fees at limitasyon. I-check ang payment status laban sa maaasahang payment records. Hindi namin kontrolado ang mga panlabas na provider, pero nananatili kaming responsable sa sarili naming obligasyon sa ilalim ng terms na ito.</p>
+
+<h2 id="lk-6">6. Fees at cancellation</h2>
+<p>Ipinapakita namin ang presyo, billing cycle, usage limits, taxes at anumang dagdag na singil bago ka bumili. Sumasang-ayon kang bayaran ang mga singil na ina-approve mo.</p>
+<p>Kung pipili ka ng recurring plan, nagre-renew ito sa katapusan ng bawat billing period maliban kung mag-cancel ka bago ang renewal. Mag-cancel sa billing settings o i-contact kami gamit ang mga detalye sa ibaba. Nagkakabisa ang cancellation sa katapusan ng bayad na period. Ang mga fee na nagkaroon na ay dapat pa ring bayaran.</p>
+<p>Ang hindi nagamit na oras o credits ay hindi refundable maliban kung hinihingi ito ng batas, iba ang sinasabi ng plan mo, o nagbibigay ng refund ang terms na ito. Kung seryoso kaming nabigong ibigay ang napagkasunduang serbisyo at hindi namin ito naayos sa loob ng makatuwirang panahon pagkatapos mo kaming sabihan, puwede mong tapusin ang apektadong serbisyo at makatanggap ng refund para sa hindi nagamit na prepaid period nito.</p>
+<p>Magbibigay kami ng abiso tungkol sa pagtaas ng presyo. Naaangkop ito simula sa susunod mong renewal pagkatapos ng abisong iyon, para makapag-cancel ka muna.</p>
+
+<h2 id="lk-7">7. Ang iyong data at privacy</h2>
+<p>Nananatili sa iyo ang mga karapatan mo sa records at content na ina-upload mo. Pinapayagan mo kami at ang aming service providers na iproseso ang mga ito ayon sa kinakailangan para ibigay at protektahan ang Lekjek, sundin ang instructions mo, at tuparin ang mga legal na tungkulin.</p>
+<p>Responsable ka sa legal na pagkolekta at paggamit ng customer information, kabilang ang pagbibigay ng anumang kinakailangang notices at pagkuha ng anumang kinakailangang consent.</p>
+<p>Gagamit kami ng makatuwirang safeguards para protektahan ang personal data at susundin namin ang naaangkop na data protection laws. Aabisuhan ka namin sa lalong madaling panahong makatuwirang posible kung may matuklasan kaming data breach na nakakaapekto sa personal data na pinoproseso namin para sa negosyo mo. Ang mga overseas transfer ay magkakaroon ng safeguards na hinihingi ng batas.</p>
+<p>Ipinapaliwanag ng aming <a href="privacy.html#lekjek">Privacy Policy</a> kung paano namin hinahawakan ang personal data, kabilang ang aming service providers at anumang paggamit ng AI.</p>
+
+<h2 id="lk-8">8. Pagmamay-ari ng Lekjek</h2>
+<p>Kami at ang aming suppliers ang may-ari ng software, branding at platform materials. Binibigyan ka ng plan mo ng pahintulot na gamitin ang Lekjek para sa negosyo mo habang active ang account mo at sinusunod mo ang terms na ito. Hindi ka nito pinapayagang kopyahin o i-resell ang platform nang walang pahintulot namin. Hindi nito nililimitahan ang mga karapatang ibinibigay sa iyo ng batas.</p>
+
+<h2 id="lk-9">9. Availability at mga pagbabago sa serbisyo</h2>
+<p>Gagamit kami ng makatuwirang pag-iingat sa pagpapatakbo ng Lekjek, pero hindi namin maipapangako ang serbisyong walang interruption o error. Ang maintenance, problema sa internet at mga panlabas na provider ay maaaring magdulot ng delay. Mag-ingat ng mga kopya ng records na mahalaga sa negosyo mo.</p>
+<p>Maaari naming i-update ang mga feature. Kung ihihinto namin ang isang core paid feature o ang serbisyo, magbibigay kami ng makatuwirang abiso at hahayaan ka naming i-cancel ang apektadong serbisyo na may refund para sa hindi nagamit na prepaid period nito.</p>
+
+<h2 id="lk-10">10. Pag-suspend o pagsara ng account</h2>
+<p>Maaari naming paghigpitan o isara ang isang account dahil sa hindi nabayarang fees, seryosong paglabag sa terms na ito, o legal o security na pangangailangan. Kung praktikal, ipapaliwanag namin ang isyu at bibigyan ka ng makatuwirang pagkakataon na ayusin ito. Ang mga urgent na panganib ay maaaring mangailangan ng agarang aksyon.</p>
+<p>Puwede mong isara ang account mo sa paggawa nito sa loob ng app. Naaangkop ang cancellation rules sa itaas. Anumang iniingatang records o backup copies ay mananatiling protektado at ide-delete kapag hindi na kailangan para sa lawful purposes.</p>
+
+<h2 id="lk-11">11. Mga limitasyon sa aming responsibilidad</h2>
+<p>Kung saan pinapayagan ng batas, hindi kami responsable sa nawalang kita, nawalang business opportunities o indirect losses na nagmumula sa paggamit ng Lekjek.</p>
+<p>Kung legal kaming responsable sa mga claim na nagmumula sa Lekjek o sa terms na ito, ang kabuuang halagang kailangan naming bayaran ay limitado sa S$100.</p>
+<p>Naaangkop lang ang mga limitasyong ito kung saan legal na pinapayagan. Hindi nito sinasaklaw ang aming fraud, sinasadyang maling gawain, kamatayan o personal injury na dulot ng aming negligence, o anumang responsibilidad na hindi pinapayagan ng batas na limitahan namin.</p>
+
+<h2 id="lk-12">12. Mga pagbabago at paglutas ng problema</h2>
+<p>Sasabihin namin sa iyo ang mga significant na pagbabago sa terms na ito sa pamamagitan ng email o sa platform agad kapag nagkabisa ang mga ito. Sa patuloy na paggamit ng serbisyo, sumasang-ayon ka sa updated na terms.</p>
+<p>I-contact mo muna kami para masubukan naming lutasin ang anumang problema. Singapore law ang naaangkop, at ang mga dispute ay hahawakan ng Singapore courts, napapailalim sa anumang karapatan o proseso na hinihingi ng batas.</p>
+<p>Ang isang hiwalay na kasunduang pinirmahan ng parehong partido ang may priority kung saan malinaw nitong binabago ang terms na ito. Kung hindi maipatupad ang isang bahagi, naaangkop pa rin ang natitira.</p>
+
+<p class="doc-note">Contact: <a href="mailto:admin@deployku.com">admin@deployku.com</a></p>`,
   "meta": "<span>Effective Date: 28 June 2026</span><span>Version 1.3</span><span>Deployku Pte Ltd · Singapore</span>",
   "intro": `Ang Terms and Conditions na ito (ang "<strong>Terms</strong>") ang kasunduan sa pagitan mo at ng <strong>Deployku Pte Ltd</strong>, isang kumpanyang naka-rehistro sa Singapore ("<strong>Deployku</strong>", "<strong>we</strong>", "<strong>us</strong>" o "<strong>our</strong>"). Sinasaklaw nito ang paggamit mo ng Heqiyou app at lahat ng nandito — lahat ng features, content, at mga kaugnay na website at services (sama-sama, ang "<strong>Service</strong>" o "<strong>App</strong>").`,
   "nav.product": "Heqiyou",

@@ -3,17 +3,17 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Terms and Conditions — Heqiyou · Deployku</title>
+<title>Terms and Conditions — Heqiyou &amp; Lekjek · Deployku</title>
 <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-<meta name="description" content="Terms and Conditions for the Heqiyou voice-first dating app by Deployku Pte Ltd — eligibility, credits and billing, call recording, conduct rules, and your agreement with us." />
+<meta name="description" content="Terms for the apps made by Deployku Pte Ltd — the Heqiyou voice-first dating app and the Lekjek business billing and follow-up platform." />
 <link rel="canonical" href="https://deployku.com/termsandconditions.html" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta name="theme-color" content="#0E233E" />
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Deployku" />
 <meta property="og:url" content="https://deployku.com/termsandconditions.html" />
-<meta property="og:title" content="Terms and Conditions — Heqiyou · Deployku" />
-<meta property="og:description" content="Terms and Conditions for the Heqiyou voice-first dating app by Deployku Pte Ltd — eligibility, credits and billing, conduct, and your agreement." />
+<meta property="og:title" content="Terms and Conditions — Heqiyou &amp; Lekjek · Deployku" />
+<meta property="og:description" content="Terms for the apps made by Deployku Pte Ltd — Heqiyou and Lekjek." />
 <meta property="og:image" content="https://deployku.com/og-image.jpg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://deployku.com/og-image.jpg" />
@@ -155,6 +155,49 @@ ul,ol{margin:0;padding:0;}
 .notice-card ul{margin-bottom:0;}
 .doc-note{font-size:14.5px;color:var(--muted);font-style:italic;margin-top:40px;padding-top:22px;border-top:1px solid var(--line);}
 
+/* ---------- product picker + expandable panels ---------- */
+.tc-doc{padding-top:4px;}
+.tc-picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;max-width:860px;}
+.tc-card{display:flex;align-items:center;gap:16px;width:100%;text-align:left;padding:18px 20px;
+  background:#fff;border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm);color:var(--ink);
+  transition:transform .35s var(--ease),box-shadow .35s var(--ease),border-color .25s ease,background .25s ease;}
+.tc-card:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:#cdd8ea;}
+.tc-icon{flex:none;width:56px;height:56px;border-radius:16px;display:grid;place-items:center;overflow:hidden;}
+.tc-icon svg{width:100%;height:100%;}
+.tc-icon.hq{background:linear-gradient(135deg,#FFF5EC,#FFE3DA);}
+.tc-icon.hq svg{width:46px;height:46px;}
+.tc-text{flex:1;min-width:0;}
+.tc-name{display:block;font-family:'Sora',sans-serif;font-weight:700;font-size:18px;letter-spacing:-0.01em;line-height:1.2;}
+.tc-desc{display:block;font-size:14px;color:var(--muted);line-height:1.4;margin-top:4px;}
+.tc-chev{flex:none;width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--bg-soft);color:var(--navy);
+  transition:transform .35s var(--ease),background .25s ease,color .25s ease;}
+.tc-card[aria-expanded="true"]{border-color:var(--navy);box-shadow:0 0 0 1px var(--navy),var(--shadow);}
+.tc-card[aria-expanded="true"] .tc-chev{transform:rotate(180deg);background:var(--navy);color:#fff;}
+.tc-card[data-product="lekjek"][aria-expanded="true"]{border-color:#5B3FD9;box-shadow:0 0 0 1px #5B3FD9,var(--shadow);}
+.tc-card[data-product="lekjek"][aria-expanded="true"] .tc-chev{background:#5B3FD9;}
+.tc-card[data-product="heqiyou"][aria-expanded="true"]{border-color:#E0877B;box-shadow:0 0 0 1px #E0877B,var(--shadow);}
+.tc-card[data-product="heqiyou"][aria-expanded="true"] .tc-chev{background:#C67B7B;}
+.tc-hint{margin-top:14px;font-size:14px;color:var(--faint);}
+.tc-panel{margin-top:40px;scroll-margin-top:calc(var(--head-h) + 16px);}
+.tc-panel:not([hidden]){animation:tc-in .45s var(--ease);}
+@keyframes tc-in{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:none;}}
+.tc-panel-head{max-width:860px;padding-bottom:28px;margin-bottom:34px;border-bottom:1px solid var(--line);}
+.tc-panel-head h2{font-family:'Sora',sans-serif;font-weight:800;font-size:clamp(26px,3.4vw,36px);letter-spacing:-0.02em;line-height:1.1;}
+.tc-panel-head .doc-meta{margin-top:16px;display:flex;flex-wrap:wrap;gap:10px;}
+.tc-panel-head .doc-meta span{font-size:13px;font-weight:600;font-family:'Sora',sans-serif;color:var(--muted);
+  background:var(--bg-soft);border:1px solid var(--line);padding:7px 14px;border-radius:var(--pill);}
+.tc-panel-head .doc-intro{margin-top:18px;font-size:16.5px;color:var(--muted);max-width:76ch;}
+.tc-langnote{margin-top:16px;font-size:14px;color:var(--muted);background:var(--bg-soft);border:1px solid var(--line);border-radius:var(--radius-sm);padding:12px 16px;}
+.tc-langnote:empty{display:none;}
+.tc-back{margin-top:40px;display:inline-flex;align-items:center;gap:8px;font-family:'Sora',sans-serif;font-weight:600;font-size:14.5px;color:var(--blue);}
+.tc-back:hover{color:var(--navy);}
+.doc-body mark.ph{background:#FFF4C2;color:var(--ink);border-radius:4px;padding:0 4px;}
+@media (max-width:640px){
+  .tc-picker{grid-template-columns:1fr;}
+  .tc-card{padding:16px;}
+  .tc-icon{width:50px;height:50px;}
+}
+
 /* ---------- footer (shared) ---------- */
 .foot{background:var(--navy);color:#fff;padding-block:54px 40px;margin-top:40px;}
 .foot-top{display:flex;justify-content:space-between;gap:32px;flex-wrap:wrap;align-items:flex-start;}
@@ -181,6 +224,30 @@ ul,ol{margin:0;padding:0;}
       <path d="M44 104 Q60 86 76 104" fill="none" stroke="#FF0072" stroke-width="13" stroke-linecap="round"/>
       <path d="M60 140 C53 126 50 122 50 116 a10 10 0 1 1 20 0 c0 6 -3 10 -10 24 Z" fill="#FFDB03"/>
     </symbol>
+    <radialGradient id="hqCore" cx="50%" cy="40%" r="62%">
+      <stop offset="0%" stop-color="#FFEAC4"/><stop offset="42%" stop-color="#FFB347"/><stop offset="100%" stop-color="#FF9A8B"/>
+    </radialGradient>
+    <linearGradient id="hqPetal" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FF9A8B"/><stop offset="100%" stop-color="#C67B7B"/>
+    </linearGradient>
+    <symbol id="hq-glyph" viewBox="0 0 200 200">
+      <circle cx="100" cy="100" r="76" fill="none" stroke="url(#hqPetal)" stroke-width="3" stroke-dasharray="3 10" stroke-linecap="round" opacity="0.7"/>
+      <g fill="url(#hqPetal)" opacity="0.92">
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(0 100 100)"/>
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(51.4 100 100)"/>
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(102.8 100 100)"/>
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(154.3 100 100)"/>
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(205.7 100 100)"/>
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(257.1 100 100)"/>
+        <ellipse cx="100" cy="44" rx="10" ry="22" transform="rotate(308.6 100 100)"/>
+      </g>
+      <circle cx="100" cy="100" r="29" fill="url(#hqCore)"/>
+      <circle cx="92" cy="92" r="7" fill="#fff" fill-opacity="0.4"/>
+    </symbol>
+    <symbol id="lk-mark" viewBox="0 0 32 32">
+      <rect width="32" height="32" rx="8" fill="#5B3FD9"/>
+      <path fill="#FFFFFF" d="M11 6.5A1.5 1.5 0 0 1 12.5 5h2.5a1.5 1.5 0 0 1 1.5 1.5v13.6c0 1.6.8 2.4 2.3 2.4h.7a1.5 1.5 0 0 1 1.5 1.5v1.5a1.5 1.5 0 0 1-1.5 1.5h-1.3C13.4 27 11 24.6 11 20.2z"/>
+    </symbol>
   </defs>
 </svg>
 
@@ -205,218 +272,309 @@ ul,ol{margin:0;padding:0;}
 <main>
 <section class="doc-hero">
   <div class="wrap">
-    <p class="eyebrow" data-t="eyebrow">Legal · Heqiyou</p>
+    <p class="eyebrow" data-t="eyebrow">Legal · Deployku</p>
     <h1 data-t="h1">Terms and Conditions</h1>
-    <div class="doc-meta" data-t="meta">
-      <span>Effective Date: 28 June 2026</span>
-      <span>Version 1.3</span>
-      <span>Deployku Pte Ltd · Singapore</span>
-    </div>
-    <p class="doc-intro" data-t="intro">These Terms and Conditions (the "<strong>Terms</strong>") are the agreement between you and <strong>Deployku Pte Ltd</strong>, a company registered in Singapore ("<strong>Deployku</strong>", "<strong>we</strong>", "<strong>us</strong>" or "<strong>our</strong>"). They cover your use of the Heqiyou app and everything in it — all features, content, and related websites and services (together, the "<strong>Service</strong>" or "<strong>App</strong>").</p>
+    <p class="doc-intro" data-t="pick.intro">Deployku Pte Ltd makes more than one app, and each has its own terms. Choose an app below to read the terms that apply to it.</p>
   </div>
 </section>
 
-<section class="doc">
+<section class="doc tc-doc">
   <div class="wrap">
-    <div class="doc-body" data-t="body">
+    <div class="tc-picker" id="apps">
+      <button type="button" class="tc-card" id="tab-heqiyou" data-product="heqiyou" aria-expanded="false" aria-controls="heqiyou">
+        <span class="tc-icon hq" aria-hidden="true"><svg viewBox="0 0 200 200"><use href="#hq-glyph"/></svg></span>
+        <span class="tc-text"><span class="tc-name">Heqiyou</span><span class="tc-desc" data-t="pick.heqiyou">Voice-first dating app</span></span>
+        <span class="tc-chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </button>
+      <button type="button" class="tc-card" id="tab-lekjek" data-product="lekjek" aria-expanded="false" aria-controls="lekjek">
+        <span class="tc-icon" aria-hidden="true"><svg viewBox="0 0 32 32"><use href="#lk-mark"/></svg></span>
+        <span class="tc-text"><span class="tc-name">Lekjek</span><span class="tc-desc" data-t="pick.lekjek">Customer records, invoices and payment reminders for businesses</span></span>
+        <span class="tc-chev" aria-hidden="true"><svg viewBox="0 0 24 24" width="16" height="16"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+      </button>
+    </div>
 
-      <p><strong>Please read these Terms. By creating an account or using the Service, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you don't agree, don't use the Service.</strong></p>
-
-      <div class="notice-card">
-        <p><strong>The key things to know up front:</strong></p>
-        <ul>
-          <li><strong>You must be 18 or older to use the Service.</strong></li>
-          <li><strong>Voice calls are recorded and transcribed for safety</strong> (see Section 8 and the <a href="privacy.html">Privacy Policy</a>). Making or joining a call means you consent to this. If you don't consent, don't use the calling features.</li>
-          <li><strong>"Glimpse" lets you post a short video of yourself.</strong> In the anonymous discovery view your name and profile stay hidden, but the <strong>video still shows your face and appearance</strong>. By posting one, you agree it can be screened and shown to the audience you pick.</li>
-          <li><strong>Credits are not money. They are non-refundable, and you can lose them if you break these Terms</strong> (see Section 7).</li>
-          <li><strong>"Premium" is a subscription that renews and charges you automatically until you cancel it</strong> (see Section 6.9).</li>
-          <li><strong>These Terms limit our legal responsibility to you and include an indemnity in our favour</strong> (see Sections 15–17).</li>
-        </ul>
+    <div class="tc-panel" id="heqiyou" role="region" aria-labelledby="tab-heqiyou" hidden>
+      <div class="tc-panel-head">
+        <h2 data-t="hq.title">Heqiyou — Terms and Conditions</h2>
+        <div class="doc-meta" data-t="meta">
+          <span>Effective Date: 28 June 2026</span>
+          <span>Version 1.3</span>
+          <span>Deployku Pte Ltd · Singapore</span>
+        </div>
+        <p class="doc-intro" data-t="intro">These Terms and Conditions (the "<strong>Terms</strong>") are the agreement between you and <strong>Deployku Pte Ltd</strong>, a company registered in Singapore ("<strong>Deployku</strong>", "<strong>we</strong>", "<strong>us</strong>" or "<strong>our</strong>"). They cover your use of the Heqiyou app and everything in it — all features, content, and related websites and services (together, the "<strong>Service</strong>" or "<strong>App</strong>").</p>
       </div>
+      <div class="doc-body" data-t="body">
 
-      <h2 id="s1">1. About the Service</h2>
-      <p>1.1 Heqiyou is a voice-first dating and social app. Instead of swiping through photos, you meet people on short, anonymous voice calls ("<strong>Mini-Dates</strong>"). Names and photos stay hidden during the call. Only if <strong>both</strong> of you choose to continue afterwards do your profiles get revealed to each other and a private chat opens up.</p>
-      <p>1.2 The Service may include: sign-up by phone number or by a third party such as Apple or Google; anonymous voice calls; queue-based matching; compatibility hints; chat after a match; direct (non-anonymous) calls between matched users; an AI date-planning helper (which may suggest a starting area from your device location and let you open apps like ride-hailing with the destination pre-filled); an AI voice companion; short videos with optional captions and a day-recap export ("<strong>Glimpse</strong>"); friend connections and an exclusive-commitment feature ("<strong>Pledge</strong>"); a shared "couple diary" of places ("<strong>Places</strong>"); profile and photo creation; buying Credits; a <strong>Premium</strong> subscription; and ads you can watch for rewards.</p>
-      <p>1.3 The Service is only available in regions we choose ("<strong>Supported Regions</strong>"). Matching and Glimpse discovery are usually limited to people in the same Supported Region. We can add, remove or change Supported Regions at any time, without notice.</p>
-      <p>1.4 We keep improving the Service. We may add, change, pause or remove features (including ones still in development, like stronger identity checks or new payment options), or set limits on features, at any time and at our discretion. If a change seriously and negatively affects a paid feature, we'll try to give you advance notice.</p>
-      <p>1.5 <strong>Glimpse.</strong> Glimpse lets you record a short video (a few seconds) of yourself, optionally add a short caption, and post it to a recurring time "window" for an audience you choose: <strong>Hopeful</strong> (anonymous discovery), <strong>Matched</strong>, <strong>Friends</strong>, or <strong>Pledged</strong>. Videos and captions sent to the Hopeful or Matched audiences are checked by automated moderation before they appear, and are shown with an abstract glyph and a compatibility score — not your name or profile (though the video does show your appearance). Videos sent to Friends or a Pledged partner are shown with your name and photo to those people. Glimpse can also stitch a day's clips (yours and your friends'/partner's) into a short recap video you can save or share. Posting to Hopeful or Matched, and exporting a recap, may cost Credits or be included with Premium; Friends/Pledged posts are free (see Section 6).</p>
-      <p>1.6 <strong>Connections, Friends and Pledge.</strong> You can form ongoing connections with other users: a <strong>Match</strong> (after a mutual Mini-Date), a <strong>Friend</strong> (added with a personal friend code), and a <strong>Pledge</strong> (a mutual, exclusive commitment between matched users, formed with a match code). While you're pledged, some blind-date and matching features are turned off, and some features only work with your pledged partner. You can end any connection at any time.</p>
-      <p>1.7 <strong>Places (couple diary).</strong> Connected users (matched or pledged) can keep a shared diary of places they've been together — including place names and locations, dates, photos, captions and notes added by either person. Both members of the connection can see the diary. Posting a place may cost Credits or be included with Premium (see Section 6).</p>
-      <p>1.8 <strong>AI voice companion.</strong> The Service may let you have a live voice chat with an automated AI companion (not another person). It's time-limited and may cost Credits.</p>
-      <p>1.9 <strong>Ambassador mode.</strong> We may invite some users to an optional "ambassador" mode that helps seed the matching queue. If you turn it on, some of your calls may be flagged so they're excluded from certain metrics, and a call you start in this mode may not cost you Credits. We may grant, change or remove ambassador eligibility at our discretion.</p>
+        <p><strong>Please read these Terms. By creating an account or using the Service, you agree to these Terms and to our <a href="privacy.html">Privacy Policy</a>. If you don't agree, don't use the Service.</strong></p>
 
-      <h2 id="s2">2. Definitions</h2>
-      <p>In these Terms:</p>
-      <ul>
-        <li>"<strong>Account</strong>" means the account you register with the Service.</li>
-        <li>"<strong>Content</strong>" means any data, text, audio, voice, video, images, photos, profiles, messages, transcripts, ratings, reports, place entries or other material on the Service.</li>
-        <li>"<strong>User Content</strong>" means Content you provide — your profile, photos, <strong>Glimpse videos</strong>, <strong>couple-diary entries (places, photos, captions and notes)</strong>, your voice during calls, and chat messages.</li>
-        <li>"<strong>Credits</strong>" means the in-app units used to pay for certain features (see Section 6).</li>
-        <li>"<strong>Premium</strong>" means an auto-renewing paid subscription that unlocks certain features and/or removes certain Credit charges (see Section 6.9).</li>
-        <li>"<strong>Mini-Date</strong>" means an anonymous, time-limited voice call between two users set up by our matching system.</li>
-        <li>"<strong>Direct Call</strong>" means a non-anonymous voice call between users who have already matched.</li>
-        <li>"<strong>Match</strong>" means the state where both users chose to continue after a Mini-Date, so their profiles are revealed to each other.</li>
-        <li>"<strong>Glimpse</strong>" or "<strong>Glimpse Clip</strong>" means a short video of yourself that you post.</li>
-        <li>"<strong>Connection</strong>" means an ongoing link between two users — a Match, a Friend, or a Pledge.</li>
-        <li>"<strong>Friend</strong>" means a non-romantic connection added by friend code.</li>
-        <li>"<strong>Pledge</strong>" means a mutual, exclusive commitment between two matched users.</li>
-        <li>"<strong>Places</strong>" or the "<strong>Couple Diary</strong>" means the shared diary where a Connection records places, photos, captions and notes.</li>
-        <li>"<strong>Marks</strong>" means the "Heqiyou" name, logo, word marks, and all related branding and designs.</li>
-        <li>"<strong>Virtual Items</strong>" means Credits, Premium benefits and any other virtual goods or features in the Service.</li>
-      </ul>
+        <div class="notice-card">
+          <p><strong>The key things to know up front:</strong></p>
+          <ul>
+            <li><strong>You must be 18 or older to use the Service.</strong></li>
+            <li><strong>Voice calls are recorded and transcribed for safety</strong> (see Section 8 and the <a href="privacy.html">Privacy Policy</a>). Making or joining a call means you consent to this. If you don't consent, don't use the calling features.</li>
+            <li><strong>"Glimpse" lets you post a short video of yourself.</strong> In the anonymous discovery view your name and profile stay hidden, but the <strong>video still shows your face and appearance</strong>. By posting one, you agree it can be screened and shown to the audience you pick.</li>
+            <li><strong>Credits are not money. They are non-refundable, and you can lose them if you break these Terms</strong> (see Section 7).</li>
+            <li><strong>"Premium" is a subscription that renews and charges you automatically until you cancel it</strong> (see Section 6.9).</li>
+            <li><strong>These Terms limit our legal responsibility to you and include an indemnity in our favour</strong> (see Sections 15–17).</li>
+          </ul>
+        </div>
 
-      <h2 id="s3">3. Who Can Use the Service</h2>
-      <p>3.1 <strong>You must be 18+.</strong> You must be at least 18 years old to create an Account or use the Service, and you confirm that you are. We can close any Account we reasonably believe belongs to someone under 18, with no refund, and we can ask for proof of age at any time.</p>
-      <p>3.2 <strong>You're allowed to agree, and you have a clean record.</strong> You confirm that: (a) you can legally enter into this contract; (b) nothing in the law where you live stops you using the Service; (c) you have never been convicted of, and aren't facing charges for, a serious crime, a sexual offence, or any crime involving violence or the threat of violence; and (d) you are not required to register as a sex offender anywhere.</p>
-      <p>3.3 <strong>Where you can use it.</strong> The Service is only for use in Supported Regions. Don't use it — or try to get around regional limits (for example with a VPN, fake location, or false sign-up details) — from outside a Supported Region.</p>
-      <p>3.4 <strong>One account each.</strong> You may have only one Account, for your own personal, non-commercial use. Don't create or run an Account for someone else, an organisation, or a bot.</p>
-      <p>3.5 <strong>No return after a ban.</strong> If we've suspended, banned or removed you before, don't create a new Account unless we give you written permission.</p>
+        <h2 id="s1">1. About the Service</h2>
+        <p>1.1 Heqiyou is a voice-first dating and social app. Instead of swiping through photos, you meet people on short, anonymous voice calls ("<strong>Mini-Dates</strong>"). Names and photos stay hidden during the call. Only if <strong>both</strong> of you choose to continue afterwards do your profiles get revealed to each other and a private chat opens up.</p>
+        <p>1.2 The Service may include: sign-up by phone number or by a third party such as Apple or Google; anonymous voice calls; queue-based matching; compatibility hints; chat after a match; direct (non-anonymous) calls between matched users; an AI date-planning helper (which may suggest a starting area from your device location and let you open apps like ride-hailing with the destination pre-filled); an AI voice companion; short videos with optional captions and a day-recap export ("<strong>Glimpse</strong>"); friend connections and an exclusive-commitment feature ("<strong>Pledge</strong>"); a shared "couple diary" of places ("<strong>Places</strong>"); profile and photo creation; buying Credits; a <strong>Premium</strong> subscription; and ads you can watch for rewards.</p>
+        <p>1.3 The Service is only available in regions we choose ("<strong>Supported Regions</strong>"). Matching and Glimpse discovery are usually limited to people in the same Supported Region. We can add, remove or change Supported Regions at any time, without notice.</p>
+        <p>1.4 We keep improving the Service. We may add, change, pause or remove features (including ones still in development, like stronger identity checks or new payment options), or set limits on features, at any time and at our discretion. If a change seriously and negatively affects a paid feature, we'll try to give you advance notice.</p>
+        <p>1.5 <strong>Glimpse.</strong> Glimpse lets you record a short video (a few seconds) of yourself, optionally add a short caption, and post it to a recurring time "window" for an audience you choose: <strong>Hopeful</strong> (anonymous discovery), <strong>Matched</strong>, <strong>Friends</strong>, or <strong>Pledged</strong>. Videos and captions sent to the Hopeful or Matched audiences are checked by automated moderation before they appear, and are shown with an abstract glyph and a compatibility score — not your name or profile (though the video does show your appearance). Videos sent to Friends or a Pledged partner are shown with your name and photo to those people. Glimpse can also stitch a day's clips (yours and your friends'/partner's) into a short recap video you can save or share. Posting to Hopeful or Matched, and exporting a recap, may cost Credits or be included with Premium; Friends/Pledged posts are free (see Section 6).</p>
+        <p>1.6 <strong>Connections, Friends and Pledge.</strong> You can form ongoing connections with other users: a <strong>Match</strong> (after a mutual Mini-Date), a <strong>Friend</strong> (added with a personal friend code), and a <strong>Pledge</strong> (a mutual, exclusive commitment between matched users, formed with a match code). While you're pledged, some blind-date and matching features are turned off, and some features only work with your pledged partner. You can end any connection at any time.</p>
+        <p>1.7 <strong>Places (couple diary).</strong> Connected users (matched or pledged) can keep a shared diary of places they've been together — including place names and locations, dates, photos, captions and notes added by either person. Both members of the connection can see the diary. Posting a place may cost Credits or be included with Premium (see Section 6).</p>
+        <p>1.8 <strong>AI voice companion.</strong> The Service may let you have a live voice chat with an automated AI companion (not another person). It's time-limited and may cost Credits.</p>
+        <p>1.9 <strong>Ambassador mode.</strong> We may invite some users to an optional "ambassador" mode that helps seed the matching queue. If you turn it on, some of your calls may be flagged so they're excluded from certain metrics, and a call you start in this mode may not cost you Credits. We may grant, change or remove ambassador eligibility at our discretion.</p>
 
-      <h2 id="s4">4. Your Account</h2>
-      <p>4.1 <strong>Signing up.</strong> To use the Service you register with a valid mobile number that can receive one-time codes, or by signing in with a supported provider such as Apple or Google. A verified phone number stays your main identity for some features. You'll go through onboarding — giving your name or display name, date of birth, gender, city, and some preferences. You can also add an email address and a profile photo.</p>
-      <p>4.2 <strong>Keep it accurate.</strong> Give us true, current and complete information, including your real date of birth, and keep it updated. Lying about your age, identity or other sign-up details is a serious breach of these Terms.</p>
-      <p>4.3 <strong>Keep it secure.</strong> You're responsible for everything that happens on your Account and for protecting your device and phone number. Tell us right away at <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong> if you think someone has accessed your Account without permission.</p>
-      <p>4.4 <strong>Verification.</strong> We may ask you to verify your identity, age, phone, photo or "liveness" (including through outside verification providers) before or while you use the Service, or to unlock certain features (like receiving calls). If you don't complete a required check, your access may be limited or suspended.</p>
-      <p>4.5 <strong>Photo and video checks.</strong> Photos and Glimpse videos you upload may be checked by automated systems and/or people before they appear. We can reject, remove or refuse to show any photo or video at our discretion — for example if it shows nudity, weapons, drugs, or offensive material, or doesn't show you.</p>
-      <p>4.6 <strong>Device permissions.</strong> Some features need device permissions — for example microphone (calls and the AI companion), camera (Glimpse and photos), photo library (uploads), and optionally location (to suggest a date-planning area, help you tag nearby places, or centre a map). We only read your location when you use such a feature; we don't track it in the background. You can manage permissions in your device settings; turning one off may disable the matching feature.</p>
+        <h2 id="s2">2. Definitions</h2>
+        <p>In these Terms:</p>
+        <ul>
+          <li>"<strong>Account</strong>" means the account you register with the Service.</li>
+          <li>"<strong>Content</strong>" means any data, text, audio, voice, video, images, photos, profiles, messages, transcripts, ratings, reports, place entries or other material on the Service.</li>
+          <li>"<strong>User Content</strong>" means Content you provide — your profile, photos, <strong>Glimpse videos</strong>, <strong>couple-diary entries (places, photos, captions and notes)</strong>, your voice during calls, and chat messages.</li>
+          <li>"<strong>Credits</strong>" means the in-app units used to pay for certain features (see Section 6).</li>
+          <li>"<strong>Premium</strong>" means an auto-renewing paid subscription that unlocks certain features and/or removes certain Credit charges (see Section 6.9).</li>
+          <li>"<strong>Mini-Date</strong>" means an anonymous, time-limited voice call between two users set up by our matching system.</li>
+          <li>"<strong>Direct Call</strong>" means a non-anonymous voice call between users who have already matched.</li>
+          <li>"<strong>Match</strong>" means the state where both users chose to continue after a Mini-Date, so their profiles are revealed to each other.</li>
+          <li>"<strong>Glimpse</strong>" or "<strong>Glimpse Clip</strong>" means a short video of yourself that you post.</li>
+          <li>"<strong>Connection</strong>" means an ongoing link between two users — a Match, a Friend, or a Pledge.</li>
+          <li>"<strong>Friend</strong>" means a non-romantic connection added by friend code.</li>
+          <li>"<strong>Pledge</strong>" means a mutual, exclusive commitment between two matched users.</li>
+          <li>"<strong>Places</strong>" or the "<strong>Couple Diary</strong>" means the shared diary where a Connection records places, photos, captions and notes.</li>
+          <li>"<strong>Marks</strong>" means the "Heqiyou" name, logo, word marks, and all related branding and designs.</li>
+          <li>"<strong>Virtual Items</strong>" means Credits, Premium benefits and any other virtual goods or features in the Service.</li>
+        </ul>
 
-      <h2 id="s5">5. Matching, Quality and Fairness</h2>
-      <p>5.1 <strong>How matching works.</strong> Our systems match users based on things that may include your preferences, how complete your profile is, compatibility hints from your onboarding answers, your region, how long you've waited, and internal quality, reputation and compatibility scores. Matching is algorithmic and at our discretion, and <strong>we don't guarantee any particular match, number of matches, call frequency, or outcome — romantic or otherwise.</strong></p>
-      <p>5.2 <strong>Internal scores.</strong> To keep things safe and balanced, we keep private, internal metrics for Accounts — such as reputation scores (affected by post-call ratings and reports) and match-quality scores (affected by call outcomes). We use these for matching, eligibility, rate-limiting and safety. They aren't a judgment of you as a person, aren't shown to other users, and aren't a promise from us.</p>
-      <p>5.3 <strong>Eligibility and limits.</strong> Some features (like joining the receiving queue) may require things such as a verified phone number, a complete profile, an approved photo or system avatar, good standing, completed verification, and staying within usage limits (for example monthly caps on received calls, or daily caps on certain actions). We can change these requirements and limits at any time.</p>
-      <p>5.4 <strong>Stay anonymous before reveal.</strong> During a Mini-Date, profiles show as abstract avatars. Don't try to defeat the anonymity — for example by giving out or asking for real names, photos, social handles, phone numbers, or other contact or identifying details during a Mini-Date.</p>
-      <p>5.5 <strong>Mutual reveal.</strong> Profiles and chat only unlock if both people choose to continue after a Mini-Date. A decision not to continue is final for that call, and we don't reveal it in a way meant to embarrass anyone.</p>
-      <p>5.6 <strong>Glimpse discovery.</strong> When you post a Glimpse, you understand that: (a) videos and captions sent to <strong>Hopeful</strong> or <strong>Matched</strong> are checked by automated moderation first and may be rejected; (b) in <strong>Hopeful</strong>, your video is shown to a compatibility-ranked group of eligible users in your region for that window — your name and profile are hidden, but <strong>the video shows your appearance</strong>; (c) in <strong>Matched</strong>, <strong>Friends</strong> and <strong>Pledged</strong>, your video is shown with your name and photo to people you've connected with; (d) a day-recap you create may combine your clips with ones your friends/partner shared; and (e) you must not post a Glimpse showing anyone other than yourself without their consent, or one that breaks Section 9.</p>
+        <h2 id="s3">3. Who Can Use the Service</h2>
+        <p>3.1 <strong>You must be 18+.</strong> You must be at least 18 years old to create an Account or use the Service, and you confirm that you are. We can close any Account we reasonably believe belongs to someone under 18, with no refund, and we can ask for proof of age at any time.</p>
+        <p>3.2 <strong>You're allowed to agree, and you have a clean record.</strong> You confirm that: (a) you can legally enter into this contract; (b) nothing in the law where you live stops you using the Service; (c) you have never been convicted of, and aren't facing charges for, a serious crime, a sexual offence, or any crime involving violence or the threat of violence; and (d) you are not required to register as a sex offender anywhere.</p>
+        <p>3.3 <strong>Where you can use it.</strong> The Service is only for use in Supported Regions. Don't use it — or try to get around regional limits (for example with a VPN, fake location, or false sign-up details) — from outside a Supported Region.</p>
+        <p>3.4 <strong>One account each.</strong> You may have only one Account, for your own personal, non-commercial use. Don't create or run an Account for someone else, an organisation, or a bot.</p>
+        <p>3.5 <strong>No return after a ban.</strong> If we've suspended, banned or removed you before, don't create a new Account unless we give you written permission.</p>
 
-      <h2 id="s6">6. Credits, Purchases, Subscriptions and Billing</h2>
-      <p>6.1 <strong>What Credits are.</strong> Credits are a limited, personal, non-transferable licence to use certain features — and we can revoke them. <strong>Credits are not money. They have no cash value, earn no interest, and can't be redeemed, exchanged or cashed out for anything of value outside the Service.</strong> You can't sell, trade, gift, transfer or pool Credits.</p>
-      <p>6.2 <strong>How you get Credits.</strong> You can get Credits by: (a) buying Credit packs through in-app purchase at the price shown when you buy; (b) promotional or free grants (like a sign-up bonus), at our discretion; (c) watching rewarded ads where offered, within limits we set; and (d) any other method we add. We can change Credit prices, pack sizes, earning rules, feature costs and limits at any time; changes only apply going forward and don't affect Credits already in your balance.</p>
-      <p>6.3 <strong>How Credits are spent.</strong> Features that use Credits — such as starting Mini-Dates, starting Direct Calls, generating AI date plans, using the AI voice companion, posting a Glimpse to a paid audience (Hopeful or Matched), exporting a Glimpse recap, and posting a place to the couple diary — cost the amount shown in the App when you use them. Some of these may be free with an active Premium subscription, and some Glimpse audiences (Friends and Pledged) are always free. For timed calls, Credits may be held when the call starts and settled based on how long you were actually connected. If a call ends earlier than booked you may be charged proportionally, and if a call fails to connect because of a fault on our side, we'll generally release or refund the held Credits.</p>
-      <p>6.4 <strong>Payments and app store rules.</strong> In-app purchases and subscriptions are handled by the app store you downloaded from and/or our payment providers, and are also subject to their terms. We don't store your full card details. We may add other payment methods later, with their own terms shown at purchase.</p>
-      <p>6.5 <strong>No refunds.</strong> <strong>Except where the law or the app store's own rules require it, all purchases of Credits and subscriptions are final and non-refundable</strong> — including unused Credits, unused parts of a subscription, and cases where your account is closed, suspended or terminated, or the Service is discontinued. If we choose to give you a refund or credit once, that doesn't mean we'll do it again.</p>
-      <p>6.6 <strong>Expiry.</strong> Credits don't currently expire, but we may add reasonable expiry or inactivity rules for free/promotional Credits, and — with reasonable advance notice — for purchased Credits, where the law allows.</p>
-      <p>6.7 <strong>No cheating the system.</strong> Don't: (a) get Credits, Premium benefits or other Virtual Items through fraud, bugs, bots, or abuse of promo/ad/referral mechanics; (b) start bad-faith chargebacks or payment reversals; or (c) buy or sell Credits, subscriptions or Accounts outside the Service. Anything obtained by breaking this rule is void.</p>
-      <p>6.8 <strong>Our records.</strong> Our records (including our transaction ledger and entitlement records) are, unless there's an obvious error, the final word on your Credit balance, subscription status and transactions.</p>
-      <p>6.9 <strong>Premium subscription (auto-renewing).</strong> Premium is an auto-renewing subscription sold through the app store.</p>
-      <ul>
-        <li><strong>Auto-renewal.</strong> You're charged through your app store account when you buy. <strong>It renews automatically for each new period at the then-current price unless you cancel at least 24 hours before the current period ends</strong> (or as the app store otherwise requires).</li>
-        <li><strong>Managing and cancelling.</strong> You can manage or cancel anytime in your app store's subscription settings. Deleting the App does <strong>not</strong> cancel it. Cancelling takes effect at the end of the current paid period, and you keep Premium until then.</li>
-        <li><strong>Price changes.</strong> We may change the price; changes apply to future periods and are notified per app store rules, which may require your agreement first.</li>
-        <li><strong>Free trials / promos.</strong> If a free trial or promo is offered, it automatically becomes a paid subscription unless you cancel before it ends; any unused part of a trial is forfeited when you subscribe, where applicable.</li>
-        <li><strong>Benefits.</strong> Premium benefits (such as posting Glimpses or places without a Credit charge, more history, or other features) are part of your licence to use the Service, are not property, may change, and end when your subscription ends or is cancelled.</li>
-      </ul>
-      <p>6.10 <strong>Apple / Google terms.</strong> Where the app store requires it, its standard licence and subscription terms also apply, and the app store operator may be a third-party beneficiary that can enforce these Terms (see Section 14.3).</p>
+        <h2 id="s4">4. Your Account</h2>
+        <p>4.1 <strong>Signing up.</strong> To use the Service you register with a valid mobile number that can receive one-time codes, or by signing in with a supported provider such as Apple or Google. A verified phone number stays your main identity for some features. You'll go through onboarding — giving your name or display name, date of birth, gender, city, and some preferences. You can also add an email address and a profile photo.</p>
+        <p>4.2 <strong>Keep it accurate.</strong> Give us true, current and complete information, including your real date of birth, and keep it updated. Lying about your age, identity or other sign-up details is a serious breach of these Terms.</p>
+        <p>4.3 <strong>Keep it secure.</strong> You're responsible for everything that happens on your Account and for protecting your device and phone number. Tell us right away at <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong> if you think someone has accessed your Account without permission.</p>
+        <p>4.4 <strong>Verification.</strong> We may ask you to verify your identity, age, phone, photo or "liveness" (including through outside verification providers) before or while you use the Service, or to unlock certain features (like receiving calls). If you don't complete a required check, your access may be limited or suspended.</p>
+        <p>4.5 <strong>Photo and video checks.</strong> Photos and Glimpse videos you upload may be checked by automated systems and/or people before they appear. We can reject, remove or refuse to show any photo or video at our discretion — for example if it shows nudity, weapons, drugs, or offensive material, or doesn't show you.</p>
+        <p>4.6 <strong>Device permissions.</strong> Some features need device permissions — for example microphone (calls and the AI companion), camera (Glimpse and photos), photo library (uploads), and optionally location (to suggest a date-planning area, help you tag nearby places, or centre a map). We only read your location when you use such a feature; we don't track it in the background. You can manage permissions in your device settings; turning one off may disable the matching feature.</p>
 
-      <h2 id="s7">7. Losing Credits; Suspension and Termination by Us</h2>
-      <p>7.1 <strong>You can lose Credits if you break the rules.</strong> <strong>If you breach these Terms — including the conduct rules in Section 9, the billing rules in Section 6.7, or the eligibility rules in Section 3 — we may cancel and forfeit any or all of your Credits (bought, earned or free) and revoke Premium benefits, without refund or compensation, on top of any other action we take.</strong> We can do this with or without a separate warning, cooldown, suspension or ban.</p>
-      <p>7.2 <strong>When we may act.</strong> We may warn you, restrict features, apply a cooldown, suspend or permanently ban your Account, and/or forfeit Credits, if we reasonably believe you have: (a) broken these Terms or any policy they reference; (b) committed fraud, payment abuse or chargeback abuse; (c) harassed, threatened, harmed or endangered any user or our staff; (d) lied about your age or identity; (e) used the Service for commercial solicitation, promotion or scamming; (f) created multiple or ban-evading Accounts; or (g) otherwise acted in a way that creates risk or possible legal exposure for us, other users, or third parties.</p>
-      <p>7.3 <strong>What happens if we terminate.</strong> If we suspend or terminate your Account: (a) your right to use the Service ends immediately (or for the suspension period); (b) <strong>all Credits are forfeited without refund</strong>, to the fullest extent the law allows; (c) Premium benefits stop (any subscription cancellation or refund is handled by the app store under its rules); and (d) the parts of these Terms that should survive (including Sections 6.5, 7, 10, 11, 14–19) continue to apply.</p>
-      <p>7.4 <strong>Appeals.</strong> If you think we got an enforcement action wrong, email <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong>. We'll review genuine appeals but don't have to reinstate any Account, Credits or benefits.</p>
-      <p>7.5 <strong>Closing your own account.</strong> You can stop using the Service and delete your Account anytime in the App settings or by emailing <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong>. Deleting your Account forfeits any remaining Credits without refund (unless the law says otherwise) and does <strong>not</strong> by itself cancel an auto-renewing subscription — cancel that through your app store. How we handle your data on deletion is in the <a href="privacy.html">Privacy Policy</a>.</p>
+        <h2 id="s5">5. Matching, Quality and Fairness</h2>
+        <p>5.1 <strong>How matching works.</strong> Our systems match users based on things that may include your preferences, how complete your profile is, compatibility hints from your onboarding answers, your region, how long you've waited, and internal quality, reputation and compatibility scores. Matching is algorithmic and at our discretion, and <strong>we don't guarantee any particular match, number of matches, call frequency, or outcome — romantic or otherwise.</strong></p>
+        <p>5.2 <strong>Internal scores.</strong> To keep things safe and balanced, we keep private, internal metrics for Accounts — such as reputation scores (affected by post-call ratings and reports) and match-quality scores (affected by call outcomes). We use these for matching, eligibility, rate-limiting and safety. They aren't a judgment of you as a person, aren't shown to other users, and aren't a promise from us.</p>
+        <p>5.3 <strong>Eligibility and limits.</strong> Some features (like joining the receiving queue) may require things such as a verified phone number, a complete profile, an approved photo or system avatar, good standing, completed verification, and staying within usage limits (for example monthly caps on received calls, or daily caps on certain actions). We can change these requirements and limits at any time.</p>
+        <p>5.4 <strong>Stay anonymous before reveal.</strong> During a Mini-Date, profiles show as abstract avatars. Don't try to defeat the anonymity — for example by giving out or asking for real names, photos, social handles, phone numbers, or other contact or identifying details during a Mini-Date.</p>
+        <p>5.5 <strong>Mutual reveal.</strong> Profiles and chat only unlock if both people choose to continue after a Mini-Date. A decision not to continue is final for that call, and we don't reveal it in a way meant to embarrass anyone.</p>
+        <p>5.6 <strong>Glimpse discovery.</strong> When you post a Glimpse, you understand that: (a) videos and captions sent to <strong>Hopeful</strong> or <strong>Matched</strong> are checked by automated moderation first and may be rejected; (b) in <strong>Hopeful</strong>, your video is shown to a compatibility-ranked group of eligible users in your region for that window — your name and profile are hidden, but <strong>the video shows your appearance</strong>; (c) in <strong>Matched</strong>, <strong>Friends</strong> and <strong>Pledged</strong>, your video is shown with your name and photo to people you've connected with; (d) a day-recap you create may combine your clips with ones your friends/partner shared; and (e) you must not post a Glimpse showing anyone other than yourself without their consent, or one that breaks Section 9.</p>
 
-      <h2 id="s8">8. Call Recording, Video, Transcription and Monitoring</h2>
-      <p>8.1 <strong>You consent to recording.</strong> To protect everyone, <strong>voice calls on the Service (Mini-Dates and Direct Calls) are recorded and automatically transcribed.</strong> The App tells you this before each call. <strong>By starting or joining a call, you consent — and confirm you have the right to consent — to that call being recorded, transcribed, analysed and reviewed for safety.</strong> If you don't consent, don't use the calling features.</p>
-      <p>8.2 <strong>What we do with recordings.</strong> As explained in the <a href="privacy.html">Privacy Policy</a>: the raw audio is used to make a transcript and is deleted promptly afterwards; the transcript (with automatic speaker labels and a summary) is kept and is available only to the call's participants and to authorised staff for safety, moderation, fraud-prevention and legal-compliance purposes.</p>
-      <p>8.3 <strong>Safety and experience.</strong> We may review and use recordings, transcripts, chat messages, Glimpse videos and couple-diary content to investigate reports, detect and stop abuse, enforce these Terms, comply with the law, protect users, and improve your experience — all in line with the Privacy Policy.</p>
-      <p>8.4 <strong>Glimpse and diary content.</strong> Glimpse videos and diary entries are screened and/or may be reviewed for safety. Glimpse videos are stored and delivered through secure, signed links and shown only to the audiences described in Sections 1.5 and 5.6. You're responsible for what you record and post.</p>
-      <p>8.5 <strong>Don't record other users.</strong> Don't record, capture, screenshot, broadcast or otherwise copy another user's call, voice, Glimpse video, chat, diary entry or profile — by any means, including an outside device — without that user's clear consent and ours. Doing so is a serious breach of these Terms.</p>
+        <h2 id="s6">6. Credits, Purchases, Subscriptions and Billing</h2>
+        <p>6.1 <strong>What Credits are.</strong> Credits are a limited, personal, non-transferable licence to use certain features — and we can revoke them. <strong>Credits are not money. They have no cash value, earn no interest, and can't be redeemed, exchanged or cashed out for anything of value outside the Service.</strong> You can't sell, trade, gift, transfer or pool Credits.</p>
+        <p>6.2 <strong>How you get Credits.</strong> You can get Credits by: (a) buying Credit packs through in-app purchase at the price shown when you buy; (b) promotional or free grants (like a sign-up bonus), at our discretion; (c) watching rewarded ads where offered, within limits we set; and (d) any other method we add. We can change Credit prices, pack sizes, earning rules, feature costs and limits at any time; changes only apply going forward and don't affect Credits already in your balance.</p>
+        <p>6.3 <strong>How Credits are spent.</strong> Features that use Credits — such as starting Mini-Dates, starting Direct Calls, generating AI date plans, using the AI voice companion, posting a Glimpse to a paid audience (Hopeful or Matched), exporting a Glimpse recap, and posting a place to the couple diary — cost the amount shown in the App when you use them. Some of these may be free with an active Premium subscription, and some Glimpse audiences (Friends and Pledged) are always free. For timed calls, Credits may be held when the call starts and settled based on how long you were actually connected. If a call ends earlier than booked you may be charged proportionally, and if a call fails to connect because of a fault on our side, we'll generally release or refund the held Credits.</p>
+        <p>6.4 <strong>Payments and app store rules.</strong> In-app purchases and subscriptions are handled by the app store you downloaded from and/or our payment providers, and are also subject to their terms. We don't store your full card details. We may add other payment methods later, with their own terms shown at purchase.</p>
+        <p>6.5 <strong>No refunds.</strong> <strong>Except where the law or the app store's own rules require it, all purchases of Credits and subscriptions are final and non-refundable</strong> — including unused Credits, unused parts of a subscription, and cases where your account is closed, suspended or terminated, or the Service is discontinued. If we choose to give you a refund or credit once, that doesn't mean we'll do it again.</p>
+        <p>6.6 <strong>Expiry.</strong> Credits don't currently expire, but we may add reasonable expiry or inactivity rules for free/promotional Credits, and — with reasonable advance notice — for purchased Credits, where the law allows.</p>
+        <p>6.7 <strong>No cheating the system.</strong> Don't: (a) get Credits, Premium benefits or other Virtual Items through fraud, bugs, bots, or abuse of promo/ad/referral mechanics; (b) start bad-faith chargebacks or payment reversals; or (c) buy or sell Credits, subscriptions or Accounts outside the Service. Anything obtained by breaking this rule is void.</p>
+        <p>6.8 <strong>Our records.</strong> Our records (including our transaction ledger and entitlement records) are, unless there's an obvious error, the final word on your Credit balance, subscription status and transactions.</p>
+        <p>6.9 <strong>Premium subscription (auto-renewing).</strong> Premium is an auto-renewing subscription sold through the app store.</p>
+        <ul>
+          <li><strong>Auto-renewal.</strong> You're charged through your app store account when you buy. <strong>It renews automatically for each new period at the then-current price unless you cancel at least 24 hours before the current period ends</strong> (or as the app store otherwise requires).</li>
+          <li><strong>Managing and cancelling.</strong> You can manage or cancel anytime in your app store's subscription settings. Deleting the App does <strong>not</strong> cancel it. Cancelling takes effect at the end of the current paid period, and you keep Premium until then.</li>
+          <li><strong>Price changes.</strong> We may change the price; changes apply to future periods and are notified per app store rules, which may require your agreement first.</li>
+          <li><strong>Free trials / promos.</strong> If a free trial or promo is offered, it automatically becomes a paid subscription unless you cancel before it ends; any unused part of a trial is forfeited when you subscribe, where applicable.</li>
+          <li><strong>Benefits.</strong> Premium benefits (such as posting Glimpses or places without a Credit charge, more history, or other features) are part of your licence to use the Service, are not property, may change, and end when your subscription ends or is cancelled.</li>
+        </ul>
+        <p>6.10 <strong>Apple / Google terms.</strong> Where the app store requires it, its standard licence and subscription terms also apply, and the app store operator may be a third-party beneficiary that can enforce these Terms (see Section 14.3).</p>
 
-      <h2 id="s9">9. Community Rules</h2>
-      <p>9.1 In connection with the Service, you agree <strong>not</strong> to:</p>
-      <ul>
-        <li>harass, abuse, stalk, intimidate, threaten, defame or harm anyone, or encourage others to;</li>
-        <li>use hate speech, or discriminate based on race, ethnicity, nationality, religion, gender, gender identity, sexual orientation, disability, or any other protected characteristic;</li>
-        <li>share content — in calls, Glimpse videos, photos, diary entries or chat — that is sexually explicit, obscene, pornographic, violent or otherwise objectionable, or expose anyone to such content without consent;</li>
-        <li>record or post a Glimpse, photo or diary entry that shows anyone other than yourself without their consent, or that isn't really you;</li>
-        <li>lie about your identity, age, photos, videos or affiliations, impersonate anyone, or run a fake, duplicate or "catfishing" profile;</li>
-        <li>ask any user for money, gifts, donations, financial information, passwords or one-time codes, or run any scam, romance fraud, pyramid scheme or commercial solicitation;</li>
-        <li>advertise, promote or sell anything, or use the Service for any commercial purpose, without our written consent;</li>
-        <li>share or ask for identifying or contact information during anonymous calls, or otherwise get around the anonymity and reveal design;</li>
-        <li>misuse the connection features — for example by sharing or harvesting friend/match codes for spam, or abusing Pledge to harass or deceive;</li>
-        <li>share someone's private information without their consent ("doxxing"), including locations in a couple diary;</li>
-        <li>use the Service if you're under 18, or interact with it on behalf of anyone under 18;</li>
-        <li>send viruses, malware or any harmful or disruptive code;</li>
-        <li>scrape, crawl, harvest or collect data about other users (including Glimpse videos or profiles), or access the Service by automated means (bots, scripts, emulators) for any purpose;</li>
-        <li>probe, scan or test the security of, or break, bypass or defeat, any security, rate-limiting, anti-fraud, moderation or login measure;</li>
-        <li>reverse engineer, decompile, disassemble, modify or make derivative works of the App or Service, except where the law doesn't allow that restriction;</li>
-        <li>use the Service to build a competing product, or copy any of its features, functions, interfaces or graphics;</li>
-        <li>exploit bugs, manipulate matching, ratings, standing or reward systems, or abuse promotions; or</li>
-        <li>use the Service in breach of any law.</li>
-      </ul>
-      <p>9.2 <strong>Reporting.</strong> The App lets you report and block other users before, during and after calls, in chat, and on Glimpse content. Please report anything that breaks these rules. Reports go through our moderation, which includes human review. Filing knowingly false or malicious reports is itself a breach of these Terms.</p>
-      <p>9.3 <strong>We can act, but don't have to watch everything.</strong> We don't promise to monitor all Content, but we may (entirely at our discretion) review, screen, moderate, remove or refuse any Content, and take action under Section 7, at any time and without notice.</p>
+        <h2 id="s7">7. Losing Credits; Suspension and Termination by Us</h2>
+        <p>7.1 <strong>You can lose Credits if you break the rules.</strong> <strong>If you breach these Terms — including the conduct rules in Section 9, the billing rules in Section 6.7, or the eligibility rules in Section 3 — we may cancel and forfeit any or all of your Credits (bought, earned or free) and revoke Premium benefits, without refund or compensation, on top of any other action we take.</strong> We can do this with or without a separate warning, cooldown, suspension or ban.</p>
+        <p>7.2 <strong>When we may act.</strong> We may warn you, restrict features, apply a cooldown, suspend or permanently ban your Account, and/or forfeit Credits, if we reasonably believe you have: (a) broken these Terms or any policy they reference; (b) committed fraud, payment abuse or chargeback abuse; (c) harassed, threatened, harmed or endangered any user or our staff; (d) lied about your age or identity; (e) used the Service for commercial solicitation, promotion or scamming; (f) created multiple or ban-evading Accounts; or (g) otherwise acted in a way that creates risk or possible legal exposure for us, other users, or third parties.</p>
+        <p>7.3 <strong>What happens if we terminate.</strong> If we suspend or terminate your Account: (a) your right to use the Service ends immediately (or for the suspension period); (b) <strong>all Credits are forfeited without refund</strong>, to the fullest extent the law allows; (c) Premium benefits stop (any subscription cancellation or refund is handled by the app store under its rules); and (d) the parts of these Terms that should survive (including Sections 6.5, 7, 10, 11, 14–19) continue to apply.</p>
+        <p>7.4 <strong>Appeals.</strong> If you think we got an enforcement action wrong, email <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong>. We'll review genuine appeals but don't have to reinstate any Account, Credits or benefits.</p>
+        <p>7.5 <strong>Closing your own account.</strong> You can stop using the Service and delete your Account anytime in the App settings or by emailing <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong>. Deleting your Account forfeits any remaining Credits without refund (unless the law says otherwise) and does <strong>not</strong> by itself cancel an auto-renewing subscription — cancel that through your app store. How we handle your data on deletion is in the <a href="privacy.html">Privacy Policy</a>.</p>
 
-      <h2 id="s10">10. Your Content and the Licence You Give Us</h2>
-      <p>10.1 <strong>You own your Content.</strong> You keep any ownership rights you have in your User Content.</p>
-      <p>10.2 <strong>The licence you give us.</strong> By submitting User Content (your profile, photos, Glimpse videos, diary entries, voice during calls, and chat messages), you give Deployku a worldwide, non-exclusive, royalty-free, sublicensable (to our service providers) and transferable licence to host, store, copy, process, adapt, transcribe, analyse, display and distribute it — only to: (a) run, provide, secure and improve the Service; (b) show your profile, Glimpse videos, diary entries and messages to users as the Service is designed to (for example after reveal, to your Glimpse audience, or to a connected partner); (c) handle moderation, safety, fraud-prevention and enforcement; and (d) comply with the law. This licence lasts as long as we keep that Content under the <a href="privacy.html">Privacy Policy</a>, and survives termination to that extent.</p>
-      <p>10.3 <strong>Anonymized and aggregated data.</strong> We may create and use anonymized, de-identified or aggregated data from your Content and activity — data that can no longer reasonably identify you — for any lawful purpose, including improving matching, safety, features and the overall experience.</p>
-      <p>10.4 <strong>Your promises about your Content.</strong> You confirm that: (a) you have all the rights needed to submit your User Content and grant the licence above; (b) your User Content (including your photos, Glimpse videos and voice) shows and belongs to you, and doesn't include any other identifiable person without their consent; and (c) it doesn't and won't infringe or violate anyone's intellectual-property, privacy, publicity or other rights, or any law.</p>
-      <p>10.5 <strong>Feedback.</strong> If you send us suggestions or ideas about the Service, we can use them freely, forever, with no restriction or payment to you.</p>
+        <h2 id="s8">8. Call Recording, Video, Transcription and Monitoring</h2>
+        <p>8.1 <strong>You consent to recording.</strong> To protect everyone, <strong>voice calls on the Service (Mini-Dates and Direct Calls) are recorded and automatically transcribed.</strong> The App tells you this before each call. <strong>By starting or joining a call, you consent — and confirm you have the right to consent — to that call being recorded, transcribed, analysed and reviewed for safety.</strong> If you don't consent, don't use the calling features.</p>
+        <p>8.2 <strong>What we do with recordings.</strong> As explained in the <a href="privacy.html">Privacy Policy</a>: the raw audio is used to make a transcript and is deleted promptly afterwards; the transcript (with automatic speaker labels and a summary) is kept and is available only to the call's participants and to authorised staff for safety, moderation, fraud-prevention and legal-compliance purposes.</p>
+        <p>8.3 <strong>Safety and experience.</strong> We may review and use recordings, transcripts, chat messages, Glimpse videos and couple-diary content to investigate reports, detect and stop abuse, enforce these Terms, comply with the law, protect users, and improve your experience — all in line with the Privacy Policy.</p>
+        <p>8.4 <strong>Glimpse and diary content.</strong> Glimpse videos and diary entries are screened and/or may be reviewed for safety. Glimpse videos are stored and delivered through secure, signed links and shown only to the audiences described in Sections 1.5 and 5.6. You're responsible for what you record and post.</p>
+        <p>8.5 <strong>Don't record other users.</strong> Don't record, capture, screenshot, broadcast or otherwise copy another user's call, voice, Glimpse video, chat, diary entry or profile — by any means, including an outside device — without that user's clear consent and ours. Doing so is a serious breach of these Terms.</p>
 
-      <h2 id="s11">11. Intellectual Property and Trademarks</h2>
-      <p>11.1 <strong>We own the Service.</strong> The Service — the App, its software, code, architecture, databases, algorithms, matching and scoring systems, generated avatars and glyph designs, AI outputs delivered by the Service, interfaces, design, text, graphics, audio and everything else (except User Content) — belongs to or is licensed by Deployku, and is protected by copyright, trademark, trade-secret and other laws. Any rights we don't expressly give you are reserved.</p>
-      <p>11.2 <strong>Your licence to use it.</strong> Subject to these Terms, we give you a personal, limited, non-exclusive, non-transferable, non-sublicensable, revocable licence to download and use the App on devices you own or control, for your own personal, non-commercial use.</p>
-      <p>11.3 <strong>Trademarks, including the pending application.</strong> "Heqiyou", the Heqiyou logo and our other Marks are trademarks of Deployku Pte Ltd. <strong>A trademark application for "Heqiyou" is currently being examined by the Intellectual Property Office of Singapore (IPOS). The fact that this application is still pending does not reduce, waive or harm any of Deployku's rights in the Marks — including unregistered and common-law rights, rights in passing off, copyright in the logo artwork, and rights that take effect on registration (which, if granted, apply from the application's filing date).</strong> These Terms give you no rights in the Marks. Don't use, register, or try to register any of our Marks, or any confusingly similar name, logo, domain, social handle or app identifier, anywhere in the world. All goodwill from any use of the Marks belongs to Deployku.</p>
-      <p>11.4 <strong>Infringement claims.</strong> If you believe Content on the Service infringes your copyright or other rights, tell us at <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong> with enough detail (the work, the infringing material, your contact details, and a good-faith statement). We'll review and act on valid notices as the law requires.</p>
+        <h2 id="s9">9. Community Rules</h2>
+        <p>9.1 In connection with the Service, you agree <strong>not</strong> to:</p>
+        <ul>
+          <li>harass, abuse, stalk, intimidate, threaten, defame or harm anyone, or encourage others to;</li>
+          <li>use hate speech, or discriminate based on race, ethnicity, nationality, religion, gender, gender identity, sexual orientation, disability, or any other protected characteristic;</li>
+          <li>share content — in calls, Glimpse videos, photos, diary entries or chat — that is sexually explicit, obscene, pornographic, violent or otherwise objectionable, or expose anyone to such content without consent;</li>
+          <li>record or post a Glimpse, photo or diary entry that shows anyone other than yourself without their consent, or that isn't really you;</li>
+          <li>lie about your identity, age, photos, videos or affiliations, impersonate anyone, or run a fake, duplicate or "catfishing" profile;</li>
+          <li>ask any user for money, gifts, donations, financial information, passwords or one-time codes, or run any scam, romance fraud, pyramid scheme or commercial solicitation;</li>
+          <li>advertise, promote or sell anything, or use the Service for any commercial purpose, without our written consent;</li>
+          <li>share or ask for identifying or contact information during anonymous calls, or otherwise get around the anonymity and reveal design;</li>
+          <li>misuse the connection features — for example by sharing or harvesting friend/match codes for spam, or abusing Pledge to harass or deceive;</li>
+          <li>share someone's private information without their consent ("doxxing"), including locations in a couple diary;</li>
+          <li>use the Service if you're under 18, or interact with it on behalf of anyone under 18;</li>
+          <li>send viruses, malware or any harmful or disruptive code;</li>
+          <li>scrape, crawl, harvest or collect data about other users (including Glimpse videos or profiles), or access the Service by automated means (bots, scripts, emulators) for any purpose;</li>
+          <li>probe, scan or test the security of, or break, bypass or defeat, any security, rate-limiting, anti-fraud, moderation or login measure;</li>
+          <li>reverse engineer, decompile, disassemble, modify or make derivative works of the App or Service, except where the law doesn't allow that restriction;</li>
+          <li>use the Service to build a competing product, or copy any of its features, functions, interfaces or graphics;</li>
+          <li>exploit bugs, manipulate matching, ratings, standing or reward systems, or abuse promotions; or</li>
+          <li>use the Service in breach of any law.</li>
+        </ul>
+        <p>9.2 <strong>Reporting.</strong> The App lets you report and block other users before, during and after calls, in chat, and on Glimpse content. Please report anything that breaks these rules. Reports go through our moderation, which includes human review. Filing knowingly false or malicious reports is itself a breach of these Terms.</p>
+        <p>9.3 <strong>We can act, but don't have to watch everything.</strong> We don't promise to monitor all Content, but we may (entirely at our discretion) review, screen, moderate, remove or refuse any Content, and take action under Section 7, at any time and without notice.</p>
 
-      <h2 id="s12">12. AI Features</h2>
-      <p>12.1 <strong>What's AI-powered.</strong> The Service includes AI features: automatic transcription and summaries of calls, an AI date planner that suggests itineraries from inputs you and your match provide, an AI voice companion you can talk to, and automated content moderation. AI processing may be done by third-party AI providers on our behalf, as described in the <a href="privacy.html">Privacy Policy</a>.</p>
-      <p>12.2 <strong>Don't rely on AI outputs.</strong> AI outputs (date plans, venue suggestions, transcripts, summaries, companion replies, compatibility hints) are <strong>automatic suggestions, provided "as is" for convenience only</strong>. They may be wrong, incomplete or out of date. We don't verify venues, opening hours, prices, transport details and the like. It's up to you to check AI outputs before relying on them, and to look after your own decisions and safety.</p>
-      <p>12.3 <strong>Third-party venues.</strong> We're not connected to, and not responsible for, any venue, business or place an AI feature suggests. Anything between you and those places is solely between you and them.</p>
-      <p>12.4 <strong>AI voice companion.</strong> The AI voice companion is an automated agent, not a real person, and an AI provider processes the conversation to generate replies. Don't rely on it for advice (medical, legal, financial, mental-health or otherwise), and don't treat it as a substitute for professional help or human relationships.</p>
+        <h2 id="s10">10. Your Content and the Licence You Give Us</h2>
+        <p>10.1 <strong>You own your Content.</strong> You keep any ownership rights you have in your User Content.</p>
+        <p>10.2 <strong>The licence you give us.</strong> By submitting User Content (your profile, photos, Glimpse videos, diary entries, voice during calls, and chat messages), you give Deployku a worldwide, non-exclusive, royalty-free, sublicensable (to our service providers) and transferable licence to host, store, copy, process, adapt, transcribe, analyse, display and distribute it — only to: (a) run, provide, secure and improve the Service; (b) show your profile, Glimpse videos, diary entries and messages to users as the Service is designed to (for example after reveal, to your Glimpse audience, or to a connected partner); (c) handle moderation, safety, fraud-prevention and enforcement; and (d) comply with the law. This licence lasts as long as we keep that Content under the <a href="privacy.html">Privacy Policy</a>, and survives termination to that extent.</p>
+        <p>10.3 <strong>Anonymized and aggregated data.</strong> We may create and use anonymized, de-identified or aggregated data from your Content and activity — data that can no longer reasonably identify you — for any lawful purpose, including improving matching, safety, features and the overall experience.</p>
+        <p>10.4 <strong>Your promises about your Content.</strong> You confirm that: (a) you have all the rights needed to submit your User Content and grant the licence above; (b) your User Content (including your photos, Glimpse videos and voice) shows and belongs to you, and doesn't include any other identifiable person without their consent; and (c) it doesn't and won't infringe or violate anyone's intellectual-property, privacy, publicity or other rights, or any law.</p>
+        <p>10.5 <strong>Feedback.</strong> If you send us suggestions or ideas about the Service, we can use them freely, forever, with no restriction or payment to you.</p>
 
-      <h2 id="s13">13. Safety and Dealing with Other Users</h2>
-      <p>13.1 <strong>You're responsible for your interactions.</strong> The Service introduces people to each other. <strong>We don't run criminal-background or full identity checks on users</strong>, and any checks we do (like phone, photo or liveness) are limited and may not catch false information. We make no promises about any user's identity, behaviour, intentions, compatibility or honesty.</p>
-      <p>13.2 <strong>Be careful.</strong> You alone are responsible for how you deal with other users, online and especially offline. Take common-sense precautions: meet in public, tell someone where you're going, don't share financial information or send money, be careful about sharing precise locations (including in a couple diary), and don't rely only on in-app signals. In-app safety tips are for convenience and aren't a guarantee of safety.</p>
-      <p>13.3 <strong>We're not liable for other users.</strong> To the fullest extent the law allows, Deployku isn't responsible or liable for any user's conduct, online or offline, or for any loss, injury or damage from interactions between users — including meetings set up through the Service or its AI date planner.</p>
-      <p>13.4 <strong>Emergencies.</strong> The Service is not an emergency service. If you think you're in danger, contact local police or emergency services right away.</p>
+        <h2 id="s11">11. Intellectual Property and Trademarks</h2>
+        <p>11.1 <strong>We own the Service.</strong> The Service — the App, its software, code, architecture, databases, algorithms, matching and scoring systems, generated avatars and glyph designs, AI outputs delivered by the Service, interfaces, design, text, graphics, audio and everything else (except User Content) — belongs to or is licensed by Deployku, and is protected by copyright, trademark, trade-secret and other laws. Any rights we don't expressly give you are reserved.</p>
+        <p>11.2 <strong>Your licence to use it.</strong> Subject to these Terms, we give you a personal, limited, non-exclusive, non-transferable, non-sublicensable, revocable licence to download and use the App on devices you own or control, for your own personal, non-commercial use.</p>
+        <p>11.3 <strong>Trademarks, including the pending application.</strong> "Heqiyou", the Heqiyou logo and our other Marks are trademarks of Deployku Pte Ltd. <strong>A trademark application for "Heqiyou" is currently being examined by the Intellectual Property Office of Singapore (IPOS). The fact that this application is still pending does not reduce, waive or harm any of Deployku's rights in the Marks — including unregistered and common-law rights, rights in passing off, copyright in the logo artwork, and rights that take effect on registration (which, if granted, apply from the application's filing date).</strong> These Terms give you no rights in the Marks. Don't use, register, or try to register any of our Marks, or any confusingly similar name, logo, domain, social handle or app identifier, anywhere in the world. All goodwill from any use of the Marks belongs to Deployku.</p>
+        <p>11.4 <strong>Infringement claims.</strong> If you believe Content on the Service infringes your copyright or other rights, tell us at <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong> with enough detail (the work, the infringing material, your contact details, and a good-faith statement). We'll review and act on valid notices as the law requires.</p>
 
-      <h2 id="s14">14. Third-Party Services, Ads and App Stores</h2>
-      <p>14.1 <strong>Service providers.</strong> We run the Service using infrastructure, communications, storage, content delivery, maps, payment, advertising, verification, moderation and AI services from third parties acting on our behalf. How they handle personal data is in the <a href="privacy.html">Privacy Policy</a>. We're not responsible for outages, errors or acts of these providers beyond our reasonable control.</p>
-      <p>14.2 <strong>Advertising.</strong> The Service may show ads, including optional rewarded ads. Ads come from third-party ad networks; we don't endorse advertised products or services, and any dealings with advertisers are solely between you and them.</p>
-      <p>14.3 <strong>App store terms.</strong> Your download and use of the App, and any subscription, are also subject to the rules of the app store you got it from. These Terms are between you and Deployku only; the app store operator isn't a party to them, doesn't have to provide support for the App, and isn't responsible for claims about it. Where the app store's rules require it, that operator and its affiliates are third-party beneficiaries of these Terms and can enforce them against you.</p>
-      <p>14.4 <strong>Links and other apps.</strong> The Service may link to third-party sites or resources (including inside AI date plans and maps) and may let you open other apps — for example a ride-hailing app pre-filled with a suggested destination, or a messaging app pre-filled with an invite and your code. Once you leave the Service for another app or site, that third party's own terms and privacy policy apply. We're not responsible for their content, products, services, pricing or availability.</p>
+        <h2 id="s12">12. AI Features</h2>
+        <p>12.1 <strong>What's AI-powered.</strong> The Service includes AI features: automatic transcription and summaries of calls, an AI date planner that suggests itineraries from inputs you and your match provide, an AI voice companion you can talk to, and automated content moderation. AI processing may be done by third-party AI providers on our behalf, as described in the <a href="privacy.html">Privacy Policy</a>.</p>
+        <p>12.2 <strong>Don't rely on AI outputs.</strong> AI outputs (date plans, venue suggestions, transcripts, summaries, companion replies, compatibility hints) are <strong>automatic suggestions, provided "as is" for convenience only</strong>. They may be wrong, incomplete or out of date. We don't verify venues, opening hours, prices, transport details and the like. It's up to you to check AI outputs before relying on them, and to look after your own decisions and safety.</p>
+        <p>12.3 <strong>Third-party venues.</strong> We're not connected to, and not responsible for, any venue, business or place an AI feature suggests. Anything between you and those places is solely between you and them.</p>
+        <p>12.4 <strong>AI voice companion.</strong> The AI voice companion is an automated agent, not a real person, and an AI provider processes the conversation to generate replies. Don't rely on it for advice (medical, legal, financial, mental-health or otherwise), and don't treat it as a substitute for professional help or human relationships.</p>
 
-      <h2 id="s15">15. Disclaimer of Warranties</h2>
-      <p>15.1 <strong>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITH ALL FAULTS AND WITHOUT ANY WARRANTY.</strong> To the fullest extent the law allows, Deployku disclaims all warranties and conditions, whether express, implied or statutory — including any implied warranties of merchantability, satisfactory quality, fitness for a particular purpose, title, quiet enjoyment, accuracy and non-infringement, and any warranties arising from how we've dealt or what's customary in the trade.</p>
-      <p>15.2 In particular, we don't promise that: (a) the Service will be uninterrupted, on time, secure, error-free or free of viruses or harmful components; (b) any matches, calls, messages, transcripts, AI outputs, Glimpse videos or other Content will be accurate, reliable, complete or available; (c) defects will be fixed; or (d) the Service will meet your expectations or lead to any relationship, date or other outcome.</p>
-      <p>15.3 Some places don't allow certain warranties to be excluded; there, the above applies to the maximum extent allowed, and nothing in these Terms excludes rights that can't legally be excluded.</p>
+        <h2 id="s13">13. Safety and Dealing with Other Users</h2>
+        <p>13.1 <strong>You're responsible for your interactions.</strong> The Service introduces people to each other. <strong>We don't run criminal-background or full identity checks on users</strong>, and any checks we do (like phone, photo or liveness) are limited and may not catch false information. We make no promises about any user's identity, behaviour, intentions, compatibility or honesty.</p>
+        <p>13.2 <strong>Be careful.</strong> You alone are responsible for how you deal with other users, online and especially offline. Take common-sense precautions: meet in public, tell someone where you're going, don't share financial information or send money, be careful about sharing precise locations (including in a couple diary), and don't rely only on in-app signals. In-app safety tips are for convenience and aren't a guarantee of safety.</p>
+        <p>13.3 <strong>We're not liable for other users.</strong> To the fullest extent the law allows, Deployku isn't responsible or liable for any user's conduct, online or offline, or for any loss, injury or damage from interactions between users — including meetings set up through the Service or its AI date planner.</p>
+        <p>13.4 <strong>Emergencies.</strong> The Service is not an emergency service. If you think you're in danger, contact local police or emergency services right away.</p>
 
-      <h2 id="s16">16. Limit on Our Liability</h2>
-      <p>16.1 To the fullest extent the law allows, Deployku and its directors, officers, employees, agents, licensors and service providers will not be liable for: (a) any indirect, incidental, special, consequential, exemplary or punitive damages; (b) lost profits, revenue, goodwill, data, opportunities or expected savings; (c) any damage from your use of (or inability to use) the Service; (d) the conduct or Content of any user or third party, including harmful, offensive or illegal conduct, and including meetings arising from the Service; or (e) unauthorised access to or alteration of your data — whether the claim is based on warranty, contract, tort (including negligence), statute or anything else, and even if we were warned such damages were possible.</p>
-      <p>16.2 To the fullest extent the law allows, <strong>our total liability for all claims relating to the Service or these Terms will not exceed the greater of (a) what you paid us in the 12 months before the event behind the claim, and (b) one hundred Singapore dollars (SGD 100).</strong></p>
-      <p>16.3 Nothing in these Terms excludes or limits liability for death or personal injury caused by negligence, for fraud or fraudulent misrepresentation, or for anything that can't be excluded or limited under the law. The limits in this Section apply only as far as the law allows.</p>
-      <p>16.4 You agree that Sections 15 and 16 are a fair way to share risk between us, and a basic part of our deal — and that we couldn't offer the Service on these terms without them.</p>
+        <h2 id="s14">14. Third-Party Services, Ads and App Stores</h2>
+        <p>14.1 <strong>Service providers.</strong> We run the Service using infrastructure, communications, storage, content delivery, maps, payment, advertising, verification, moderation and AI services from third parties acting on our behalf. How they handle personal data is in the <a href="privacy.html">Privacy Policy</a>. We're not responsible for outages, errors or acts of these providers beyond our reasonable control.</p>
+        <p>14.2 <strong>Advertising.</strong> The Service may show ads, including optional rewarded ads. Ads come from third-party ad networks; we don't endorse advertised products or services, and any dealings with advertisers are solely between you and them.</p>
+        <p>14.3 <strong>App store terms.</strong> Your download and use of the App, and any subscription, are also subject to the rules of the app store you got it from. These Terms are between you and Deployku only; the app store operator isn't a party to them, doesn't have to provide support for the App, and isn't responsible for claims about it. Where the app store's rules require it, that operator and its affiliates are third-party beneficiaries of these Terms and can enforce them against you.</p>
+        <p>14.4 <strong>Links and other apps.</strong> The Service may link to third-party sites or resources (including inside AI date plans and maps) and may let you open other apps — for example a ride-hailing app pre-filled with a suggested destination, or a messaging app pre-filled with an invite and your code. Once you leave the Service for another app or site, that third party's own terms and privacy policy apply. We're not responsible for their content, products, services, pricing or availability.</p>
 
-      <h2 id="s17">17. Indemnity</h2>
-      <p>To the fullest extent the law allows, you agree to defend, indemnify and hold harmless Deployku and its directors, officers, employees, agents and service providers from any claims, demands, actions, losses, liabilities, damages, costs and expenses (including reasonable legal fees) arising from: (a) your User Content (including Glimpse videos and diary entries); (b) your use or misuse of the Service; (c) your breach of these Terms or any law; (d) your interactions with other users, online or offline; or (e) your violation of anyone's rights. We may, at your expense, take over the exclusive defence and control of any matter you'd otherwise indemnify, and you agree to cooperate.</p>
+        <h2 id="s15">15. Disclaimer of Warranties</h2>
+        <p>15.1 <strong>THE SERVICE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITH ALL FAULTS AND WITHOUT ANY WARRANTY.</strong> To the fullest extent the law allows, Deployku disclaims all warranties and conditions, whether express, implied or statutory — including any implied warranties of merchantability, satisfactory quality, fitness for a particular purpose, title, quiet enjoyment, accuracy and non-infringement, and any warranties arising from how we've dealt or what's customary in the trade.</p>
+        <p>15.2 In particular, we don't promise that: (a) the Service will be uninterrupted, on time, secure, error-free or free of viruses or harmful components; (b) any matches, calls, messages, transcripts, AI outputs, Glimpse videos or other Content will be accurate, reliable, complete or available; (c) defects will be fixed; or (d) the Service will meet your expectations or lead to any relationship, date or other outcome.</p>
+        <p>15.3 Some places don't allow certain warranties to be excluded; there, the above applies to the maximum extent allowed, and nothing in these Terms excludes rights that can't legally be excluded.</p>
 
-      <h2 id="s18">18. Governing Law and Disputes</h2>
-      <p>18.1 <strong>Governing law.</strong> These Terms, and any dispute relating to them or the Service (whether contract or not), are governed by the laws of Singapore, ignoring conflict-of-laws rules.</p>
-      <p>18.2 <strong>Talk to us first.</strong> Before starting formal proceedings, email <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong> describing the dispute and try in good faith to resolve it with us for at least 30 days.</p>
-      <p>18.3 <strong>Courts.</strong> Subject to Section 18.2, the courts of Singapore have exclusive jurisdiction over any dispute relating to these Terms or the Service, and each of us submits to those courts. Nothing here stops either of us from seeking urgent injunctive relief in any competent court, or limits any mandatory consumer rights you have to bring proceedings where you live.</p>
-      <p>18.4 <strong>No class actions.</strong> To the extent the law allows, you must bring disputes individually, not as a plaintiff or class member in any class, collective or representative proceeding.</p>
-      <p>18.5 <strong>One-year limit.</strong> To the extent the law allows, any claim relating to the Service must be started within one (1) year after it arises; after that it's permanently barred.</p>
+        <h2 id="s16">16. Limit on Our Liability</h2>
+        <p>16.1 To the fullest extent the law allows, Deployku and its directors, officers, employees, agents, licensors and service providers will not be liable for: (a) any indirect, incidental, special, consequential, exemplary or punitive damages; (b) lost profits, revenue, goodwill, data, opportunities or expected savings; (c) any damage from your use of (or inability to use) the Service; (d) the conduct or Content of any user or third party, including harmful, offensive or illegal conduct, and including meetings arising from the Service; or (e) unauthorised access to or alteration of your data — whether the claim is based on warranty, contract, tort (including negligence), statute or anything else, and even if we were warned such damages were possible.</p>
+        <p>16.2 To the fullest extent the law allows, <strong>our total liability for all claims relating to the Service or these Terms will not exceed the greater of (a) what you paid us in the 12 months before the event behind the claim, and (b) one hundred Singapore dollars (SGD 100).</strong></p>
+        <p>16.3 Nothing in these Terms excludes or limits liability for death or personal injury caused by negligence, for fraud or fraudulent misrepresentation, or for anything that can't be excluded or limited under the law. The limits in this Section apply only as far as the law allows.</p>
+        <p>16.4 You agree that Sections 15 and 16 are a fair way to share risk between us, and a basic part of our deal — and that we couldn't offer the Service on these terms without them.</p>
 
-      <h2 id="s19">19. General</h2>
-      <p>19.1 <strong>Changes to these Terms.</strong> We may update these Terms. If changes are material, we'll notify you through the App or another reasonable way, and the updated Terms will show a new effective date. Using the Service after that date means you accept the new Terms. If you don't agree, stop using the Service and, if you wish, delete your Account.</p>
-      <p>19.2 <strong>Whole agreement.</strong> These Terms, with the <a href="privacy.html">Privacy Policy</a> and any extra terms shown for specific features or purchases, are the entire agreement between you and Deployku about the Service, and replace any earlier agreements on the topic.</p>
-      <p>19.3 <strong>Severability.</strong> If any part of these Terms is found invalid or unenforceable, that part is applied as far as possible and the rest stays in force.</p>
-      <p>19.4 <strong>No waiver.</strong> If we don't enforce a right or rule, that's not a waiver of it. Any waiver must be in writing and signed by us.</p>
-      <p>19.5 <strong>Assignment.</strong> You can't assign or transfer these Terms or your Account. We can assign or transfer them (in whole or part) freely, including in a merger, acquisition, reorganisation or sale of assets.</p>
-      <p>19.6 <strong>Events beyond our control.</strong> We're not liable for any delay or failure caused by things beyond our reasonable control, including natural disasters, epidemics, war, terrorism, civil unrest, labour disputes, government action, utility or telecom failures, or failures of third-party providers.</p>
-      <p>19.7 <strong>No partnership.</strong> These Terms don't create any partnership, joint venture, employment, fiduciary or agency relationship between you and Deployku.</p>
-      <p>19.8 <strong>Survival.</strong> Parts of these Terms that by their nature should continue after termination will survive, including Sections 6.5, 7, 10, 11, 14–19.</p>
-      <p>19.9 <strong>Language.</strong> These Terms are written in English. Any translation is for convenience only; if there's a conflict, the English version wins, except where the law says otherwise.</p>
-      <p>19.10 <strong>Electronic communications.</strong> You agree to receive communications from us electronically (in-app notices, push notifications, SMS to your registered number, or email where provided), and that these meet any legal requirement for written communication.</p>
+        <h2 id="s17">17. Indemnity</h2>
+        <p>To the fullest extent the law allows, you agree to defend, indemnify and hold harmless Deployku and its directors, officers, employees, agents and service providers from any claims, demands, actions, losses, liabilities, damages, costs and expenses (including reasonable legal fees) arising from: (a) your User Content (including Glimpse videos and diary entries); (b) your use or misuse of the Service; (c) your breach of these Terms or any law; (d) your interactions with other users, online or offline; or (e) your violation of anyone's rights. We may, at your expense, take over the exclusive defence and control of any matter you'd otherwise indemnify, and you agree to cooperate.</p>
 
-      <h2 id="s20">20. Contact</h2>
-      <p><strong>Deployku Pte Ltd</strong><br />
-      Email: <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong></p>
-      <p>For support, appeals, legal notices and infringement claims, use the email above and include enough detail for us to find your Account and handle your request.</p>
+        <h2 id="s18">18. Governing Law and Disputes</h2>
+        <p>18.1 <strong>Governing law.</strong> These Terms, and any dispute relating to them or the Service (whether contract or not), are governed by the laws of Singapore, ignoring conflict-of-laws rules.</p>
+        <p>18.2 <strong>Talk to us first.</strong> Before starting formal proceedings, email <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong> describing the dispute and try in good faith to resolve it with us for at least 30 days.</p>
+        <p>18.3 <strong>Courts.</strong> Subject to Section 18.2, the courts of Singapore have exclusive jurisdiction over any dispute relating to these Terms or the Service, and each of us submits to those courts. Nothing here stops either of us from seeking urgent injunctive relief in any competent court, or limits any mandatory consumer rights you have to bring proceedings where you live.</p>
+        <p>18.4 <strong>No class actions.</strong> To the extent the law allows, you must bring disputes individually, not as a plaintiff or class member in any class, collective or representative proceeding.</p>
+        <p>18.5 <strong>One-year limit.</strong> To the extent the law allows, any claim relating to the Service must be started within one (1) year after it arises; after that it's permanently barred.</p>
 
-      <p class="doc-note">By using Heqiyou you confirm that you have read, understood and agreed to these Terms and Conditions and the accompanying <a href="privacy.html">Privacy Policy</a>.</p>
+        <h2 id="s19">19. General</h2>
+        <p>19.1 <strong>Changes to these Terms.</strong> We may update these Terms. If changes are material, we'll notify you through the App or another reasonable way, and the updated Terms will show a new effective date. Using the Service after that date means you accept the new Terms. If you don't agree, stop using the Service and, if you wish, delete your Account.</p>
+        <p>19.2 <strong>Whole agreement.</strong> These Terms, with the <a href="privacy.html">Privacy Policy</a> and any extra terms shown for specific features or purchases, are the entire agreement between you and Deployku about the Service, and replace any earlier agreements on the topic.</p>
+        <p>19.3 <strong>Severability.</strong> If any part of these Terms is found invalid or unenforceable, that part is applied as far as possible and the rest stays in force.</p>
+        <p>19.4 <strong>No waiver.</strong> If we don't enforce a right or rule, that's not a waiver of it. Any waiver must be in writing and signed by us.</p>
+        <p>19.5 <strong>Assignment.</strong> You can't assign or transfer these Terms or your Account. We can assign or transfer them (in whole or part) freely, including in a merger, acquisition, reorganisation or sale of assets.</p>
+        <p>19.6 <strong>Events beyond our control.</strong> We're not liable for any delay or failure caused by things beyond our reasonable control, including natural disasters, epidemics, war, terrorism, civil unrest, labour disputes, government action, utility or telecom failures, or failures of third-party providers.</p>
+        <p>19.7 <strong>No partnership.</strong> These Terms don't create any partnership, joint venture, employment, fiduciary or agency relationship between you and Deployku.</p>
+        <p>19.8 <strong>Survival.</strong> Parts of these Terms that by their nature should continue after termination will survive, including Sections 6.5, 7, 10, 11, 14–19.</p>
+        <p>19.9 <strong>Language.</strong> These Terms are written in English. Any translation is for convenience only; if there's a conflict, the English version wins, except where the law says otherwise.</p>
+        <p>19.10 <strong>Electronic communications.</strong> You agree to receive communications from us electronically (in-app notices, push notifications, SMS to your registered number, or email where provided), and that these meet any legal requirement for written communication.</p>
 
+        <h2 id="s20">20. Contact</h2>
+        <p><strong>Deployku Pte Ltd</strong><br />
+        Email: <strong><a href="mailto:admin@deployku.com">admin@deployku.com</a></strong></p>
+        <p>For support, appeals, legal notices and infringement claims, use the email above and include enough detail for us to find your Account and handle your request.</p>
+
+        <p class="doc-note">By using Heqiyou you confirm that you have read, understood and agreed to these Terms and Conditions and the accompanying <a href="privacy.html">Privacy Policy</a>.</p>
+
+      </div>
+      <a href="#apps" class="tc-back" data-tc-back><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-t="pick.back">Choose another app</span></a>
+    </div>
+
+    <div class="tc-panel" id="lekjek" role="region" aria-labelledby="tab-lekjek" hidden>
+      <div class="tc-panel-head">
+        <h2 data-t="lk.title">Lekjek — Terms of Service</h2>
+        <div class="doc-meta" data-t="lk.meta">
+          <span>Effective date: 5 November 2026</span>
+          <span>Deployku Pte. Ltd. · Singapore</span>
+        </div>
+        <p class="tc-langnote" data-t="lk.langnote"></p>
+      </div>
+      <div class="doc-body" data-t="lk.body">
+        <h2 id="lk-1">1. About these terms</h2>
+        <p>Lekjek is operated by Deployku Pte. Ltd., Singapore. These terms explain the agreement between us and the person or business using Lekjek.</p>
+        <p>By accepting these terms when you sign up, you agree to follow them. You must be at least 18 and able to enter into this agreement. If you sign up for a business, you confirm that you have authority to accept on its behalf. In that case, 'you' means that business.</p>
+
+        <h2 id="lk-2">2. What Lekjek does</h2>
+        <p>Lekjek helps businesses manage customer records, invoices, payment reminders and sales follow-up. The features and limits available to you depend on your plan.</p>
+        <p>These terms cover software access. They do not appoint us to negotiate settlements, take legal action or hold customer funds for you. Any separate service of that kind needs its own written agreement. You remain responsible for your customer relationships and the instructions you give through Lekjek.</p>
+        <p>We do not guarantee that a customer will pay, that a sale will happen or that every message will be delivered.</p>
+
+        <h2 id="lk-3">3. Your account and team</h2>
+        <p>Give us accurate account and business details, keep your login secure, and tell us promptly if you suspect unauthorised access.</p>
+        <p>A business workspace is controlled by that business through its authorised owner and administrators. They manage invitations, access and permissions. Your business is responsible for its team members' authorised use of Lekjek and for removing access when it is no longer needed.</p>
+
+        <h2 id="lk-4">4. Use Lekjek responsibly</h2>
+        <p>Only upload information you have the right to use. Check invoice amounts, customer details and payment status before sending reminders. Only request payment where you have a lawful basis and authority to do so. Correct errors promptly and pause disputed reminders while you review the issue.</p>
+        <p>Do not use Lekjek to threaten or harass anyone, make false claims, reveal debts to unrelated people, send unlawful spam, impersonate others, or break the law. Do not interfere with the platform, access other users' data or bypass security or usage limits.</p>
+        <p>You must follow the rules that apply to your messages, marketing and collection activity, including any required permissions or licences. Respect contact restrictions and marketing opt-outs. Using Lekjek does not give you permission to contact someone.</p>
+
+        <h2 id="lk-5">5. AI and connected services</h2>
+        <p>Where AI is available, it may make mistakes. Check extracted invoice details, suggested messages and other outputs before relying on them. AI output is not legal, accounting or financial advice.</p>
+        <p>If you enable automated messages or actions, you authorise Lekjek to carry them out within the settings and instructions you choose. Review those settings and pause automation when the information or circumstances change.</p>
+        <p>Connected messaging, payment, mapping and other services may have their own terms, fees and limits. Check payment status against reliable payment records. We cannot control outside providers, but remain responsible for our own obligations under these terms.</p>
+
+        <h2 id="lk-6">6. Fees and cancellation</h2>
+        <p>We show the price, billing cycle, usage limits, taxes and any extra charges before you buy. You agree to pay the charges you approve.</p>
+        <p>If you choose a recurring plan, it renews at the end of each billing period unless you cancel before renewal. Cancel through the billing settings or contact us using the details below. Cancellation takes effect at the end of the paid period. Fees already incurred remain due.</p>
+        <p>Unused time or credits are not refundable unless the law requires it, your plan says otherwise, or these terms provide a refund. If we seriously fail to provide the agreed service and do not fix it within a reasonable time after you tell us, you may end the affected service and receive a refund for its unused prepaid period.</p>
+        <p>We will give notice of a price increase. It will apply from your next renewal after that notice, so you can cancel first.</p>
+
+        <h2 id="lk-7">7. Your data and privacy</h2>
+        <p>You keep your rights in the records and content you upload. You allow us and our service providers to process them as needed to provide and protect Lekjek, follow your instructions and meet legal duties.</p>
+        <p>You are responsible for collecting and using customer information lawfully, including giving any required notices and obtaining any required consent.</p>
+        <p>We will use reasonable safeguards to protect personal data and follow applicable data protection laws. We will notify you as soon as reasonably possible if we discover a data breach affecting personal data we process for your business. Overseas transfers will have the safeguards required by law.</p>
+        <p>Our <a href="privacy.html#lekjek">Privacy Policy</a> explains how we handle personal data, including our service providers and any use of AI.</p>
+
+        <h2 id="lk-8">8. Ownership of Lekjek</h2>
+        <p>We and our suppliers own the software, branding and platform materials. Your plan gives you permission to use Lekjek for your business while your account is active and you follow these terms. It does not let you copy or resell the platform without our permission. This does not limit rights the law gives you.</p>
+
+        <h2 id="lk-9">9. Availability and service changes</h2>
+        <p>We will use reasonable care to operate Lekjek, but cannot promise uninterrupted or error-free service. Maintenance, internet problems and outside providers may cause delays. Keep copies of records that are important to your business.</p>
+        <p>We may update features. If we discontinue a core paid feature or the service, we will give reasonable notice and let you cancel the affected service with a refund for its unused prepaid period.</p>
+
+        <h2 id="lk-10">10. Suspending or closing an account</h2>
+        <p>We may restrict or close an account for unpaid fees, a serious breach of these terms, or a legal or security need. Where practical, we will explain the issue and give you a reasonable chance to fix it. Urgent risks may require immediate action.</p>
+        <p>You may close your account by performing it within the app. The cancellation rules above apply. Any retained records or backup copies will remain protected and be deleted when no longer needed for lawful purposes.</p>
+
+        <h2 id="lk-11">11. Limits on our responsibility</h2>
+        <p>Where the law allows, we are not responsible for lost profits, lost business opportunities or indirect losses arising from use of Lekjek.</p>
+        <p>If we are legally responsible for claims arising from Lekjek or these terms, the total amount we must pay is limited to S$100.</p>
+        <p>These limits apply only where legally allowed. They do not cover our fraud, deliberate wrongdoing, death or personal injury caused by our negligence, or any responsibility the law does not allow us to limit.</p>
+
+        <h2 id="lk-12">12. Changes and resolving problems</h2>
+        <p>We will tell you about significant changes to these terms by email or in the platform immediately when they take effect. By continuing to use the service, you agree to the updated terms.</p>
+        <p>Contact us first so we can try to resolve any problem. Singapore law applies, and disputes will be handled by the Singapore courts, subject to any rights or procedures that the law requires.</p>
+        <p>A separate agreement signed by both parties takes priority where it expressly changes these terms. If one part cannot be enforced, the rest still applies.</p>
+
+        <p class="doc-note">Contact: <a href="mailto:admin@deployku.com">admin@deployku.com</a></p>
+      </div>
+      <a href="#apps" class="tc-back" data-tc-back><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg><span data-t="pick.back">Choose another app</span></a>
     </div>
   </div>
 </section>
@@ -468,6 +626,48 @@ ul,ol{margin:0;padding:0;}
   var header=document.getElementById('header');
   var onScroll=function(){ header.classList.toggle('scrolled', window.scrollY>24); };
   onScroll(); window.addEventListener('scroll',onScroll,{passive:true});
+})();
+</script>
+<script>
+(function(){
+  var cards=document.querySelectorAll('.tc-card');
+  var ids=['heqiyou','lekjek'];
+  function panel(id){return document.getElementById(id);}
+  function setOpen(id,scroll){
+    ids.forEach(function(p){
+      var on=p===id;
+      panel(p).hidden=!on;
+      document.getElementById('tab-'+p).setAttribute('aria-expanded',on?'true':'false');
+    });
+    if(history.replaceState){history.replaceState(null,'',id?('#'+id):location.pathname+location.search);}
+    if(id&&scroll){panel(id).scrollIntoView({behavior:'smooth',block:'start'});}
+  }
+  cards.forEach(function(c){
+    c.addEventListener('click',function(){
+      var id=c.getAttribute('data-product');
+      setOpen(c.getAttribute('aria-expanded')==='true'?null:id,false);
+    });
+  });
+  document.querySelectorAll('[data-tc-back]').forEach(function(a){
+    a.addEventListener('click',function(e){
+      e.preventDefault();
+      document.getElementById('apps').scrollIntoView({behavior:'smooth',block:'center'});
+    });
+  });
+  // Deep links: #heqiyou, #lekjek, or any section id inside a panel (e.g. #s8, #lk-6).
+  function fromHash(){
+    var h=decodeURIComponent(location.hash.slice(1));
+    if(!h)return;
+    var el=document.getElementById(h);
+    if(!el)return;
+    var p=el.closest('.tc-panel');
+    if(!p)return;
+    setOpen(p.id,false);
+    history.replaceState&&history.replaceState(null,'','#'+h);
+    requestAnimationFrame(function(){el.scrollIntoView({block:'start'});});
+  }
+  fromHash();
+  window.addEventListener('hashchange',fromHash);
 })();
 </script>
 <script src="tr/terms.ms.js"></script>

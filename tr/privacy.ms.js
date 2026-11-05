@@ -1,9 +1,83 @@
 window.DK_TRANSLATIONS = window.DK_TRANSLATIONS || {};
 window.DK_TRANSLATIONS.ms = {
   _lang: "ms",
-  _title: "Dasar Privasi — Heqiyou · Deployku",
-  "eyebrow": "Undang-undang · Heqiyou",
+  _title: "Dasar Privasi — Heqiyou & Lekjek · Deployku",
+  "eyebrow": "Undang-undang · Deployku",
   "h1": "Dasar Privasi",
+  "pick.intro": "Deployku Pte Ltd membina lebih daripada satu aplikasi, dan setiap satu mempunyai dasar privasinya sendiri. Pilih aplikasi di bawah untuk membaca cara ia mengendalikan data peribadi.",
+  "pick.heqiyou": "Aplikasi temu janji yang mengutamakan suara",
+  "pick.lekjek": "Rekod pelanggan, invois dan peringatan pembayaran untuk perniagaan",
+  "pick.back": "Pilih aplikasi lain",
+  "hq.title": "Heqiyou — Dasar Privasi",
+  "lk.langnote": "Ini ialah terjemahan untuk kemudahan sahaja. Sekiranya terdapat sebarang percanggahan, versi bahasa Inggeris akan terpakai.",
+  "lk.title": `Lekjek — Dasar Privasi`,
+  "lk.meta": `<span>Tarikh berkuat kuasa: 5 November 2026</span>
+          <span>Deployku Pte. Ltd. · Singapura</span>`,
+  "lk.body": `<h2 id="lk-1">1. Siapa yang diliputi oleh dasar ini</h2>
+<p>Lekjek dikendalikan oleh Deployku Pte. Ltd., Singapura. Dasar ini menerangkan cara kami mengumpul, menggunakan, berkongsi dan melindungi data peribadi. Data peribadi bermaksud maklumat yang mengenal pasti anda, sama ada secara tersendiri atau bersama-sama dengan maklumat lain yang boleh kami akses.</p>
+<p>Dasar ini meliputi laman web, platform dan sokongan kami, termasuk maklumat yang dikendalikan oleh sesebuah perniagaan melalui Lekjek tentang kakitangan, pelanggan atau bakal pelanggannya.</p>
+
+<h2 id="lk-2">2. Peranan kami dan perniagaan anda</h2>
+<p>Kami menentukan cara maklumat akaun, langganan, keselamatan dan sokongan digunakan untuk mengendalikan Lekjek.</p>
+<p>Apabila sesebuah perniagaan menggunakan Lekjek untuk mengurus rekod pelanggan, invois atau susulan, kami lazimnya mengendalikan rekod tersebut mengikut arahannya. Perniagaan itu bertanggungjawab atas sebab-sebabnya menggunakan maklumat tersebut dan untuk memberikan sebarang notis yang diperlukan atau mendapatkan persetujuan. Kewajipan kami sendiri untuk melindungi data tersebut masih terpakai.</p>
+<p>Bagi rekod pelanggan tersebut, notis privasi perniagaan itu juga menerangkan cara maklumat anda digunakan.</p>
+
+<h2 id="lk-3">3. Maklumat yang kami kumpul</h2>
+<p>Bergantung pada cara Lekjek digunakan, kami mungkin mengumpul:</p>
+<ul>
+  <li><strong>Butiran akaun</strong>, seperti nama, butiran hubungan, nama perniagaan dan peranan anda dalam ruang kerja.</li>
+  <li><strong>Rekod perniagaan</strong>, seperti butiran pelanggan, invois, baki, status pembayaran, surat-menyurat dan dokumen yang dimuat naik.</li>
+  <li><strong>Rekod pengebilan</strong>, seperti pelan, kenalan pengebilan, rujukan pembayaran dan status transaksi anda.</li>
+  <li><strong>Maklumat teknikal</strong>, seperti alamat IP, butiran pelayar atau peranti, sejarah log masuk, penggunaan ciri dan log ralat.</li>
+  <li><strong>Mesej sokongan, lampiran</strong>, dan maklumat yang diserahkan kepada alat AI atau perkhidmatan bersambung.</li>
+</ul>
+<p>Kami menerima maklumat daripada anda, perniagaan anda, integrasi yang didayakan dan, jika berkaitan, sumber perniagaan awam yang sah di sisi undang-undang. Panggilan, rakaman atau transkrip hanya disertakan jika ciri yang didayakan menggunakannya, dengan sebarang notis dan persetujuan yang diperlukan.</p>
+<p>Elakkan memuat naik dokumen pengenalan diri, maklumat kesihatan atau butiran penuh kad pembayaran melainkan diperlukan untuk ciri yang dibenarkan.</p>
+
+<h2 id="lk-4">4. Cara kami menggunakan maklumat</h2>
+<p>Kami menggunakan maklumat untuk mengendalikan akaun dan ruang kerja, melaksanakan susulan invois dan pelanggan yang diminta, mengurus langganan, menjawab permintaan sokongan, mencegah penyalahgunaan, membaiki masalah dan memenuhi kewajipan undang-undang. Kami juga menggunakan maklumat akaun dan penggunaan untuk memahami dan menambah baik prestasi perkhidmatan.</p>
+<p>Kami mengumpul, menggunakan dan berkongsi data peribadi dengan persetujuan atau apabila dibenarkan oleh undang-undang. Kami menerangkan tujuan baharu dan mendapatkan persetujuan jika diperlukan sebelum menggunakan maklumat untuk tujuan tersebut.</p>
+
+<h2 id="lk-5">5. AI dan perkhidmatan bersambung</h2>
+<p>Apabila anda menggunakan ciri AI, teks atau fail yang berkaitan mungkin dihantar kepada penyedia AI untuk mengekstrak butiran, mencadangkan mesej atau menghasilkan output yang diminta. Output mungkin mengandungi data peribadi dan mungkin salah. Semak output tersebut sebelum menggunakannya.</p>
+<p>Menyambungkan perkhidmatan lain membolehkan kami berkongsi maklumat yang diperlukan untuk ciri tersebut di bawah arahan anda. Perkhidmatan yang disambungkan itu juga mungkin mengendalikan maklumat di bawah dasar privasinya sendiri. Sambungkan hanya perkhidmatan dan serahkan hanya maklumat yang anda diberi kuasa untuk gunakan.</p>
+
+<h2 id="lk-6">6. Siapa yang boleh menerima maklumat</h2>
+<p>Pemilik, pentadbir dan ahli pasukan ruang kerja yang diberi kuasa boleh mengakses maklumat mengikut kebenaran mereka.</p>
+<p>Kami menggunakan penyedia untuk fungsi seperti pengehosan, pemesejan, pembayaran, AI dan sokongan. Penyedia yang mengendalikan data bagi pihak kami mesti mematuhi arahan yang dipersetujui serta keperluan kerahsiaan dan keselamatan.</p>
+<p>Kami mungkin berkongsi maklumat yang perlu dengan penasihat atau pihak berkuasa untuk memenuhi kewajipan undang-undang, menyelesaikan tuntutan atau melindungi hak yang sah di sisi undang-undang. Jika perniagaan kami dijual atau disusun semula, maklumat yang perlu mungkin dikongsi di bawah langkah perlindungan kerahsiaan dan kewajipan perlindungan data yang berterusan.</p>
+
+<h2 id="lk-7">7. Kuki dan pemasaran</h2>
+<p>Kami menggunakan kuki dan storan pelayar yang serupa untuk fungsi seperti mendaftar masuk anda, melindungi sesi dan mengingati pilihan. Menyekat storan penting mungkin menjejaskan fungsi ini.</p>
+<p>Jika kami menghantar bahan pemasaran, anda boleh menarik diri melalui mesej tersebut atau dengan menghubungi kami. Kami mungkin masih menghantar notis akaun, keselamatan dan pengebilan yang perlu. Bagi mesej yang dihantar oleh perniagaan yang menggunakan Lekjek, hubungi perniagaan tersebut untuk mengurus pilihan anda. Kami boleh membantu menyalurkan permintaan anda.</p>
+
+<h2 id="lk-8">8. Perlindungan dan penyimpanan di luar negara</h2>
+<p>Kami menggunakan langkah perlindungan yang munasabah dan mengehadkan akses kepada individu dan penyedia yang memerlukan maklumat tersebut. Tiada sistem dalam talian yang dapat menjamin keselamatan sepenuhnya. Kami akan memaklumkan perniagaan yang berkenaan dengan segera tentang pelanggaran yang menjejaskan data yang kami kendalikan untuknya, dan memaklumkan individu serta pengawal selia jika dikehendaki oleh undang-undang.</p>
+<p>Penyedia kami mungkin menyimpan atau memproses data di luar Singapura. Kami akan menggunakan langkah perlindungan kontrak atau langkah perlindungan lain yang dikehendaki oleh undang-undang bagi memastikan perlindungan yang setanding.</p>
+<p>Lokasi pemprosesan utama: Singapura.</p>
+
+<h2 id="lk-9">9. Berapa lama kami menyimpan maklumat</h2>
+<p>Kami menyimpan data peribadi hanya selama yang munasabah diperlukan untuk perkhidmatan, tujuan perniagaan yang perlu atau keperluan undang-undang. Kami kemudiannya memadamkannya atau membuang butiran yang mengenal pasti.</p>
+<p>Sebelum menutup ruang kerja, pemiliknya bertanggungjawab untuk mengeksport data mereka di bawah <a href="termsandconditions.html#lekjek">Terma Perkhidmatan</a> kami, tertakluk kepada sekatan undang-undang dan keselamatan. Rekod yang diperlukan untuk pertikaian, pengebilan atau kewajipan undang-undang mungkin disimpan lebih lama. Salinan sandaran kekal dilindungi sehingga pemadaman berjadualnya.</p>
+<p>Jadual pemadaman: Anda boleh meminta kami memadamkan rekod anda dari dalam aplikasi, dan kami akan memadamkannya sebaik sahaja kami tidak lagi memerlukannya untuk tujuan yang sah di sisi undang-undang.</p>
+
+<h2 id="lk-10">10. Pilihan dan permintaan anda</h2>
+<p>Tertakluk kepada undang-undang yang terpakai dan pengecualiannya, anda boleh meminta untuk mengakses data peribadi anda, mengetahui cara data tersebut digunakan atau dikongsi dalam tempoh setahun yang lalu, atau membetulkan kesilapan. Anda boleh menarik balik persetujuan bagi penggunaan yang bergantung pada persetujuan tersebut. Kami akan menerangkan jika perkara ini menjejaskan sesuatu perkhidmatan; penggunaan yang dibenarkan atau dikehendaki oleh undang-undang boleh diteruskan.</p>
+<p>Anda juga boleh meminta kami memadamkan maklumat. Kami akan menyemak permintaan tersebut, tetapi mungkin perlu mengekalkan sesetengah rekod untuk tujuan yang sah di sisi undang-undang.</p>
+<p>Hubungi Pegawai Perlindungan Data kami di bawah. Kami mungkin memerlukan butiran untuk mengesahkan identiti anda. Sebarang fi yang sah bagi permintaan akses akan diterangkan terlebih dahulu.</p>
+<p>Kami akan memberikan maklum balas secepat yang munasabah. Jika permintaan akses atau pembetulan tidak dapat diselesaikan dalam tempoh 30 hari, kami akan memaklumkan anda secara bertulis dalam tempoh tersebut bila anda boleh menjangkakan maklum balas kami.</p>
+<p>Bagi rekod yang kami kendalikan untuk sesebuah perniagaan, anda boleh menghubungi perniagaan tersebut atau kami. Kami akan membantu menyalurkan atau menyelaraskan permintaan tersebut.</p>
+
+<h2 id="lk-11">11. Maklumat tentang kanak-kanak</h2>
+<p>Akaun Lekjek bertujuan untuk orang dewasa berumur 18 tahun ke atas. Sesebuah perniagaan hanya patut memuat naik maklumat tentang kanak-kanak jika perlu dan sah di sisi undang-undang, dengan sebarang persetujuan ibu bapa atau penjaga yang diperlukan. Hubungi kami jika anda percaya maklumat seorang kanak-kanak telah digunakan secara tidak wajar.</p>
+
+<h2 id="lk-12">12. Kemas kini dan butiran hubungan</h2>
+<p>Kami akan mengemas kini tarikh berkuat kuasa apabila dasar ini berubah dan memberikan notis tentang perubahan penting melalui e-mel, di laman web kami atau dalam Lekjek. Kemas kini dasar tidak menggantikan persetujuan jika persetujuan diperlukan untuk penggunaan baharu.</p>
+<p>Untuk soalan, permintaan atau aduan berkaitan privasi, hubungi:</p>
+<div class="summary-card">
+  <p><strong>Pegawai Perlindungan Data</strong><br />Deployku Pte. Ltd.<br />E-mel: <a href="mailto:admin@deployku.com">admin@deployku.com</a></p>
+</div>
+<p>Anda juga boleh membangkitkan kebimbangan kepada Suruhanjaya Perlindungan Data Peribadi Singapura di <a href="https://www.pdpc.gov.sg" target="_blank" rel="noopener">https://www.pdpc.gov.sg</a>.</p>`,
   "meta": "<span>Tarikh Berkuat Kuasa: 11 June 2026</span><span>Versi 1.0</span><span>Deployku Pte Ltd · Singapura</span>",
   "intro": `Dasar Privasi ini menerangkan bagaimana <strong>Deployku Pte Ltd</strong>, sebuah syarikat sendirian berhad yang diperbadankan di Singapura ("<strong>Deployku</strong>", "<strong>kami</strong>", "<strong>kita</strong>" atau "<strong>milik kami</strong>"), mengumpul, menggunakan, mendedahkan, memindahkan, menyimpan dan melindungi data peribadi berkaitan dengan aplikasi mudah alih Heqiyou dan perkhidmatan berkaitan ("<strong>Perkhidmatan</strong>" atau "<strong>Aplikasi</strong>").`,
   "nav.product": "Heqiyou",
